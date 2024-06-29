@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_music_and_sound_effects",
+  "%Name":"obj_logo_company",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_music_and_sound_effects",
+  "name":"obj_logo_company",
   "overriddenProperties":[],
   "parent":{
-    "name":"invisibles",
-    "path":"folders/Objects/invisibles.yy",
+    "name":"logos",
+    "path":"folders/Objects/logos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,15 +27,14 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"music_playing","filters":[
-        "GMSound",
-      ],"listItems":[],"multiselect":false,"name":"music_playing","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_menu_music","path":"sounds/snd_menu_music/snd_menu_music.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_menu_music","varType":5,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_logo_company",
+    "path":"sprites/spr_logo_company/spr_logo_company.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

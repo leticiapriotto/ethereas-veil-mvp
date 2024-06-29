@@ -1,2 +1,4 @@
 /// @description animated buttons
-image_alpha = 1;
+if (!disable_animation) {
+	image_alpha = 1;
+}

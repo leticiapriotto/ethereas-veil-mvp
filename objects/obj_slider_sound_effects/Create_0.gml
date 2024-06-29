@@ -1,7 +1,3 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
-// Inherit the parent event
+// Evento Create do obj_slider_sound_effects
 event_inherited();
-
 value = global.sfx_volume; 
