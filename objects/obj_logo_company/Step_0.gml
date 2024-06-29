@@ -18,6 +18,6 @@ if fading_out {
     image_alpha -= 0.01; // Ajuste o valor para controlar a velocidade do fade out
 
     if image_alpha <= 0 {
-        room_goto(rm_splash_game); // Troca para a sala do menu principal após o fade out completo
+        room_goto(rm_splash_ethereas_veil); // Troca para a sala do menu principal após o fade out completo
     }
 }

@@ -9,8 +9,8 @@
   "name":"obj_slider_sound_effects",
   "overriddenProperties":[],
   "parent":{
-    "name":"buttons",
-    "path":"folders/Objects/buttons.yy",
+    "name":"Sliders",
+    "path":"folders/Objects/Interface Elements/Sliders.yy",
   },
   "parentObjectId":{
     "name":"obj_slider_parent",

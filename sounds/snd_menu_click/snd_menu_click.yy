@@ -12,8 +12,8 @@
   "duration":0.203968,
   "name":"snd_menu_click",
   "parent":{
-    "name":"sound_effects",
-    "path":"folders/Sounds/sound_effects.yy",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

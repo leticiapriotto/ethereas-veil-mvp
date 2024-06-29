@@ -1,12 +1,12 @@
 {
   "$GMRoom":"",
-  "%Name":"rm_splash_game",
+  "%Name":"rm_splash_ethereas_veil",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_F532476","path":"rooms/rm_splash_game/rm_splash_game.yy",},
+    {"name":"inst_F532476","path":"rooms/rm_splash_ethereas_veil/rm_splash_ethereas_veil.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -15,10 +15,10 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"rm_splash_game",
+  "name":"rm_splash_ethereas_veil",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Splash Screens",
+    "path":"folders/Rooms/Splash Screens.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

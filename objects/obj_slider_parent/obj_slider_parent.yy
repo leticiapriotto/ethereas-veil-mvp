@@ -11,8 +11,8 @@
   "name":"obj_slider_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"parents",
-    "path":"folders/Objects/buttons/parents.yy",
+    "name":"Parents",
+    "path":"folders/Objects/Interface Elements/Parents.yy",
   },
   "parentObjectId":null,
   "persistent":false,

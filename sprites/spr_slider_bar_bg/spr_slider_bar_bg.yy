@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"default",
-    "path":"folders/Sprites/default.yy",
+    "name":"Interface Elements",
+    "path":"folders/Sprites/Interface Elements.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

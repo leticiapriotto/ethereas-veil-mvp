@@ -10,8 +10,8 @@
   "name":"obj_music_and_sound_effects",
   "overriddenProperties":[],
   "parent":{
-    "name":"invisibles",
-    "path":"folders/Objects/invisibles.yy",
+    "name":"Control",
+    "path":"folders/Objects/Control.yy",
   },
   "parentObjectId":null,
   "persistent":false,

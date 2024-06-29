@@ -9,8 +9,8 @@
   "name":"obj_logo_ethereas_veil",
   "overriddenProperties":[],
   "parent":{
-    "name":"logos",
-    "path":"folders/Objects/logos.yy",
+    "name":"Logos",
+    "path":"folders/Objects/Logos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

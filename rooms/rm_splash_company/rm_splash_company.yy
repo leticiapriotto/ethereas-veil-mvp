@@ -17,8 +17,8 @@
   ],
   "name":"rm_splash_company",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Splash Screens",
+    "path":"folders/Rooms/Splash Screens.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
