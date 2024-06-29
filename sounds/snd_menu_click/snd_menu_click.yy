@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_menu_click",
+  "audioGroupId":{
+    "name":"audiogroup_sound_effects",
+    "path":"audiogroups/audiogroup_sound_effects",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.203968,
+  "name":"snd_menu_click",
+  "parent":{
+    "name":"sound_effects",
+    "path":"folders/Sounds/sound_effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_menu_click.wav",
+  "type":0,
+  "volume":1.0,
+}

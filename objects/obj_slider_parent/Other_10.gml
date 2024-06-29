@@ -1,0 +1,1 @@
+/// @description slider event
