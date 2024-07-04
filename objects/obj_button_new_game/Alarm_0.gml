@@ -1,7 +1,5 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+/// @description start game
 
 // Inherit the parent event
 event_inherited();
-
 room_goto(rm_game);

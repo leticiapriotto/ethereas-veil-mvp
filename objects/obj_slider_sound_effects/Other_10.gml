@@ -1,7 +1,6 @@
-/// @description Slider event
+/// @description sfx_volume to value
 
 // Inherit the parent event
 event_inherited();
-
 global.sfx_volume = value;
 audio_group_set_gain(audiogroup_sound_effects, global.sfx_volume, 0);

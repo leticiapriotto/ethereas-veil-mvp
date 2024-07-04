@@ -1,4 +1,4 @@
-/// @description animated_buttons
+/// @description pop button and click sound
 
 if (!disable_animation) {
     y = ystart + 5;

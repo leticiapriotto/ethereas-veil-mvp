@@ -1,8 +1,5 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+/// @description end game
 
 // Inherit the parent event
 event_inherited();
-
 game_end();
-

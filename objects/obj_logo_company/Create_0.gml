@@ -1,5 +1,5 @@
-/// @description Inserir descrição aqui
+/// @description fading and display setup
 
 image_alpha = 0;
-fading_out = false; // Variável para controlar o fade out
-display_time = 120; // Número de frames para 2 segundos a 60 FPS
+fading_out = false;
+display_time = 120; // frames per seconds for 2 seconds (60 FPS)
