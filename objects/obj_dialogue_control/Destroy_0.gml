@@ -1,5 +1,5 @@
 /// @description chatterbox stopped
 
-if ChatterboxIsStopped(chatterbox){
-	instance_destroy(self); 
+if (ChatterboxIsStopped(chatterbox)){
+    instance_destroy();
 }

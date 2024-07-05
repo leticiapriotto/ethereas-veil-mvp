@@ -1,18 +1,28 @@
-/// @description text formating and chat progression
+/// @description handle user input for option
 
-if ChatterboxIsWaiting(chatterbox) {
-	text = ChatterboxGetContent(chatterbox, 0);
-	character = ChatterboxGetContentSpeaker(chatterbox, 0);
-	node_title = ChatterboxGetCurrent(chatterbox); 
+option_count = ChatterboxGetOptionCount(chatterbox); // get the number of dialogue options
+
+// loop through each option
+for (var _i = 0; _i < option_count; _i++) {
 	
-	// removes character name from text
-	if (string_starts_with(text, character + ": ")) {
-        text = string_delete(text, 1, string_length(character) + 2);
+    if (ChatterboxGetOptionConditionBool(chatterbox, _i)) {
+		var _option_x = _option_x_positions[_i]; 
+        var _option_y = room_height / 2;
+
+        // check if the mouse is over the option area
+        if (mouse_x >= _option_x - 50 && mouse_x <= _option_x + 50 && mouse_y >= _option_y - 15 && mouse_y <= _option_y + 15) {
+            option_index = _i; // Set the current option index for selection
+
+            if (mouse_check_button_pressed(mb_left)) {
+                ChatterboxSelect(chatterbox, option_index); // select this option in chatterbox
+                chatterbox_update(); 
+            }
+        }
     }
-	
-	// chat progression
-	if mouse_check_button_pressed(mb_left) {
-		ChatterboxContinue(chatterbox);
-	}
+}
 
+// continue in chatterbox if waiting for player interaction
+if (ChatterboxIsWaiting(chatterbox) && mouse_check_button_pressed(mb_left)) {
+    ChatterboxContinue(chatterbox);
+    chatterbox_update(); 
 }

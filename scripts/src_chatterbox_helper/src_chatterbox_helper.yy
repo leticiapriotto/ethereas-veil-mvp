@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_chatterbox_helper",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_chatterbox_helper",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

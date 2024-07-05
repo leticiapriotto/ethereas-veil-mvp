@@ -1,26 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -859,-230
-__PrivCrochet_tags: 
-title: Start
----
-Soul: In time immemorial, the duality inherent in the universe manifested itself in the creation of Etherea.
-Chaos: Two primordial entities, The Personification of order and logic and The Soul of chaos and infinite potentiality
-
-<<jump Origin 2>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -524,-260
-__PrivCrochet_tags: 
-title: Origin 2
----
-Soul: they wove reality through an eternal conflict.
-Chaos: The misty lands and overcast skies reflect the untamed nature of this world, where life struggles to flourish amidst this hostile environment.
-
-<<jump First Decision>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -213,-210
+__PrivCrochet_position: 523,208
 __PrivCrochet_tags: 
 title: First Decision
 ---
@@ -28,38 +8,58 @@ Chaos: Chose a card that will seal Elyssia's fate
     -> The High Priestess
         Soul: Okay
         <<jump The High Priestess>>
-    -> The High Priestess
-        Soul: Okay
+    -> The Lovers
+        Soul: Fine
         <<jump The Lovers>>
     -> Death
         Chaos: Oh my...
         <<jump Death>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 181,-488
+__PrivCrochet_position: 846,-22
 __PrivCrochet_tags: 
 title: The High Priestess
 ---
-The High Priestess is a powerful symbol of intuition and the feminine divine, offering a gateway to our subconscious minds and the highest source of wisdom. She is a reminder to trust our inner knowing and to access the knowledge that lies within us
+The High Priestess is a powerful symbol of intuition and the feminine divine, offering a gateway to our subconscious minds and the highest source of wisdom. 
+She is a reminder to trust our inner knowing and to access the knowledge that lies within us
+
+<<jump First Decision>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 179,-250
+__PrivCrochet_position: 845,208
 __PrivCrochet_tags: 
 title: The Lovers
 ---
 The Lovers tarot card encourages us to explore our personal beliefs and values, while also finding balance in life for increased success. The Upright Lovers card symbolizes a strong bond between two people, urging one to stay true to their values when it comes to relationships.
+
+<<jump First Decision>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 171,2
+__PrivCrochet_position: 845,444
 __PrivCrochet_tags: 
 title: Death
 ---
 The Death tarot card is often misunderstood and feared, primarily due to its name. However, in the upright position, this card signifies not physical death but rather a profound transformation. It represents the end of a significant phase in your life that you recognize is no longer serving you.
+
+<<jump First Decision>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -816,-551
+__PrivCrochet_position: -2,208
 __PrivCrochet_tags: 
-title: Node
+title: Start
 ---
-Empty Text
+Soul: In time immemorial, the duality inherent in the universe manifested itself in the creation of Etherea.
+Chaos: Two primordial entities, The Personification of order and logic and The Soul of chaos and infinite potentiality
+
+<<jump Intro>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 254,208
+__PrivCrochet_tags: 
+title: Intro
+---
+Soul: they wove reality through an eternal conflict.
+Chaos: The misty lands and overcast skies reflect the untamed nature of this world, where life struggles to flourish amidst this hostile environment.
+
+<<jump First Decision>>
 ===
