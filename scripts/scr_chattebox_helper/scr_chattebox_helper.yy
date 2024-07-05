@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"src_chatterbox_helper",
+  "%Name":"scr_chattebox_helper",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"src_chatterbox_helper",
+  "name":"scr_chattebox_helper",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

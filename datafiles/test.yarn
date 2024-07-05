@@ -4,7 +4,7 @@ __PrivCrochet_position: 523,208
 __PrivCrochet_tags: 
 title: First Decision
 ---
-Chaos: Chose a card that will seal Elyssia's fate
+Chose a card that will seal Elyssia's fate
     -> The High Priestess
         Soul: Okay
         <<jump The High Priestess>>
