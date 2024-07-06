@@ -1,4 +1,10 @@
 //chattebox
+function chatterbox_init() {
+	ChatterboxLoadFromFile("test.yarn");
+	chatterbox = ChatterboxCreate();
+	ChatterboxJump(chatterbox, "Start");
+}
+
 function chatterbox_update() {
     text = ChatterboxGetContent(chatterbox, 0);
     character = ChatterboxGetContentSpeaker(chatterbox, 0);
@@ -20,6 +26,19 @@ function remove_character_name_from_text(_text, _character) {
 }
 
 //draw sprites
+function set_cards_lists_and_position() {
+	sprite_y_position = 300;
+	sprite_x_positions = [
+	    room_width / 4,
+	    room_width / 2,
+	    3 * room_width / 4
+	];
+	
+	first_decision_sprites = [spr_card_the_high_priestess, spr_card_the_lovers, spr_card_death];
+	second_decision_sprites = [spr_card_the_high_priestess, spr_card_the_lovers, spr_card_death];
+	third_decision_sprites = [spr_card_the_high_priestess, spr_card_the_lovers, spr_card_death];
+}
+
 function draw_character_sprite(_character) {
     var _character_y = 700;
     var _character_right_x = 3 * room_width / 4;
@@ -40,9 +59,7 @@ function draw_character_sprite(_character) {
 function draw_card_sprites(_node_title, _index, x, y) {
     var _sprite_list = undefined;
 	
-	first_decision_sprites = [spr_the_high_priestess, spr_the_lovers, spr_death];
-	second_decision_sprites = [spr_the_high_priestess, spr_the_lovers, spr_death];
-	third_decision_sprites = [spr_the_high_priestess, spr_the_lovers, spr_death];
+	
 
     switch (_node_title) {
         case "First Decision":
@@ -60,7 +77,5 @@ function draw_card_sprites(_node_title, _index, x, y) {
         draw_sprite(_sprite_list[_index], 0, x, y);
     }
 }
-
-
 
 
