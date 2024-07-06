@@ -2,7 +2,7 @@
 function chatterbox_init() {
 	ChatterboxLoadFromFile("test.yarn");
 	chatterbox = ChatterboxCreate();
-	ChatterboxJump(chatterbox, "Start");
+	ChatterboxJump(chatterbox, "Intro");
 }
 
 function chatterbox_update() {
@@ -35,8 +35,29 @@ function set_cards_lists_and_position() {
 	];
 	
 	first_decision_sprites = [spr_card_the_high_priestess, spr_card_the_lovers, spr_card_death];
-	second_decision_sprites = [spr_card_the_high_priestess, spr_card_the_lovers, spr_card_death];
-	third_decision_sprites = [spr_card_the_high_priestess, spr_card_the_lovers, spr_card_death];
+	second_decision_sprites = [spr_card_the_fool, spr_card_the_emperor, spr_card_strength];
+	third_decision_sprites = [spr_card_the_tower, spr_card_the_devil, spr_card_justice];
+}
+
+function set_cards_descriptions() {
+	first_decision_descriptions = [
+	    "The High Priestess - Description for the High Priestess card.",
+	    "The Lovers - Description for the Lovers card.",
+	    "Death - Description for the Death card."
+	];
+
+	second_decision_descriptions = [
+	    "The Fool - Description for the Fool card.",
+	    "The Emperor - Description for the Emperor card.",
+	    "Strength - Description for the Strength card."
+	];
+
+	third_decision_descriptions = [
+	    "The Tower - Description for the Tower card.",
+	    "The Devil - Description for the Devil card.",
+	    "Justice - Description for the Justice card."
+	];
+	
 }
 
 function draw_character_sprite(_character) {

@@ -11,6 +11,7 @@ option_count = 0;
 
 // sprites setup
 set_cards_lists_and_position()
+set_cards_descriptions();
 
 // text layout setup
 text_x = room_width / 2;

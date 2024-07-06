@@ -32,3 +32,24 @@ if (IsChatterbox(chatterbox) && text != undefined) {
     draw_character_sprite(character);
 	
 }
+
+// check mouse hover and draws card description
+if (mouse_over_option && option_index != -1) {
+    var _description = "";
+    
+    switch (node_title) {
+        case "First Decision":
+            _description = first_decision_descriptions[option_index];
+            break;
+        case "Second Decision":
+            _description = second_decision_descriptions[option_index];
+            break;
+        case "Third Decision":
+            _description = third_decision_descriptions[option_index];
+            break;
+    }
+	
+	chatterbox_wrap_text(text_x, 650, _description, line_spacing, text_width);
+	//chatterbox_wrap_text(mouse_x, mouse_y, _description, line_spacing, text_width);
+	
+}
