@@ -1,23 +1,23 @@
-/// @description Inserir descrição aqui
+/// @description fade in and out
 
-// Fade in
+// fade in
 if image_alpha < 1 && !fading_out {
-    image_alpha += 0.01; // Ajuste o valor para controlar a velocidade do fade in
+    image_alpha += 0.01; // fade in speed
 }
 
-// Verifica se deve iniciar o fade out após o tempo mínimo de exibição
+// checks if should start fade out after minimum display time
 if image_alpha >= 1 && display_time > 0 {
     display_time--;
 } else if image_alpha >= 1 {
     fading_out = true;
-    image_alpha = 1; // Garante que a alpha não passe de 1
+    image_alpha = 1; // guarantees that alpha is not greater than 1
 }
 
-// Fade out
+// fade out
 if fading_out {
-    image_alpha -= 0.01; // Ajuste o valor para controlar a velocidade do fade out
+    image_alpha -= 0.01; // fade out speed
 
     if image_alpha <= 0 {
-        room_goto(rm_splash_ethereas_veil); // Troca para a sala do menu principal após o fade out completo
+        room_goto(rm_splash_ethereas_veil);
     }
 }
