@@ -24,6 +24,7 @@ title: Intro
 <<declare $finalB = 0 >>
 <<declare $finalC = 0 >>
 
+...
 Lira: Hello! I heard rumors about a wisdom that can help those who seek their destiny. Are you that person?
 Player: I am. Sit down. What brings you here?
 

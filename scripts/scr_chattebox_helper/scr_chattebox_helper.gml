@@ -68,10 +68,10 @@ function draw_character_sprite(_character) {
 
     switch (_character) {
         case "Lira":
-            draw_sprite(spr_soul, image_index, _character_right_x, _character_y);
+            draw_sprite(spr_chaos, image_index, _character_right_x, _character_y);
             break;
         case "Player":
-            draw_sprite(spr_chaos, image_index, _character_left_x, _character_y);
+            draw_sprite(spr_soul, image_index, _character_left_x, _character_y);
             break;
     
     }
@@ -99,10 +99,7 @@ function draw_card_sprites(_node_title, _index, x, y) {
     }
 }
 
-
 //draw buttons
-
-//draw sprites
 function draw_buttons(_buttons, x) {
     for (var _i = 0; _i < array_length(_buttons); _i++) {
         instance_create_layer(x, 284 + (_i * 100), "Instances_Buttons", _buttons[_i]);
