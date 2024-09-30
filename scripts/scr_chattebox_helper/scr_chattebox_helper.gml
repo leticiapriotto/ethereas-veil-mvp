@@ -67,11 +67,11 @@ function draw_character_sprite(_character) {
 	var _character_left_x = room_width / 4;
 
     switch (_character) {
-        case "Soul":
-            draw_sprite(spr_soul, 0, _character_right_x, _character_y);
+        case "Lira":
+            draw_sprite(spr_soul, image_index, _character_right_x, _character_y);
             break;
-        case "Chaos":
-            draw_sprite(spr_chaos, 0, _character_left_x, _character_y);
+        case "Player":
+            draw_sprite(spr_chaos, image_index, _character_left_x, _character_y);
             break;
     
     }
@@ -99,4 +99,25 @@ function draw_card_sprites(_node_title, _index, x, y) {
     }
 }
 
+
+//draw buttons
+
+//draw sprites
+function draw_buttons(_buttons, x) {
+    for (var _i = 0; _i < array_length(_buttons); _i++) {
+        instance_create_layer(x, 284 + (_i * 100), "Instances_Buttons", _buttons[_i]);
+    }
+}
+
+function update_buttons(_buttons, _cam_x, _button_parallax_speed) {
+    for (var _i = 0; _i < array_length(_buttons); _i++) {
+        _buttons[_i].x = 640 - (_cam_x * _button_parallax_speed);
+    }
+}
+
+function destroy_buttons(_buttons) {
+    for (var _i = 0; _i < array_length(_buttons); _i++) {
+        instance_destroy(_buttons[_i]);
+    }
+}
 

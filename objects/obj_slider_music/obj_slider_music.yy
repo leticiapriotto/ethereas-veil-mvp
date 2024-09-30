@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Sliders",
-    "path":"folders/Objects/Interface Elements/Sliders.yy",
+    "path":"folders/Notes/Objects/Interface Elements/Sliders.yy",
   },
   "parentObjectId":{
     "name":"obj_slider_parent",

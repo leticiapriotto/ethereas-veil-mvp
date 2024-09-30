@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Logos",
-    "path":"folders/Objects/Logos.yy",
+    "path":"folders/Notes/Objects/Logos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

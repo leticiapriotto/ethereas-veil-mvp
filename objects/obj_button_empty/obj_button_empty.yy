@@ -10,7 +10,7 @@
   ],
   "parent":{
     "name":"Buttons",
-    "path":"folders/Objects/Interface Elements/Buttons.yy",
+    "path":"folders/Notes/Objects/Interface Elements/Buttons.yy",
   },
   "parentObjectId":{
     "name":"obj_button_parent",

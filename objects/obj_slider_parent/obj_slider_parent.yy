@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Parents",
-    "path":"folders/Objects/Interface Elements/Parents.yy",
+    "path":"folders/Notes/Objects/Interface Elements/Parents.yy",
   },
   "parentObjectId":null,
   "persistent":false,

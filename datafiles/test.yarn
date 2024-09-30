@@ -1,53 +1,22 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 523,208
+__PrivCrochet_position: 488,210
 __PrivCrochet_tags: 
 title: First Decision
 ---
-Chose a card that will seal Elyssia's fate
-    -> The High Priestess
-        Soul: Okay
-        <<jump The High Priestess>>
-    -> The Lovers
-        Soul: Fine
-        <<jump The Lovers>>
-    -> Death
-        Chaos: Oh my...
-        <<jump Death>>
+Player: These cards can help us discover your path. Let’s see what they reveal.
+-> Curiosity
+    Player: Let's see...
+    <<jump Curiosity>>
+-> Doubt
+    Player: Let's see...
+    <<jump History>>
+-> Hope
+    Player: Let's see...
+    <<jump Confort>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 836,-105
-__PrivCrochet_tags: 
-title: The High Priestess
----
-The High Priestess is a powerful symbol of intuition and the feminine divine, offering a gateway to our subconscious minds and the highest source of wisdom. 
-She is a reminder to trust our inner knowing and to access the knowledge that lies within us
-
-<<set $finalA = $finalA + 1>>
-<<jump Intro 2>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 834,208
-__PrivCrochet_tags: 
-title: The Lovers
----
-The Lovers tarot card encourages us to explore our personal beliefs and values, while also finding balance in life for increased success. The Upright Lovers card symbolizes a strong bond between two people, urging one to stay true to their values when it comes to relationships.
-
-<<set $finalB = $finalB + 1>>
-<<jump Intro 2>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 826,524
-__PrivCrochet_tags: 
-title: Death
----
-The Death tarot card is often misunderstood and feared, primarily due to its name. However, in the upright position, this card signifies not physical death but rather a profound transformation. It represents the end of a significant phase in your life that you recognize is no longer serving you.
-
-<<set $finalC = $finalC + 1>>
-<<jump Intro 2>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -2,208
+__PrivCrochet_position: -78,210
 __PrivCrochet_tags: 
 title: Intro
 ---
@@ -55,110 +24,107 @@ title: Intro
 <<declare $finalB = 0 >>
 <<declare $finalC = 0 >>
 
-Soul: In time immemorial, the duality inherent in the universe manifested itself in the creation of Etherea.
-Chaos: Two primordial entities, The Personification of order and logic and The Soul of chaos and infinite potentiality
+Lira: Hello! I heard rumors about a wisdom that can help those who seek their destiny. Are you that person?
+Player: I am. Sit down. What brings you here?
 
 <<jump Problem 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 254,208
+__PrivCrochet_position: 181,210
 __PrivCrochet_tags: 
 title: Problem 1
 ---
-Soul: they wove reality through an eternal conflict.
-Chaos: The misty lands and overcast skies reflect the untamed nature of this world, where life struggles to flourish amidst this hostile environment.
+Lira: I... feel like I'm lost. My heart longs for adventure, but I'm afraid of what I might find.
+Player: Sometimes, it's in uncertainty that we find what we really want. Let's see what the cards have to say.
 
 <<jump First Decision>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1155,208
+__PrivCrochet_position: 1100,213
 __PrivCrochet_tags: 
 title: Intro 2
 ---
-Soul: In time immemorial, the duality inherent in the universe manifested itself in the creation of Etherea.
-Chaos: Two primordial entities, The Personification of order and logic and The Soul of chaos and infinite potentiality
-
-<<jump Problem 2>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 1409,203
-__PrivCrochet_tags: 
-title: Problem 2
----
-Soul: they wove reality through an eternal conflict.
-Chaos: The misty lands and overcast skies reflect the untamed nature of this world, where life struggles to flourish amidst this hostile environment.
+Player: Well, let's see...
 
 <<jump Second Decision>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1693,208
+__PrivCrochet_position: 1376,210
 __PrivCrochet_tags: 
 title: Second Decision
 ---
-Chose a card that will seal Elyssia's fate
-    -> The Fool
-        Soul: Okay
-        <<jump The Fool>>
-    -> The Emperor
-        Soul: Fine
-        <<jump The Emperor>>
-    -> Strength
-        Chaos: Oh my...
-        <<jump Strength>>
+Player: Let’s discover what destiny has in store.
+    -> Encouragement
+        Player: I see...
+        <<jump Encouragement>>
+    -> Fear
+        Player: I see...
+        <<jump Fear>>
+    -> Uncertain
+        Player: I see...
+        <<jump Uncertain>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1988,-143
+__PrivCrochet_position: 1683,-54
 __PrivCrochet_tags: 
-title: The Fool
+title: Encouragement
 ---
-The High Priestess is a powerful symbol of intuition and the feminine divine, offering a gateway to our subconscious minds and the highest source of wisdom. 
-She is a reminder to trust our inner knowing and to access the knowledge that lies within us
+Player: Hope is within your reach. You must take the risk!
 
 <<set $finalA = $finalA + 1>>
-<<jump Intro 3>>
+<<jump Passeio>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1986,196
+__PrivCrochet_position: 1683,208
 __PrivCrochet_tags: 
-title: The Emperor
+title: Fear
 ---
-The Lovers tarot card encourages us to explore our personal beliefs and values, while also finding balance in life for increased success. The Upright Lovers card symbolizes a strong bond between two people, urging one to stay true to their values when it comes to relationships.
+Player: What if you fail? Sometimes, it’s better to stay where we are.
 
 <<set $finalB = $finalB + 1>>
-<<jump Intro 3>>
+<<jump Passeio>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1984,513
+__PrivCrochet_position: 1683,460
 __PrivCrochet_tags: 
-title: Strength
+title: Uncertain
 ---
-The Death tarot card is often misunderstood and feared, primarily due to its name. However, in the upright position, this card signifies not physical death but rather a profound transformation. It represents the end of a significant phase in your life that you recognize is no longer serving you.
+Player: Well, I see...
 
 <<set $finalC = $finalC + 1>>
-<<jump Intro 3>>
+<<jump Passeio>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 2290,199
+__PrivCrochet_position: 2027,210
 __PrivCrochet_tags: 
-title: Intro 3
+title: Passeio
 ---
-Soul: In time immemorial, the duality inherent in the universe manifested itself in the creation of Etherea.
-Chaos: Two primordial entities, The Personification of order and logic and The Soul of chaos and infinite potentiality
+Player: Why don’t we explore the surroundings of the cabin?
+Lira: Alright
 
-<<jump Problem 3>>
+<<jump Consequencia>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 2595,194
+__PrivCrochet_position: 2307,203
 __PrivCrochet_tags: 
-title: Problem 3
+title: Consequencia
 ---
-Soul: they wove reality through an eternal conflict.
-Chaos: The misty lands and overcast skies reflect the untamed nature of this world, where life struggles to flourish amidst this hostile environment.
+Lira: Well...
+
+<<if $finalA > $finalB and $finalA > $finalC>>
+    Lira: Everything will be fine, I guess...
+<<elseif $finalB > $finalA and $finalB > $finalC>>
+    Lira: I should go home, I'm need to rest.
+<<elseif $finalC > $finalB and $finalC > $finalA>>
+    Lira: ...
+<<else>>
+    Lira: ...
+<<endif>>
 
 <<jump Third Decision>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 2853,199
+__PrivCrochet_position: 2600,203
 __PrivCrochet_tags: 
 title: Third Decision
 ---
@@ -209,7 +175,7 @@ __PrivCrochet_position: 3582,193
 __PrivCrochet_tags: 
 title: Intro 4
 ---
-You got... Final A {$finalA} - Final B {$finalB} - Final C {$finalC}
+You got...
 
 <<if $finalA > $finalB and $finalA > $finalC>>
     <<jump Final A>>
@@ -243,9 +209,39 @@ title: Final C
 Final C
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 3933,-201
+__PrivCrochet_position: 3786,-317
 __PrivCrochet_tags: 
 title: Final Alternativo
 ---
 How did you got here? wtf
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 792,-46
+__PrivCrochet_tags: 
+title: Curiosity
+---
+Lira: I’ve always been curious about the world beyond the trees, but fear holds me back. What if I never find my place?
+
+<<set $finalA = $finalA + 1>>
+<<jump Intro 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 792,210
+__PrivCrochet_tags: 
+title: History
+---
+Lira: I come from a small village where everyone seems to know their purpose. I feel like a stranger even among my own people.
+
+<<set $finalB = $finalB + 1>>
+<<jump Intro 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 792,449
+__PrivCrochet_tags: 
+title: Confort
+---
+Lira: Sometimes, a kind word is all we need. I’ve often felt alone, wishing someone would understand my struggles.
+
+<<set $finalC = $finalC + 1>>
+<<jump Intro 2>>
 ===

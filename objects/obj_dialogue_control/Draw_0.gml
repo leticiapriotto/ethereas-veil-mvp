@@ -1,7 +1,7 @@
 /// @description text and options display
 
 // set font for drawing text
-draw_set_font(fnt_segoe_ui);
+draw_set_font(fnt_segoe_ui_25);
 
 // check if Chatterbox is active and if there is text to display
 if (IsChatterbox(chatterbox) && text != undefined) {
@@ -29,6 +29,7 @@ if (IsChatterbox(chatterbox) && text != undefined) {
     }
 
     // draw current character sprite
+	image_speed = 0.15;
     draw_character_sprite(character);
 	
 }
