@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Control",
-    "path":"folders/Notes/Objects/Control.yy",
+    "path":"folders/Objects/Control.yy",
   },
   "parentObjectId":null,
   "persistent":false,
