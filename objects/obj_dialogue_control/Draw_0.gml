@@ -1,7 +1,7 @@
 /// @description text and options display
 
 // set font for drawing text
-draw_set_font(fnt_segoe_ui_25);
+draw_set_font(fnt_elegant_typewriter_25);
 
 // check if Chatterbox is active and if there is text to display
 if (IsChatterbox(chatterbox) && text != undefined) {
