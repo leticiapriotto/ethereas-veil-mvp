@@ -4,7 +4,7 @@ __PrivCrochet_position: 488,210
 __PrivCrochet_tags: 
 title: First Decision
 ---
-Player: These cards can help us discover your path. Let’s see what they reveal.
+Player: These cards can help us discover your path. Let's see what they reveal.
 -> Curiosity
     Player: Let's see...
     <<jump Curiosity>>
@@ -16,7 +16,7 @@ Player: These cards can help us discover your path. Let’s see what they reveal
     <<jump Confort>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -78,210
+__PrivCrochet_position: -83,210
 __PrivCrochet_tags: 
 title: Intro
 ---
@@ -162,7 +162,7 @@ She is a reminder to trust our inner knowing and to access the knowledge that li
 <<jump Intro 4>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 3233,193
+__PrivCrochet_position: 3223,205
 __PrivCrochet_tags: 
 title: The Devil
 ---
