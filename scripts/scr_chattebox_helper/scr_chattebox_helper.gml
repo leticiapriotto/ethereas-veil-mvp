@@ -56,9 +56,11 @@ function draw_dialogue() {
         var _text_width = _character_data.text_width;  
         var _text_color = _character_data.text_color; 
         
-        // Desenha a bolha de fala e atualiza o frame da animação
-        if (_speech_bubble != noone) {
-            draw_speech_bubble(_speech_bubble);
+        // Verifica se as opções estão visíveis
+        if (option_count == 0) { // Se não há opções, desenhe a bolha de fala
+            if (_speech_bubble != noone) {
+                draw_speech_bubble(_speech_bubble);
+            }
         }
 
         // Configura e desenha o texto com a cor específica do personagem
