@@ -20,9 +20,9 @@ __PrivCrochet_position: -83,210
 __PrivCrochet_tags: 
 title: Intro
 ---
-<<declare $finalA = 0 >>
-<<declare $finalB = 0 >>
-<<declare $finalC = 0 >>
+<<set $finalA = 0 >>
+<<set $finalB = 0 >>
+<<set $finalC = 0 >>
 
 ...
 Lira: Hello! I heard rumors about a wisdom that can help those who seek their destiny?
@@ -194,13 +194,15 @@ __PrivCrochet_tags:
 title: Final A
 ---
 Final A
+<<jump End Game>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 3933,392
+__PrivCrochet_position: 3936,392
 __PrivCrochet_tags: 
 title: Final B
 ---
 Final B
+<<jump End Game>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 3933,668
@@ -208,13 +210,15 @@ __PrivCrochet_tags:
 title: Final C
 ---
 Final C
+<<jump End Game>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 3786,-317
+__PrivCrochet_position: 3963,-324
 __PrivCrochet_tags: 
 title: Final Alternativo
 ---
 How did you got here? wtf
+<<jump End Game>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 792,-46
@@ -245,4 +249,11 @@ Lira: Sometimes, a kind word is all we need. I’ve often felt alone, wishing so
 
 <<set $finalC = $finalC + 1>>
 <<jump Intro 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 4609,230
+__PrivCrochet_tags: 
+title: End Game
+---
+Empty Text
 ===

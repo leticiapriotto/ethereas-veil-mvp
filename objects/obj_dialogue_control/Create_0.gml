@@ -1,26 +1,23 @@
 /// @description chatterbox and options setup
 
-// chatterbox setup
-initialize_chatterbox();
-update_chatterbox();
+// Chatterbox setup
+initialize_chatterbox(); 
+update_chatterbox(); 
 
-speech_bubble_frame = 0; // Global ou variável de instância para rastrear o frame atual da bolha de fala
-frame_timer = 0; // Timer para controlar a mudança de frames
-frame_interval = 10; // Número de chamadas da função antes de mudar o frame
+// Speech Bubble Animation seup
+speech_bubble_frame = 0; 
+frame_timer = 0; 
+frame_interval = 10;
 
-// options setup
+// Options setup
 mouse_over_option = false;
 option_index = -1;
 option_count = 0;
 
-// Initialize in your create event or initialization function
-options_delay = 0;
-max_options_delay = 30; // Ajuste o valor conforme necessário (30 frames = meio segundo, se o jogo roda a 60fps)
-
-
-// sprites setup
-initialize_card_positions()
+// Sprites setup
+initialize_card_positions();
 initialize_card_descriptions();
 
+// Text setup
 line_spacing = 38;
 text_width = room_width * 0.8;

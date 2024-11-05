@@ -1,45 +1,57 @@
 // Character Setup
 function get_character_data(_character) {
-    var _character_y = room_height;
-    var _character_x = room_width;
-    var _speech_bubble;
-    var _sprite = noone; 
-    var _text_x = 150;
-    var _text_y = 0;
-	var _text_width = 640;
-    var _text_color = c_white; 
+    var _character_data = {};
 
     switch (_character) {
         case "Lira":
-            _character_x = 3 * room_width / 4;
-            _sprite = spr_chaos;
-            _speech_bubble = spr_speech_bubble_dark_bg; 
-            _text_y = 125;
-			_text_width = 750;
-            _text_color = c_white;  // Cor específica para Lira
+            _character_data = {
+                sprite: spr_chaos,
+                sprite_x: 3 * room_width / 4,
+                sprite_y: room_height,
+                speech_bubble: spr_speech_bubble_dark_bg,
+                text_x: 150,
+                text_y: 125,
+                text_width: 750,
+                text_color: c_white
+            };
             break;
+
         case "Player":
-            _speech_bubble = spr_speech_bubble_light_bg;
-            _text_y = 240;
-			_text_width = 600;
-            _text_color = c_black;  
+            _character_data = {
+                sprite: noone,
+                sprite_x: room_width,
+                sprite_y: room_height,
+                speech_bubble: spr_speech_bubble_light_bg,
+                text_x: 150,
+                text_y: 240,
+                text_width: 600,
+                text_color: c_black
+            };
             break;
+
         default:
-            _speech_bubble = noone; 
+            _character_data = {
+                sprite: noone,
+                sprite_x: room_width,
+                sprite_y: room_height,
+                speech_bubble: noone,
+                text_x: 150,
+                text_y: 100,
+                text_width: 640,
+                text_color: c_black
+            };
             break;
     }
 
-    return [_sprite, _character_x, _character_y, _speech_bubble, _text_x, _text_y, _text_width, _text_color];
+    return _character_data;
 }
 
 // Character Drawing 
 function draw_character(_character) {
     var _character_data = get_character_data(_character);
-    var _sprite = _character_data[0];
-    var _character_x = _character_data[1];
-    var _character_y = _character_data[2];
+    var _sprite = _character_data.sprite; 
 
     if (_sprite != noone) {
-        draw_sprite(_sprite, image_index, _character_x, _character_y);
+        draw_sprite(_sprite, image_index, _character_data.sprite_x, _character_data.sprite_y);
     }
 }

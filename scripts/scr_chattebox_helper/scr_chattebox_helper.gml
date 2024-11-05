@@ -6,15 +6,22 @@ function initialize_chatterbox() {
 }
 
 function update_chatterbox() {
-    text = ChatterboxGetContent(chatterbox, 0);
-    character = ChatterboxGetContentSpeaker(chatterbox, 0);
-    node_title = ChatterboxGetCurrent(chatterbox);
+    if (chatterbox != noone) { // Verifica se chatterbox foi inicializado
+        text = ChatterboxGetContent(chatterbox, 0);
+        character = ChatterboxGetContentSpeaker(chatterbox, 0);
+        node_title = ChatterboxGetCurrent(chatterbox);
+
+        // Verifica se chegou no nó "End Game" e troca a sala
+        if (node_title == "End Game") { 
+            room_goto(rm_splash_credits); // Transição para os créditos
+        }
+    }
 }
 
 function continue_chatterbox_dialogue() {
     if (ChatterboxIsWaiting(chatterbox) && mouse_check_button_pressed(mb_left)) {
         ChatterboxContinue(chatterbox);
-        update_chatterbox();
+        update_chatterbox(); // Atualiza após continuar o diálogo
     }
 }
 
@@ -43,11 +50,11 @@ function draw_dialogue() {
         
         // Recupera dados do personagem
         var _character_data = get_character_data(character);
-        var _speech_bubble = _character_data[3];
-        var _text_x = _character_data[4];
-        var _text_y = _character_data[5];
-		var _text_width = _character_data[6]
-        var _text_color = _character_data[7];
+        var _speech_bubble = _character_data.speech_bubble;
+        var _text_x = _character_data.text_x; 
+        var _text_y = _character_data.text_y;  
+        var _text_width = _character_data.text_width;  
+        var _text_color = _character_data.text_color; 
         
         // Desenha a bolha de fala e atualiza o frame da animação
         if (_speech_bubble != noone) {
