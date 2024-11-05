@@ -52,7 +52,7 @@ function configure_character_dialogue(_character) {
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_middle);
             _config.text_x = 150;
-            _config.text_y = 240;
+            _config.text_y = 550;
             _config.text_width = 600;
             _config.text_color = c_black;
             _config.speech_bubble = spr_speech_bubble_light_bg;

@@ -23,7 +23,7 @@
   ],
   "name":"spr_speech_bubble_light_bg",
   "nineSlice":null,
-  "origin":0,
+  "origin":6,
   "parent":{
     "name":"Interface Elements",
     "path":"folders/Sprites/Interface Elements.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":270,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
