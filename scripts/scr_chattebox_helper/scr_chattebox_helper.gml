@@ -41,7 +41,20 @@ function draw_dialogue() {
         if (_speech_bubble != noone) {
             var _bubble_x = 100;
             var _bubble_y = 50; 
-            draw_sprite(_speech_bubble, 0, _bubble_x, _bubble_y);
+            var _total_frames = sprite_get_number(_speech_bubble);
+            draw_sprite(_speech_bubble, speech_bubble_frame, _bubble_x, _bubble_y);
+         
+            // Aumenta o contador de tempo
+            frame_timer++;
+            if (frame_timer >= frame_interval) {
+                // Atualiza o frame da bolha de fala
+                speech_bubble_frame++;
+                if (speech_bubble_frame >= _total_frames) {
+                    speech_bubble_frame = 0; 
+                }
+                // Reseta o timer
+                frame_timer = 0;
+            }
         }
 
         draw_set_color(c_white);

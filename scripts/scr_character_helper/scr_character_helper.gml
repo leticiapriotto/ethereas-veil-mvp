@@ -13,7 +13,6 @@ function get_character_data(_character) {
             break;
         case "Player":
             _character_x = room_width / 4;
-            _sprite = spr_soul;
             _speech_bubble = spr_speech_bubble_light_bg;
             break;
         default:
