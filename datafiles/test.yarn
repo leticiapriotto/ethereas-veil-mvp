@@ -5,13 +5,13 @@ __PrivCrochet_tags:
 title: First Decision
 ---
 Void: These cards can help us discover your path. Let's see what they reveal.
--> Curiosity
+-> Card: Curiosity
     Player: Let's see...
     <<jump Curiosity>>
--> Doubt
+-> Card: Doubt
     Player: Let's see...
     <<jump History>>
--> Hope
+-> Card: Hope
     Player: Let's see...
     <<jump Confort>>
 ===
