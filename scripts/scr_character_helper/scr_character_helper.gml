@@ -4,24 +4,32 @@ function get_character_data(_character) {
     var _character_x;
     var _speech_bubble;
     var _sprite = noone; 
+    var _text_x;
+    var _text_y;
 
     switch (_character) {
         case "Lira":
             _character_x = 3 * room_width / 4;
             _sprite = spr_chaos;
             _speech_bubble = spr_speech_bubble_dark_bg; 
+            _text_x = 150;
+            _text_y = 125;
             break;
         case "Player":
             _character_x = room_width / 4;
             _speech_bubble = spr_speech_bubble_light_bg;
+            _text_x = 150;
+            _text_y = 240;
             break;
         default:
             _character_x = room_width / 2;
             _speech_bubble = noone; 
+            _text_x = room_width / 2; 
+            _text_y = room_height / 2; 
             break;
     }
 
-    return [_sprite, _character_x, _character_y, _speech_bubble];
+    return [_sprite, _character_x, _character_y, _speech_bubble, _text_x, _text_y];
 }
 
 // Character Drawing 

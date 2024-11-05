@@ -37,6 +37,8 @@ function draw_dialogue() {
 
         var _character_data = get_character_data(character);
         var _speech_bubble = _character_data[3];
+        var _text_x = _character_data[4];
+        var _text_y = _character_data[5]; 
 
         if (_speech_bubble != noone) {
             var _bubble_x = 100;
@@ -63,6 +65,6 @@ function draw_dialogue() {
         draw_set_valign(fa_middle);
         draw_set_halign(fa_left);
         
-        wrap_text_in_chatterbox(150, 125, text, line_spacing, 750);
+        wrap_text_in_chatterbox(_text_x, _text_y, text, line_spacing, 750);
     }
 }
