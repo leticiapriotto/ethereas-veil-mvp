@@ -25,13 +25,13 @@ title: Intro
 <<declare $finalC = 0 >>
 
 ...
-Lira: Hello! I heard rumors about a wisdom that can help those who seek their destiny. Are you that person?
+Lira: Hello! I heard rumors about a wisdom that can help those who seek their destiny?
 Player: I am. Sit down. What brings you here?
 
 <<jump Problem 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 181,210
+__PrivCrochet_position: 182,210
 __PrivCrochet_tags: 
 title: Problem 1
 ---

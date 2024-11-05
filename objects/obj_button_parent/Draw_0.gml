@@ -2,7 +2,7 @@
 
 draw_self();
 
-draw_set_font(fnt_elegant_typewriter_25);
+draw_set_font(fnt_elegant_typewriter_22);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 

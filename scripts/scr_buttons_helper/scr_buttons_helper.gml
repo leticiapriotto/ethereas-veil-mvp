@@ -1,4 +1,4 @@
-// buttons.js
+// buttons
 function draw_buttons(_buttons, x) {
     for (var _i = 0; _i < array_length(_buttons); _i++) {
         instance_create_layer(x, 284 + (_i * 100), "Instances_Buttons", _buttons[_i]);

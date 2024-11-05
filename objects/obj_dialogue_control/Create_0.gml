@@ -13,8 +13,7 @@ option_count = 0;
 set_cards_lists_and_position()
 set_cards_descriptions();
 
-// text layout setup
 text_x = room_width / 2;
 text_y = 150; 
-line_spacing = 50;
+line_spacing = 38;
 text_width = room_width * 0.8;
