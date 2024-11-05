@@ -95,10 +95,12 @@ function draw_card_sprites(_node_title, _index, x, y) {
 }
 
 
-function draw_card_description() {
+function draw_card_description(_character) {
     if (mouse_over_option && option_index != -1) {
-		draw_set_halign(fa_center);
         var _description = get_card_description(node_title, option_index);
-        wrap_text_in_chatterbox(room_width / 2, 650, _description, line_spacing, 650);
+        var _config = configure_character_dialogue(_character);
+
+        wrap_text_in_chatterbox(_config.text_x, _config.text_y, _description, line_spacing, _config.text_width);
     }
 }
+

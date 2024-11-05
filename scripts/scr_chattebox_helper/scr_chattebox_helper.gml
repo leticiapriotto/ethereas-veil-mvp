@@ -37,39 +37,34 @@ function strip_character_name_from_text(_text, _character) {
     return _text;
 }
 	
-function configure_text(_color) {
-    draw_set_color(_color);
-    draw_set_valign(fa_middle);
-    draw_set_halign(fa_left);
+function get_default_text_position() {
+    return {
+        text_x: 150,
+        text_y: 100,
+        text_width: 640,
+        text_color: c_black,
+        speech_bubble: noone
+    };
 }
 
 // Draw Dialogue
 function draw_dialogue() {
     if (IsChatterbox(chatterbox) && text != undefined) {
         text = strip_character_name_from_text(text, character);
-        
-        // Recupera dados do personagem
-        var _character_data = get_character_data(character);
-        var _speech_bubble = _character_data.speech_bubble;
-        var _text_x = _character_data.text_x; 
-        var _text_y = _character_data.text_y;  
-        var _text_width = _character_data.text_width;  
-        var _text_color = _character_data.text_color; 
-        
-        // Verifica se as opções estão visíveis
-        if (option_count == 0) { // Se não há opções, desenhe a bolha de fala
-            if (_speech_bubble != noone) {
-                draw_speech_bubble(_speech_bubble);
-            }
+        var _config = configure_character_dialogue(character);
+
+        // Desenha a bolha de fala, se o personagem tiver uma
+        if (option_count == 0 && _config.speech_bubble != noone) {
+            draw_speech_bubble(_config.speech_bubble);
         }
 
-        // Configura e desenha o texto com a cor específica do personagem
-        configure_text(_text_color);
-        wrap_text_in_chatterbox(_text_x, _text_y, text, line_spacing, _text_width);
+        // Configura o texto e o desenha usando as propriedades específicas do personagem
+        draw_set_color(_config.text_color);
+        wrap_text_in_chatterbox(_config.text_x, _config.text_y, text, line_spacing, _config.text_width);
     }
 }
 
-//  Draw Speech Bubble
+// Draw Speech Bubble
 function draw_speech_bubble(_speech_bubble) {
     var _bubble_x = 100;
     var _bubble_y = 50;

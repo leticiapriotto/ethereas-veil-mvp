@@ -4,7 +4,7 @@ __PrivCrochet_position: 488,210
 __PrivCrochet_tags: 
 title: First Decision
 ---
-Player: These cards can help us discover your path. Let's see what they reveal.
+Void: These cards can help us discover your path. Let's see what they reveal.
 -> Curiosity
     Player: Let's see...
     <<jump Curiosity>>
@@ -45,7 +45,7 @@ Neriah: Marks of something that can't be erased... or redeemed.
 Neriah: Would you still cling to it, to something that only brings pain?
 
 Player: Maybe pain is... necessary.
-Player: Perhaps it's what keeps us alert, reminds us of who we are…
+Player: Perhaps it's what keeps us alert, reminds us of who we are... 
 Player: or what we try to avoid.
 
 <<jump Problem 1>>
@@ -55,7 +55,7 @@ __PrivCrochet_position: 182,210
 __PrivCrochet_tags: 
 title: Problem 1
 ---
-Lira: I... feel like I'm lost. My heart longs for adventure, but I'm afraid of what I might find.
+Neriah: I... feel like I'm lost. My heart longs for adventure, but I'm afraid of what I might find.
 Player: Sometimes, it's in uncertainty that we find what we really want. Let's see what the cards have to say.
 
 <<jump First Decision>>
@@ -74,7 +74,7 @@ __PrivCrochet_position: 1376,210
 __PrivCrochet_tags: 
 title: Second Decision
 ---
-Player: Let’s discover what destiny has in store.
+Void: Let’s discover what destiny has in store.
     -> Encouragement
         Player: I see...
         <<jump Encouragement>>
@@ -121,7 +121,7 @@ __PrivCrochet_tags:
 title: Passeio
 ---
 Player: Why don’t we explore the surroundings of the cabin?
-Lira: Alright
+Neriah: Alright
 
 <<jump Consequencia>>
 ===
@@ -130,16 +130,16 @@ __PrivCrochet_position: 2307,203
 __PrivCrochet_tags: 
 title: Consequencia
 ---
-Lira: Well...
+Neriah: Well...
 
 <<if $finalA > $finalB and $finalA > $finalC>>
-    Lira: Everything will be fine, I guess...
+    Neriah: Everything will be fine, I guess...
 <<elseif $finalB > $finalA and $finalB > $finalC>>
-    Lira: I should go home, I'm need to rest.
+    Neriah: I should go home, I'm need to rest.
 <<elseif $finalC > $finalB and $finalC > $finalA>>
-    Lira: ...
+    Neriah: ...
 <<else>>
-    Lira: ...
+    Neriah: ...
 <<endif>>
 
 <<jump Third Decision>>
@@ -149,15 +149,15 @@ __PrivCrochet_position: 2600,203
 __PrivCrochet_tags: 
 title: Third Decision
 ---
-Chose a card that will seal Elyssia's fate
+Void: Chose a card that will seal Elyssia's fate
     -> The Tower
-        Soul: Okay
+        Player: Okay
         <<jump The Tower>>
     -> The Devil
-        Soul: Fine
+        Player: Fine
         <<jump The Devil>>
     -> Justice
-        Chaos: Oh my...
+        Player: Oh my...
         <<jump Justice>>
 ===
 __PrivCrochet_colorID: 0
@@ -245,7 +245,7 @@ __PrivCrochet_position: 792,-46
 __PrivCrochet_tags: 
 title: Curiosity
 ---
-Lira: I’ve always been curious about the world beyond the trees, but fear holds me back. What if I never find my place?
+Neriah: I’ve always been curious about the world beyond the trees, but fear holds me back. What if I never find my place?
 
 <<set $finalA = $finalA + 1>>
 <<jump Intro 2>>
@@ -255,7 +255,7 @@ __PrivCrochet_position: 792,210
 __PrivCrochet_tags: 
 title: History
 ---
-Lira: I come from a small village where everyone seems to know their purpose. I feel like a stranger even among my own people.
+Neriah: I come from a small village where everyone seems to know their purpose. I feel like a stranger even among my own people.
 
 <<set $finalB = $finalB + 1>>
 <<jump Intro 2>>
@@ -265,7 +265,7 @@ __PrivCrochet_position: 792,449
 __PrivCrochet_tags: 
 title: Confort
 ---
-Lira: Sometimes, a kind word is all we need. I’ve often felt alone, wishing someone would understand my struggles.
+Neriah: Sometimes, a kind word is all we need. I’ve often felt alone, wishing someone would understand my struggles.
 
 <<set $finalC = $finalC + 1>>
 <<jump Intro 2>>
