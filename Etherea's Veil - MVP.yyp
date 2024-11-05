@@ -348,6 +348,7 @@
     {"id":{"name":"spr_slider_button_bg","path":"sprites/spr_slider_button_bg/spr_slider_button_bg.yy",},},
     {"id":{"name":"spr_soul","path":"sprites/spr_soul/spr_soul.yy",},},
     {"id":{"name":"spr_speech_bubble_dark_bg","path":"sprites/spr_speech_bubble_dark_bg/spr_speech_bubble_dark_bg.yy",},},
+    {"id":{"name":"spr_speech_bubble_light_bg","path":"sprites/spr_speech_bubble_light_bg/spr_speech_bubble_light_bg.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

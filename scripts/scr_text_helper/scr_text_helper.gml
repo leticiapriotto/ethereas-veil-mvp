@@ -1,4 +1,4 @@
-// text_formatting.js
+// text_formatting
 function chatterbox_wrap_text(x, y, _text, _line_spacing, _text_width) {
     draw_set_valign(fa_middle);
     draw_set_halign(fa_center);
