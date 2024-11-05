@@ -1,35 +1,35 @@
 // Character Setup
 function get_character_data(_character) {
     var _character_y = room_height;
-    var _character_x;
+    var _character_x = room_width;
     var _speech_bubble;
     var _sprite = noone; 
-    var _text_x;
-    var _text_y;
+    var _text_x = 150;
+    var _text_y = 0;
+	var _text_width = 640;
+    var _text_color = c_white; 
 
     switch (_character) {
         case "Lira":
             _character_x = 3 * room_width / 4;
             _sprite = spr_chaos;
             _speech_bubble = spr_speech_bubble_dark_bg; 
-            _text_x = 150;
             _text_y = 125;
+			_text_width = 750;
+            _text_color = c_white;  // Cor específica para Lira
             break;
         case "Player":
-            _character_x = room_width / 4;
             _speech_bubble = spr_speech_bubble_light_bg;
-            _text_x = 150;
             _text_y = 240;
+			_text_width = 600;
+            _text_color = c_black;  
             break;
         default:
-            _character_x = room_width / 2;
             _speech_bubble = noone; 
-            _text_x = room_width / 2; 
-            _text_y = room_height / 2; 
             break;
     }
 
-    return [_sprite, _character_x, _character_y, _speech_bubble, _text_x, _text_y];
+    return [_sprite, _character_x, _character_y, _speech_bubble, _text_x, _text_y, _text_width, _text_color];
 }
 
 // Character Drawing 

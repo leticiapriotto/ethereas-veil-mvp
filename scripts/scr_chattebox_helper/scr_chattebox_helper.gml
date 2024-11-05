@@ -29,42 +29,49 @@ function strip_character_name_from_text(_text, _character) {
     }
     return _text;
 }
+	
+function configure_text(_color) {
+    draw_set_color(_color);
+    draw_set_valign(fa_middle);
+    draw_set_halign(fa_left);
+}
 
 // Draw Dialogue
 function draw_dialogue() {
     if (IsChatterbox(chatterbox) && text != undefined) {
         text = strip_character_name_from_text(text, character);
-
+        
+        // Recupera dados do personagem
         var _character_data = get_character_data(character);
         var _speech_bubble = _character_data[3];
         var _text_x = _character_data[4];
-        var _text_y = _character_data[5]; 
-
+        var _text_y = _character_data[5];
+		var _text_width = _character_data[6]
+        var _text_color = _character_data[7];
+        
+        // Desenha a bolha de fala e atualiza o frame da animação
         if (_speech_bubble != noone) {
-            var _bubble_x = 100;
-            var _bubble_y = 50; 
-            var _total_frames = sprite_get_number(_speech_bubble);
-            draw_sprite(_speech_bubble, speech_bubble_frame, _bubble_x, _bubble_y);
-         
-            // Aumenta o contador de tempo
-            frame_timer++;
-            if (frame_timer >= frame_interval) {
-                // Atualiza o frame da bolha de fala
-                speech_bubble_frame++;
-                if (speech_bubble_frame >= _total_frames) {
-                    speech_bubble_frame = 0; 
-                }
-                // Reseta o timer
-                frame_timer = 0;
-            }
+            draw_speech_bubble(_speech_bubble);
         }
 
-        draw_set_color(c_white);
-        show_debug_message(text_width);
-        
-        draw_set_valign(fa_middle);
-        draw_set_halign(fa_left);
-        
-        wrap_text_in_chatterbox(_text_x, _text_y, text, line_spacing, 750);
+        // Configura e desenha o texto com a cor específica do personagem
+        configure_text(_text_color);
+        wrap_text_in_chatterbox(_text_x, _text_y, text, line_spacing, _text_width);
+    }
+}
+
+//  Draw Speech Bubble
+function draw_speech_bubble(_speech_bubble) {
+    var _bubble_x = 100;
+    var _bubble_y = 50;
+    var _total_frames = sprite_get_number(_speech_bubble);
+    
+    draw_sprite(_speech_bubble, speech_bubble_frame, _bubble_x, _bubble_y);
+
+    // Atualiza o frame da bolha de fala
+    frame_timer++;
+    if (frame_timer >= frame_interval) {
+        speech_bubble_frame = (speech_bubble_frame + 1) % _total_frames;
+        frame_timer = 0;
     }
 }

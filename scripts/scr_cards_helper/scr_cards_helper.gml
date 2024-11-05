@@ -73,9 +73,9 @@ function draw_card_sprites(_node_title, _index, x, y) {
             scale_y_list[_index] = 1.0;
         }
 
-        var target_scale = (option_index == _index && mouse_over_option) ? 1.2 : 1.0;
-        scale_x_list[_index] = lerp(scale_x_list[_index], target_scale, 0.1);
-        scale_y_list[_index] = lerp(scale_y_list[_index], target_scale, 0.1);
+        var _target_scale = (option_index == _index && mouse_over_option) ? 1.2 : 1.0;
+        scale_x_list[_index] = lerp(scale_x_list[_index], _target_scale, 0.1);
+        scale_y_list[_index] = lerp(scale_y_list[_index], _target_scale, 0.1);
 
         draw_sprite_ext(_sprite_list[_index], 0, x, y, scale_x_list[_index], scale_y_list[_index], 0, c_white, 1);
     }
