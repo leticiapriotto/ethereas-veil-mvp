@@ -3,7 +3,7 @@ function get_character_data(_character) {
     var _character_data = {};
 
     switch (_character) {
-        case "Lira":
+        case "Neriah":
             _character_data = {
                 sprite: spr_chaos,
                 sprite_x: 3 * room_width / 4,
