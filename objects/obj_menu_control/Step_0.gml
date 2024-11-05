@@ -7,12 +7,12 @@ var _button_parallax_speed = -1;
 var _center_x = room_width / 2;
 
 if (global.show_options) {
-	destroy_buttons(menu_buttons);
-    draw_buttons(options_buttons, _center_x);
-    update_buttons(options_buttons, _cam_x, _button_parallax_speed);
+	remove_buttons(menu_buttons);
+    create_buttons(options_buttons, _center_x);
+    update_buttons_position(options_buttons, _cam_x, _button_parallax_speed);
 	
 } else {
-	destroy_buttons(options_buttons);
-    draw_buttons(menu_buttons, _center_x);
-    update_buttons(menu_buttons, _cam_x, _button_parallax_speed);
+	remove_buttons(options_buttons);
+    create_buttons(menu_buttons, _center_x);
+    update_buttons_position(menu_buttons, _cam_x, _button_parallax_speed);
 }

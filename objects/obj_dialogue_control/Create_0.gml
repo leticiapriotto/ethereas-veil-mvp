@@ -1,8 +1,8 @@
 /// @description chatterbox and options setup
 
 // chatterbox setup
-chatterbox_init();
-chatterbox_update();
+initialize_chatterbox();
+update_chatterbox();
 
 // options setup
 mouse_over_option = false;
@@ -10,8 +10,8 @@ option_index = -1;
 option_count = 0;
 
 // sprites setup
-set_cards_lists_and_position()
-set_cards_descriptions();
+initialize_card_positions()
+initialize_card_descriptions();
 
 text_x = room_width / 2;
 text_y = 150; 

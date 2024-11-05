@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_sprites_helper",
+  "%Name":"scr_options_helper",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_sprites_helper",
+  "name":"scr_options_helper",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

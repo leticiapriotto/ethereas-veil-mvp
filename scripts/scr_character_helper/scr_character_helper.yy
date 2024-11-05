@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_dialogue_helper",
+  "%Name":"scr_character_helper",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_dialogue_helper",
+  "name":"scr_character_helper",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

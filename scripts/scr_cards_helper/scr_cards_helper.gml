@@ -1,18 +1,18 @@
-// cards.js
-function set_cards_lists_and_position() {
+// Card Setup
+function initialize_card_positions() {
     sprite_y_position = room_height / 2;
     sprite_x_positions = [
         room_width / 4,
         room_width / 2,
         3 * room_width / 4
     ];
-    
+
     first_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_decaptado_4];
     second_decision_sprites = [spr_card_decaptado_4, spr_card_moon_2, spr_card_world_3];
     third_decision_sprites = [spr_card_order_1, spr_card_world_3, spr_card_chaos_5];
 }
 
-function set_cards_descriptions() {
+function initialize_card_descriptions() {
     first_decision_descriptions = [
         "The High Priestess - Description for the High Priestess card.",
         "The Lovers - Description for the Lovers card.",
@@ -31,7 +31,7 @@ function set_cards_descriptions() {
         "Justice - Description for the Justice card."
     ];
 }
-
+	
 function get_sprite_list(_node_title) {
     switch (_node_title) {
         case "First Decision":
@@ -42,5 +42,48 @@ function get_sprite_list(_node_title) {
             return third_decision_sprites;
         default:
             return undefined;
+    }
+}
+	
+function get_card_description(_node_title, _index) {
+switch (_node_title) {
+    case "First Decision":
+        return first_decision_descriptions[_index];
+    case "Second Decision":
+        return second_decision_descriptions[_index];
+    case "Third Decision":
+        return third_decision_descriptions[_index];
+    default:
+        return "";
+}
+}
+
+// Card Drawing
+function draw_card_sprites(_node_title, _index, x, y) {
+    var _sprite_list = get_sprite_list(_node_title);
+
+    if (_sprite_list != undefined && _sprite_list[_index] != undefined) {
+        if (!variable_instance_exists(id, "scale_x_list")) {
+            scale_x_list = [];
+            scale_y_list = [];
+        }
+
+        if (array_length(scale_x_list) <= _index) {
+            scale_x_list[_index] = 1.0;
+            scale_y_list[_index] = 1.0;
+        }
+
+        var target_scale = (option_index == _index && mouse_over_option) ? 1.2 : 1.0;
+        scale_x_list[_index] = lerp(scale_x_list[_index], target_scale, 0.1);
+        scale_y_list[_index] = lerp(scale_y_list[_index], target_scale, 0.1);
+
+        draw_sprite_ext(_sprite_list[_index], 0, x, y, scale_x_list[_index], scale_y_list[_index], 0, c_white, 1);
+    }
+}
+
+function draw_card_description() {
+    if (mouse_over_option && option_index != -1) {
+        var _description = get_card_description(node_title, option_index);
+        wrap_text_in_chatterbox(550, 650, _description, line_spacing, 650);
     }
 }
