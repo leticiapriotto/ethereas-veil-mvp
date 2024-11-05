@@ -12,6 +12,15 @@ function initialize_card_positions() {
     third_decision_sprites = [spr_card_order_1, spr_card_world_3, spr_card_chaos_5];
 }
 
+function draw_card_positions_debug() {
+    for (var i = 0; i < array_length(sprite_x_positions); i++) {
+        draw_set_color(c_red);
+        draw_rectangle(sprite_x_positions[i] - 10, sprite_y_position - 10, sprite_x_positions[i] + 10, sprite_y_position + 10, false);
+        draw_set_color(c_white);
+    }
+}
+
+
 function initialize_card_descriptions() {
     first_decision_descriptions = [
         "The High Priestess - Description for the High Priestess card.",
@@ -77,13 +86,19 @@ function draw_card_sprites(_node_title, _index, x, y) {
         scale_x_list[_index] = lerp(scale_x_list[_index], _target_scale, 0.1);
         scale_y_list[_index] = lerp(scale_y_list[_index], _target_scale, 0.1);
 
+        // Defina a opacidade explicitamente como 1 para garantir que o sprite seja visível
+        draw_set_alpha(1);
+
+        // Desenha a carta com escala e cor corretas
         draw_sprite_ext(_sprite_list[_index], 0, x, y, scale_x_list[_index], scale_y_list[_index], 0, c_white, 1);
     }
 }
 
+
 function draw_card_description() {
     if (mouse_over_option && option_index != -1) {
+		draw_set_halign(fa_center);
         var _description = get_card_description(node_title, option_index);
-        wrap_text_in_chatterbox(550, 650, _description, line_spacing, 650);
+        wrap_text_in_chatterbox(room_width / 2, 650, _description, line_spacing, 650);
     }
 }

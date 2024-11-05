@@ -13,6 +13,11 @@ mouse_over_option = false;
 option_index = -1;
 option_count = 0;
 
+// Initialize in your create event or initialization function
+options_delay = 0;
+max_options_delay = 30; // Ajuste o valor conforme necessário (30 frames = meio segundo, se o jogo roda a 60fps)
+
+
 // sprites setup
 initialize_card_positions()
 initialize_card_descriptions();

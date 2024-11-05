@@ -37,9 +37,19 @@ function is_mouse_over_option(_index) {
            mouse_y >= _sprite_y && mouse_y <= _sprite_y + _sprite_height;
 }
 
+// Darken Background When Options Appear
+function draw_darken_background() {
+    draw_set_alpha(0.2); // Defina a transparência (0.2 é um valor intermediário)
+    draw_rectangle_color(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
+    draw_set_alpha(1); // Restaure a opacidade padrão
+}
+
 // Options Draw
 function draw_options() {
     if (option_count > 0) {
+        // Escurece o fundo quando as cartas aparecem
+        draw_darken_background();
+
         for (var _i = 0; _i < option_count; _i++) {
             if (ChatterboxGetOptionConditionBool(chatterbox, _i)) {
                 var _option_text = ChatterboxGetOption(chatterbox, _i);
