@@ -1,6 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 488,210
+__PrivCrochet_position: 162,217
 __PrivCrochet_tags: 
 title: First Decision
 ---
@@ -16,7 +16,7 @@ Void: These cards can help us discover your path. Let's see what they reveal.
     <<jump Confort>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -85,210
+__PrivCrochet_position: -411,217
 __PrivCrochet_tags: 
 title: Intro
 ---
@@ -51,7 +51,7 @@ Player: or what we try to avoid.
 <<jump Problem 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 182,210
+__PrivCrochet_position: -144,217
 __PrivCrochet_tags: 
 title: Problem 1
 ---
@@ -61,7 +61,7 @@ Player: Sometimes, it's in uncertainty that we find what we really want. Let's s
 <<jump First Decision>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1100,213
+__PrivCrochet_position: 1058,227
 __PrivCrochet_tags: 
 title: Intro 2
 ---
@@ -70,7 +70,7 @@ Player: Well, let's see...
 <<jump Second Decision>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1376,210
+__PrivCrochet_position: 1398,216
 __PrivCrochet_tags: 
 title: Second Decision
 ---
@@ -130,16 +130,16 @@ __PrivCrochet_position: 2307,203
 __PrivCrochet_tags: 
 title: Consequencia
 ---
-Neriah: Well...
+Void: Well...
 
 <<if $finalA > $finalB and $finalA > $finalC>>
-    Neriah: Everything will be fine, I guess...
+    Void: Everything will be fine, I guess...
 <<elseif $finalB > $finalA and $finalB > $finalC>>
-    Neriah: I should go home, I'm need to rest.
+    Void: I should go home, I'm need to rest.
 <<elseif $finalC > $finalB and $finalC > $finalA>>
-    Neriah: ...
+    Void: ...
 <<else>>
-    Neriah: ...
+    Void: ...
 <<endif>>
 
 <<jump Third Decision>>
@@ -241,34 +241,34 @@ How did you got here? wtf
 <<jump End Game>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 792,-46
+__PrivCrochet_position: 466,-39
 __PrivCrochet_tags: 
 title: Curiosity
 ---
 Neriah: I’ve always been curious about the world beyond the trees, but fear holds me back. What if I never find my place?
 
 <<set $finalA = $finalA + 1>>
-<<jump Intro 2>>
+<<jump Goodbye>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 792,210
+__PrivCrochet_position: 466,217
 __PrivCrochet_tags: 
 title: History
 ---
 Neriah: I come from a small village where everyone seems to know their purpose. I feel like a stranger even among my own people.
 
 <<set $finalB = $finalB + 1>>
-<<jump Intro 2>>
+<<jump Goodbye>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 792,449
+__PrivCrochet_position: 466,456
 __PrivCrochet_tags: 
 title: Confort
 ---
 Neriah: Sometimes, a kind word is all we need. I’ve often felt alone, wishing someone would understand my struggles.
 
 <<set $finalC = $finalC + 1>>
-<<jump Intro 2>>
+<<jump Goodbye>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 4609,230
@@ -276,4 +276,12 @@ __PrivCrochet_tags:
 title: End Game
 ---
 Empty Text
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 765,219
+__PrivCrochet_tags: 
+title: Goodbye
+---
+Neriah: Goodbye, thank you.
+<<jump Intro 2>>
 ===
