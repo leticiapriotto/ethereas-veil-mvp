@@ -1,6 +1,8 @@
 /// @description chatterbox and options setup
 
 // Chatterbox setup
+is_neriah_here = false;
+
 initialize_chatterbox(); 
 update_chatterbox(); 
 
@@ -19,5 +21,5 @@ initialize_card_positions();
 initialize_card_descriptions();
 
 // Text setup
-line_spacing = 38;
+line_spacing = 50;
 text_width = room_width * 0.8;

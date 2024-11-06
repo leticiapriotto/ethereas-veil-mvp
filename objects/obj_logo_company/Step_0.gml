@@ -21,3 +21,7 @@ if fading_out {
         room_goto(rm_splash_ethereas_veil);
     }
 }
+
+if mouse_check_button_pressed(mb_left) {
+	window_set_fullscreen(true);
+}

@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_logo_ethereas_veil",
   "bboxMode":0,
-  "bbox_bottom":444,
+  "bbox_bottom":390,
   "bbox_left":0,
-  "bbox_right":799,
+  "bbox_right":701,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7273d70e-bdee-4ca4-9c77-7a325a939049","name":"7273d70e-bdee-4ca4-9c77-7a325a939049","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"511ef154-2b20-4781-9749-869dbb480962","name":"511ef154-2b20-4781-9749-869dbb480962","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":445,
+  "height":391,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"65283f0f-7d5b-4a71-974d-b66f2f088554","blendMode":0,"displayName":"default","isLocked":false,"name":"65283f0f-7d5b-4a71-974d-b66f2f088554","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c96ee6c7-6d8f-4824-ae3f-a1fad232bc79","blendMode":0,"displayName":"default","isLocked":false,"name":"c96ee6c7-6d8f-4824-ae3f-a1fad232bc79","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_logo_ethereas_veil",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7273d70e-bdee-4ca4-9c77-7a325a939049","path":"sprites/spr_logo_ethereas_veil/spr_logo_ethereas_veil.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"520b48e3-04e2-442e-a04f-0c72428dccbf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"511ef154-2b20-4781-9749-869dbb480962","path":"sprites/spr_logo_ethereas_veil/spr_logo_ethereas_veil.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3f9c7a7e-4451-4674-9255-52a1816198df","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":800,
+  "width":702,
 }

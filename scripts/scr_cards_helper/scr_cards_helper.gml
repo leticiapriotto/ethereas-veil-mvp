@@ -13,9 +13,9 @@ function initialize_card_positions() {
 }
 
 function draw_card_positions_debug() {
-    for (var i = 0; i < array_length(sprite_x_positions); i++) {
+    for (var _i = 0; _i < array_length(sprite_x_positions); _i++) {
         draw_set_color(c_red);
-        draw_rectangle(sprite_x_positions[i] - 10, sprite_y_position - 10, sprite_x_positions[i] + 10, sprite_y_position + 10, false);
+        draw_rectangle(sprite_x_positions[_i] - 10, sprite_y_position - 10, sprite_x_positions[_i] + 10, sprite_y_position + 10, false);
         draw_set_color(c_white);
     }
 }

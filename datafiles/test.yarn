@@ -16,7 +16,7 @@ Void: These cards can help us discover your path. Let's see what they reveal.
     <<jump Confort>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -411,217
+__PrivCrochet_position: -413,215
 __PrivCrochet_tags: 
 title: Intro
 ---
@@ -24,6 +24,7 @@ title: Intro
 <<set $finalB = 0 >>
 <<set $finalC = 0 >>
 
+<<draw_char_neriah([0])>> 
 Neriah: Sometimes, the paths we choose... lead us to places we never imagined.
 Neriah: I used to believe that control was in my hands...
 Neriah: ...until one night, the darkness itself spoke back to me.
@@ -283,5 +284,8 @@ __PrivCrochet_tags:
 title: Goodbye
 ---
 Neriah: Goodbye, thank you.
+
+<<set $isNeriahHere = false>>
+
 <<jump Intro 2>>
 ===

@@ -95,7 +95,7 @@
 // 
 // An example, analogous to the example above, would be: <<giveItem amulet 1>>
 
-#macro CHATTERBOX_ACTION_MODE      1           //See above
+#macro CHATTERBOX_ACTION_MODE      0          //See above
 #macro CHATTERBOX_ACTION_FUNCTION  (undefined) //The function to receive <<action>> contents. This will only be called if CHATTERBOX_ACTION_MODE is 0
 
 // Chatterbox offers three helper functions to assist with parsing content strings as dialogue:

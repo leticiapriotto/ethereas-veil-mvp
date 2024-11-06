@@ -5,7 +5,7 @@ function get_character_data(_character) {
     switch (_character) {
         case "Neriah":
             _character_data = {
-                sprite: spr_chaos,
+                sprite: spr_char_neriah,
                 sprite_x: 3 * room_width / 4,
                 sprite_y: room_height
             };
@@ -42,8 +42,8 @@ function configure_character_dialogue(_character) {
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_middle);
             _config.text_x = 150;
-            _config.text_y = 125;
-            _config.text_width = 750;
+            _config.text_y = 200;
+            _config.text_width = 1100;
             _config.text_color = c_white;
             _config.speech_bubble = spr_speech_bubble_dark_bg;
             break;
@@ -52,8 +52,8 @@ function configure_character_dialogue(_character) {
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_middle);
             _config.text_x = 150;
-            _config.text_y = 550;
-            _config.text_width = 600;
+            _config.text_y = 900;
+            _config.text_width = 900;
             _config.text_color = c_black;
             _config.speech_bubble = spr_speech_bubble_light_bg;
             break;
@@ -63,17 +63,17 @@ function configure_character_dialogue(_character) {
 			draw_set_valign(fa_top);
 		    _config.text_x = room_width / 2;
             _config.text_y = 50;
-            _config.text_width = 640;
+            _config.text_width = 800;
             _config.text_color = c_black;
             _config.speech_bubble = noone;
             break;
 
         default:
 			draw_set_halign(fa_center);
-			draw_set_valign(fa_middle);
+			draw_set_valign(fa_bottom);
             _config.text_x = room_width / 2;
-            _config.text_y = 640;
-            _config.text_width = 640;
+            _config.text_y = 1000;
+            _config.text_width = 800;
             _config.text_color = c_black;
             _config.speech_bubble = noone;
             break;
@@ -83,11 +83,18 @@ function configure_character_dialogue(_character) {
 }
 
 // Character Drawing 
-function draw_character(_character) {
-    var _character_data = get_character_data(_character);
-    var _sprite = _character_data.sprite; 
-
-    if (_sprite != noone) {
-        draw_sprite(_sprite, image_index, _character_data.sprite_x, _character_data.sprite_y);
+function draw_char_neriah(_is_neriah_here) {
+    if (_is_neriah_here == true) { 
+        var _character_data = get_character_data("Neriah");
+        var _sprite = _character_data.sprite;
+        
+        if (_sprite != noone) {
+            draw_sprite(_sprite, image_index, _character_data.sprite_x, _character_data.sprite_y);
+        }
     }
+}
+
+function delete_character() {
+    var _character_data = get_character_data("Neriah"); // Acesse o dado do personagem
+    _character_data.sprite = noone; // Apaga o personagem ao definir o sprite como "noone"
 }

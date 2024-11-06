@@ -41,13 +41,13 @@ function draw_dialogue() {
 function draw_speech_bubble(_speech_bubble, _bubble_x, _bubble_y) {
     
     if (_speech_bubble == spr_speech_bubble_dark_bg) {
-        _bubble_x = _bubble_x - 50 ;
-        _bubble_y = _bubble_y - 75;
+        _bubble_x = _bubble_x - 75;
+        _bubble_y = _bubble_y - 120;
     } 
 	
 	if (_speech_bubble == spr_speech_bubble_light_bg) {
-	    _bubble_x = _bubble_x - 50; 
-	    _bubble_y = _bubble_y + 75; 
+	    _bubble_x = _bubble_x - 75; 
+	    _bubble_y = _bubble_y + 120; 
 	}
     
     var _total_frames = sprite_get_number(_speech_bubble);
