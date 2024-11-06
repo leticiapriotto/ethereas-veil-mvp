@@ -72,28 +72,36 @@ function draw_card_sprites(_node_title, _index, x, y) {
     var _sprite_list = get_sprite_list(_node_title);
 
     if (_sprite_list != undefined && _sprite_list[_index] != undefined) {
-        if (!variable_instance_exists(id, "scale_x_list")) {
-            scale_x_list = [];
-            scale_y_list = [];
-        }
 
-        if (array_length(scale_x_list) <= _index) {
-            scale_x_list[_index] = 1.0;
-            scale_y_list[_index] = 1.0;
-        }
+        initialize_scale_lists(_index); // Inicializa as listas de escala, se necessário
+        update_card_scale(_index); // Atualiza a escala da carta
 
-        var _target_scale = (option_index == _index && mouse_over_option) ? 1.2 : 1.0;
-        scale_x_list[_index] = lerp(scale_x_list[_index], _target_scale, 0.1);
-        scale_y_list[_index] = lerp(scale_y_list[_index], _target_scale, 0.1);
-
-        // Defina a opacidade explicitamente como 1 para garantir que o sprite seja visível
+        // Define a opacidade e desenha a carta
         draw_set_alpha(1);
-
-        // Desenha a carta com escala e cor corretas
         draw_sprite_ext(_sprite_list[_index], 0, x, y, scale_x_list[_index], scale_y_list[_index], 0, c_white, 1);
     }
 }
 
+// Inicializa as listas de escala se ainda não existirem
+function initialize_scale_lists(_index) {
+    if (!variable_instance_exists(id, "scale_x_list")) {
+        scale_x_list = [];
+        scale_y_list = [];
+    }
+
+    // Define a escala inicial para o índice se ainda não existir
+    if (array_length(scale_x_list) <= _index) {
+        scale_x_list[_index] = 1.0;
+        scale_y_list[_index] = 1.0;
+    }
+}
+
+// Atualiza a escala da carta com interpolação
+function update_card_scale(_index) {
+    var _target_scale = (option_index == _index && mouse_over_option) ? 1.2 : 1.0;
+    scale_x_list[_index] = lerp(scale_x_list[_index], _target_scale, 0.1);
+    scale_y_list[_index] = lerp(scale_y_list[_index], _target_scale, 0.1);
+}
 
 function draw_card_description() {
     if (mouse_over_option && option_index != -1) {
