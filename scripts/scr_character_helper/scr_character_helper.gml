@@ -50,10 +50,10 @@ function configure_character_dialogue(_character) {
             _config.speech_bubble = spr_speech_bubble_light_bg;
             break;
 			
-		case "Void":
+		case "Title":
 		    _config.text_x = room_width / 2;
             _config.text_y = 50;
-            _config.text_width = 800;
+            _config.text_width = 1000;
             _config.speech_bubble = noone;
             break;
 

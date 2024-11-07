@@ -8,6 +8,8 @@ initialize_chatterbox();
 update_chatterbox(); 
 
 // Scribble Setup
+gpu_set_tex_filter(true);
+
 typist = scribble_typist();
 typist.in(0.2, 60);
 typist.ease(SCRIBBLE_EASE.ELASTIC, 0, 0, 1, 1, 0, 0);

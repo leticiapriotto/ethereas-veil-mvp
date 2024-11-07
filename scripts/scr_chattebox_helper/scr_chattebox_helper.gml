@@ -8,7 +8,7 @@ function initialize_chatterbox() {
 	}
     
     chatterbox = ChatterboxCreate();
-    ChatterboxJump(chatterbox, "Intro");
+    ChatterboxJump(chatterbox, "Start");
 	
 }
 

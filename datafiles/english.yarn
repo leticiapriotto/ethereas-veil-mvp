@@ -4,8 +4,8 @@ __PrivCrochet_position: 163,217
 __PrivCrochet_tags: 
 title: First Decision
 ---
-Void: [fa_center]These cards can help us discover your path. Let's see what they reveal.
-Void: [fa_center]
+Title: [fa_center]These cards can help us discover your path. Let's see what they reveal.
+Title: [fa_center]
 -> Card: Curiosity
     Player: Let's see...
     <<jump Curiosity>>
@@ -53,7 +53,7 @@ Player: [c_black]or what we try to avoid.
 <<jump Problem 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -144,217
+__PrivCrochet_position: -150,278
 __PrivCrochet_tags: 
 title: Problem 1
 ---
@@ -289,4 +289,14 @@ title: Goodbye
 Neriah: Goodbye, thank you.
 
 <<jump Intro 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -722,251
+__PrivCrochet_tags: 
+title: Start
+---
+Title: [fa_center][c_black]Welcome!\n\nBefore you start, we have some tips to enhance your experience.\n\nTo fully immerse yourself, we recommend playing in fullscreen mode with headphones.\n\nThis game is a journey where your choices make a difference in the characters' world.\nGet ready to make decisions that will shape the story.\n\nNavigation tips\n- To skip dialogues, just double-click.\n- When the choice cards are on screen, simply choose one to continue.\n\nHave fun!
+
+
+<<jump Intro>>
 ===
