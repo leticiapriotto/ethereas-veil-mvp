@@ -29,7 +29,12 @@ function update_button_texts() {
         
         // Verifica se a instância ainda existe antes de acessar o button_text
         if (instance_exists(_button)) {
-            _button.button_text = global.texts[global.current_language][_button.button_index];
+            // Atualiza o texto do botão Fullscreen com o valor atual de global.text_on_off
+            if (_button == obj_button_fullscreen) {
+                _button.button_text = "Fullscreen: " + global.text_on_off;
+            } else {
+                _button.button_text = global.texts[global.current_language][_button.button_index];
+            }
         }
     }
 }
@@ -41,4 +46,18 @@ function remove_buttons(_buttons) {
     }
 }
 
+function check_esc_pressed() {
+	if (keyboard_check_pressed(vk_escape) && (global.fullscreen = true)) {
+		window_set_fullscreen(false);
+	    global.fullscreen = false;
+		global.text_on_off = "OFF";
+		update_button_texts();
+		
+	} else if (keyboard_check_pressed(vk_escape) && (global.fullscreen = false)) {
+		window_set_fullscreen(true);
+	    global.fullscreen = true;
+		global.text_on_off = "ON";
+		update_button_texts();
+	}
+}
 

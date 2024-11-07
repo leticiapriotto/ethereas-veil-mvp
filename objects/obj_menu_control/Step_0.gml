@@ -16,4 +16,5 @@ if (global.show_options) {
     update_buttons_position(global.menu_buttons, _cam_x, _button_parallax_speed);
 }
 
+check_esc_pressed();
 

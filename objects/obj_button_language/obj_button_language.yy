@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_bg",
-    "path":"sprites/spr_button_bg/spr_button_bg.yy",
+    "name":"spr_button_volume_bg",
+    "path":"sprites/spr_button_volume_bg/spr_button_volume_bg.yy",
   },
   "spriteMaskId":null,
   "visible":true,
