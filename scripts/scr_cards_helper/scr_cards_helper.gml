@@ -7,8 +7,8 @@ function initialize_card_positions() {
         3 * room_width / 4
     ];
 
-    first_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_decaptado_4];
-    second_decision_sprites = [spr_card_decaptado_4, spr_card_moon_2, spr_card_world_3];
+    first_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_sun_4];
+    second_decision_sprites = [spr_card_sun_4, spr_card_moon_2, spr_card_world_3];
     third_decision_sprites = [spr_card_order_1, spr_card_world_3, spr_card_chaos_5];
 }
 

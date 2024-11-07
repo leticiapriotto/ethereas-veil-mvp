@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_card_chaos_5",
   "bboxMode":0,
-  "bbox_bottom":586,
+  "bbox_bottom":585,
   "bbox_left":0,
   "bbox_right":349,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"732d7607-1dd7-4194-8344-10afa610fe3c","name":"732d7607-1dd7-4194-8344-10afa610fe3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e9037dcb-b1c6-4c58-bfd8-bb47b486a85b","name":"e9037dcb-b1c6-4c58-bfd8-bb47b486a85b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":587,
+  "height":586,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c37abd4b-ae04-49e2-9a65-ea12d3d7ab8d","blendMode":0,"displayName":"default","isLocked":false,"name":"c37abd4b-ae04-49e2-9a65-ea12d3d7ab8d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5caae403-7e0d-4f8b-9fa7-c2581edb51fa","blendMode":0,"displayName":"default","isLocked":false,"name":"5caae403-7e0d-4f8b-9fa7-c2581edb51fa","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_card_chaos_5",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"732d7607-1dd7-4194-8344-10afa610fe3c","path":"sprites/spr_card_chaos_5/spr_card_chaos_5.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"14ac075f-65f8-4cf7-a20e-3aea08fa3ff8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e9037dcb-b1c6-4c58-bfd8-bb47b486a85b","path":"sprites/spr_card_chaos_5/spr_card_chaos_5.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"db816d07-9291-4e25-9abc-59b68da92b4f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
