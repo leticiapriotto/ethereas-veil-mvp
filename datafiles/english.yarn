@@ -24,7 +24,6 @@ title: Intro
 <<set $finalB = 0 >>
 <<set $finalC = 0 >>
 
-<<draw_char_neriah([0])>> 
 Neriah: Sometimes, the paths we choose... lead us to places we never imagined.
 Neriah: I used to believe that control was in my hands...
 Neriah: ...until one night, the darkness itself spoke back to me.
@@ -39,7 +38,8 @@ Neriah: And when you see yourself reflected there, there's nothing left but to a
 Neriah: You wouldn't understand... the pain of remembering what you'd rather forget.
 
 Player: [c_black]... 
-Player: [c_black]I... understand more than you think. Not all memories are welcome. But sometimes, they're all we have left.
+Player: [c_black]I... understand more than you think. Not all memories are welcome. 
+Player: [c_black]But sometimes, they're all we have left.
 
 Neriah: Is that so? And if all that remains are scars?
 Neriah: Marks of something that can't be erased... or redeemed.
@@ -279,13 +279,11 @@ title: End Game
 Empty Text
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 765,219
+__PrivCrochet_position: 763,219
 __PrivCrochet_tags: 
 title: Goodbye
 ---
 Neriah: Goodbye, thank you.
-
-<<set $isNeriahHere = false>>
 
 <<jump Intro 2>>
 ===
