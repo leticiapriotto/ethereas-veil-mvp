@@ -1,6 +1,6 @@
 // Chatterbox Management
 function initialize_chatterbox() {
-    ChatterboxLoadFromFile("test.yarn");
+    ChatterboxLoadFromFile("english.yarn");
     chatterbox = ChatterboxCreate();
     ChatterboxJump(chatterbox, "Intro");
 	

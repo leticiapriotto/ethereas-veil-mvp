@@ -31,23 +31,23 @@ Neriah: ...until one night, the darkness itself spoke back to me.
 Neriah: You hear those voices too, don't you?
 Neriah: Voices that challenge us to confront what we'd rather hide?
 
-Player: ...
-Player: This... darkness... did you bring it upon yourself, or did it come to you?
+Player: [c_black]...
+Player: [c_black]This... darkness... did you bring it upon yourself, or did it come to you?
 
 Neriah: Ah... You know how it is. Sometimes, the abyss stares back, doesn't it?
 Neriah: And when you see yourself reflected there, there's nothing left but to accept... or to lose yourself.
 Neriah: You wouldn't understand... the pain of remembering what you'd rather forget.
 
-Player: ... 
-Player: I... understand more than you think. Not all memories are welcome. But sometimes, they're all we have left.
+Player: [c_black]... 
+Player: [c_black]I... understand more than you think. Not all memories are welcome. But sometimes, they're all we have left.
 
 Neriah: Is that so? And if all that remains are scars?
 Neriah: Marks of something that can't be erased... or redeemed.
 Neriah: Would you still cling to it, to something that only brings pain?
 
-Player: Maybe pain is... necessary.
-Player: Perhaps it's what keeps us alert, reminds us of who we are... 
-Player: or what we try to avoid.
+Player: [c_black]Maybe pain is... necessary.
+Player: [c_black]Perhaps it's what keeps us alert, reminds us of who we are... 
+Player: [c_black]or what we try to avoid.
 
 <<jump Problem 1>>
 ===
@@ -57,7 +57,7 @@ __PrivCrochet_tags:
 title: Problem 1
 ---
 Neriah: I... feel like I'm lost. My heart longs for adventure, but I'm afraid of what I might find.
-Player: Sometimes, it's in uncertainty that we find what we really want. Let's see what the cards have to say.
+Player: [c_black]Sometimes, it's in uncertainty that we find what we really want. Let's see what the cards have to say.
 
 <<jump First Decision>>
 ===
