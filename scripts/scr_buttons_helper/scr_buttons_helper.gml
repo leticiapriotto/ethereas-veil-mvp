@@ -22,7 +22,6 @@ function update_buttons_position(_buttons, _camera_x, _parallax_speed) {
 }
 
 // Script para atualizar os textos dos botões
-// Script para atualizar os textos dos botões
 function update_button_texts() {
     var _all_buttons = array_concat(global.menu_buttons, global.options_buttons);
     for (var _i = 0; _i < array_length(_all_buttons); _i++) {

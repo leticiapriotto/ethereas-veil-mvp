@@ -1,6 +1,12 @@
 // Chatterbox Management
 function initialize_chatterbox() {
-    ChatterboxLoadFromFile("english.yarn");
+	
+	if (global.current_language == 0) {
+		ChatterboxLoadFromFile("english.yarn");
+	} else if (global.current_language == 1) {
+		ChatterboxLoadFromFile("portuguese.yarn");
+	}
+    
     chatterbox = ChatterboxCreate();
     ChatterboxJump(chatterbox, "Intro");
 	
