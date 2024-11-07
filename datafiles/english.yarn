@@ -1,10 +1,11 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 162,217
+__PrivCrochet_position: 163,217
 __PrivCrochet_tags: 
 title: First Decision
 ---
-Void: These cards can help us discover your path. Let's see what they reveal.
+Void: [fa_center]These cards can help us discover your path. Let's see what they reveal.
+Void: [fa_center]
 -> Card: Curiosity
     Player: Let's see...
     <<jump Curiosity>>
@@ -57,7 +58,9 @@ __PrivCrochet_tags:
 title: Problem 1
 ---
 Neriah: I... feel like I'm lost. My heart longs for adventure, but I'm afraid of what I might find.
-Player: [c_black]Sometimes, it's in uncertainty that we find what we really want. Let's see what the cards have to say.
+
+Player: [c_black]Sometimes, it's in uncertainty that we find what we really want. 
+Player: [c_black]Let's see what the cards have to say.
 
 <<jump First Decision>>
 ===

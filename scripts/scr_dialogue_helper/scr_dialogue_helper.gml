@@ -1,5 +1,5 @@
 // Text Formatting
-function wrap_text_in_chatterbox(x, y, _text, _line_spacing, _text_width) {
+function wrap_text_in_chatterbox(x, y, _text, _text_width) {
 	scribble(_text).wrap(_text_width).draw(x, y, typist);
     //draw_text_ext(x, y, _text, _line_spacing, _text_width);
 }
@@ -16,7 +16,6 @@ function get_default_text_position() {
         text_x: 150,
         text_y: 100,
         text_width: 640,
-        text_color: c_black,
         speech_bubble: noone
     };
 }
@@ -33,8 +32,7 @@ function draw_dialogue() {
         }
 
         // Configura o texto e o desenha usando as propriedades específicas do personagem
-        draw_set_color(_config.text_color);
-        wrap_text_in_chatterbox(_config.text_x, _config.text_y, text, line_spacing, _config.text_width);
+        wrap_text_in_chatterbox(_config.text_x, _config.text_y, text, _config.text_width);
     }
 }
 

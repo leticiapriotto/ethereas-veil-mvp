@@ -103,13 +103,14 @@ function update_card_scale(_index) {
     scale_y_list[_index] = lerp(scale_y_list[_index], _target_scale, 0.1);
 }
 
+// Card Desription Drawing
 function draw_card_description() {
     if (mouse_over_option && option_index != -1) {
 	
         var _description = get_card_description(node_title, option_index);
         var _config = configure_character_dialogue(undefined);
 
-        wrap_text_in_chatterbox(_config.text_x, _config.text_y, _description, line_spacing, _config.text_width);
+        wrap_text_in_chatterbox(_config.text_x, _config.text_y, _description, _config.text_width);
     }
 }
 
