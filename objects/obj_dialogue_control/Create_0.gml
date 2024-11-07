@@ -2,6 +2,7 @@
 
 // Chatterbox setup
 is_neriah_here = false;
+is_text_complete = false;
 
 initialize_chatterbox(); 
 update_chatterbox(); 
