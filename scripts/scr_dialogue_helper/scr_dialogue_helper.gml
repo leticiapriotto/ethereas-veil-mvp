@@ -1,6 +1,7 @@
 // Text Formatting
 function wrap_text_in_chatterbox(x, y, _text, _line_spacing, _text_width) {
-    draw_text_ext(x, y, _text, _line_spacing, _text_width);
+	scribble(_text).wrap(_text_width).draw(x, y, typist);
+    //draw_text_ext(x, y, _text, _line_spacing, _text_width);
 }
 
 function strip_character_name_from_text(_text, _character) {
@@ -42,7 +43,7 @@ function draw_speech_bubble(_speech_bubble, _bubble_x, _bubble_y) {
     
     if (_speech_bubble == spr_speech_bubble_dark_bg) {
         _bubble_x = _bubble_x - 75;
-        _bubble_y = _bubble_y - 120;
+        _bubble_y = _bubble_y - 75;
     } 
 	
 	if (_speech_bubble == spr_speech_bubble_light_bg) {

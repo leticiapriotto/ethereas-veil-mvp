@@ -41,8 +41,8 @@ function configure_character_dialogue(_character) {
         case "Neriah":
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_middle);
-            _config.text_x = 150;
-            _config.text_y = 200;
+            _config.text_x = 175;
+            _config.text_y = 175;
             _config.text_width = 1100;
             _config.text_color = c_white;
             _config.speech_bubble = spr_speech_bubble_dark_bg;
@@ -52,7 +52,7 @@ function configure_character_dialogue(_character) {
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_middle);
             _config.text_x = 150;
-            _config.text_y = 900;
+            _config.text_y = 850;
             _config.text_width = 900;
             _config.text_color = c_black;
             _config.speech_bubble = spr_speech_bubble_light_bg;

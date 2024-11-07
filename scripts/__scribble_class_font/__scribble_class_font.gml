@@ -1,13 +1,14 @@
 // Feather disable all
 /// @param fontName
 /// @param glyphCount
-/// @param isMSDF
+/// @param fontType
 
-function __scribble_class_font(_name, _glyph_count, _msdf) constructor
+function __scribble_class_font(_name, _glyph_count, _fontType) constructor
 {
-    __name = _name;
+    __name     = _name;
+    __fontType = _fontType;
     
-    static _font_data_map = __scribble_get_font_data_map();
+    static _font_data_map = __scribble_initialize().__font_data_map;
     _font_data_map[? _name] = self;
     
     __glyph_data_grid = ds_grid_create(_glyph_count, SCRIBBLE_GLYPH.__SIZE);
@@ -15,9 +16,12 @@ function __scribble_class_font(_name, _glyph_count, _msdf) constructor
     __kerning_map     = ds_map_create();
     
     __is_krutidev = false;
+    __bilinear    = (_fontType == __SCRIBBLE_FONT_TYPE.__SDF)? true : undefined;
     
-    __msdf          = _msdf;
-    __msdf_pxrange  = undefined;
+    __sdf                  = (_fontType == __SCRIBBLE_FONT_TYPE.__SDF);
+    __sdf_pxrange          = undefined;
+    __sdf_thickness_offset = 0;
+    
     __superfont     = false;
     __runtime       = false;
     __source_sprite = undefined;
@@ -69,8 +73,8 @@ function __scribble_class_font(_name, _glyph_count, _msdf) constructor
         
         ds_map_clear(__glyphs_map);
         
-        __msdf_pxrange = undefined;
-        __msdf         = undefined;
+        __sdf_pxrange = undefined;
+        __sdf         = undefined;
         
         __height = 0;
     }
@@ -82,7 +86,6 @@ function __scribble_class_font(_name, _glyph_count, _msdf) constructor
         ds_map_destroy(__glyphs_map);
         ds_grid_destroy(__glyph_data_grid);
         
-        static _font_data_map = __scribble_get_font_data_map();
         ds_map_delete(_font_data_map, __name);
         
         if (__source_sprite != undefined)

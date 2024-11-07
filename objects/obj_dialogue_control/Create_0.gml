@@ -6,6 +6,11 @@ is_neriah_here = false;
 initialize_chatterbox(); 
 update_chatterbox(); 
 
+// Scribble Setup
+typist = scribble_typist();
+typist.in(0.2, 60);
+typist.ease(SCRIBBLE_EASE.ELASTIC, 0, 0, 1, 1, 0, 0);
+
 // Speech Bubble Animation seup
 speech_bubble_frame = 0; 
 frame_timer = 0; 
