@@ -33,48 +33,34 @@ function get_character_data(_character) {
 	
 // Character Dialogue Configuration
 function configure_character_dialogue(_character) {
-    // Começa com a configuração padrão
     var _config = get_default_text_position();
 
-    // Ajusta as configurações com base no personagem e na bolha
     switch (_character) {
         case "Neriah":
-			draw_set_halign(fa_left);
-			draw_set_valign(fa_middle);
             _config.text_x = 175;
             _config.text_y = 175;
             _config.text_width = 1100;
-            _config.text_color = c_white;
             _config.speech_bubble = spr_speech_bubble_dark_bg;
             break;
 
         case "Player":
-			draw_set_halign(fa_left);
-			draw_set_valign(fa_middle);
             _config.text_x = 150;
             _config.text_y = 800;
-            _config.text_width = 900;
-            _config.text_color = c_black;
+            _config.text_width = 950;
             _config.speech_bubble = spr_speech_bubble_light_bg;
             break;
 			
 		case "Void":
-			draw_set_halign(fa_center);
-			draw_set_valign(fa_top);
 		    _config.text_x = room_width / 2;
             _config.text_y = 50;
             _config.text_width = 800;
-            _config.text_color = c_black;
             _config.speech_bubble = noone;
             break;
 
         default:
-			draw_set_halign(fa_center);
-			draw_set_valign(fa_bottom);
             _config.text_x = room_width / 2;
             _config.text_y = 1000;
             _config.text_width = 800;
-            _config.text_color = c_black;
             _config.speech_bubble = noone;
             break;
     }
