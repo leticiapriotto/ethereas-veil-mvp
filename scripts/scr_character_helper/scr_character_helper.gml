@@ -58,6 +58,7 @@ function configure_character_dialogue(_character) {
             break;
 
         default:
+			draw_set_halign(fa_center)
             _config.text_x = room_width / 2;
             _config.text_y = 1000;
             _config.text_width = 800;

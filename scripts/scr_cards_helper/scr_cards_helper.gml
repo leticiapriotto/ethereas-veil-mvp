@@ -110,7 +110,7 @@ function draw_card_description() {
         var _description = get_card_description(node_title, option_index);
         var _config = configure_character_dialogue(undefined);
 
-        wrap_text_in_chatterbox(_config.text_x, _config.text_y, _description, _config.text_width);
+        draw_text_ext(_config.text_x, _config.text_y, _description, 40,_config.text_width);
     }
 }
 
