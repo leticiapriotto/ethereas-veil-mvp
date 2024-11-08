@@ -1,19 +1,17 @@
-/// @description Função para criar botões centralizados
-function create_buttons(_buttons, _x_center_ratio) {
-    var _center_x = display_get_width() * _x_center_ratio; 
+// create
+function create_buttons(_buttons) {
+    var _center_x = display_get_width() * (room_width / 2); 
     var _base_y = display_get_height() * 0.5; 
+    var _spacing = display_get_height() * 0.1; 
 
-    // Calcula o espaçamento entre os botões com base na altura da tela
-    var _spacing = display_get_height() * 0.1; // 10% da altura da tela como espaçamento entre botões
-
-    // Distribui os botões centralizando o do meio e espaçando os outros acima e abaixo
+    // distribute buttons by centering the middle and spacing the others above and below
     for (var _i = 0; _i < array_length(_buttons); _i++) {
         var _y = _base_y + ((_i - (array_length(_buttons) - 1) / 2) * _spacing);
         instance_create_layer(_center_x, _y, "Instances_Buttons", _buttons[_i]);
     }
 }
 
-// Função para atualizar a posição dos botões com parallax
+// update positions because parallax
 function update_buttons_position(_buttons, _camera_x, _parallax_speed) {
     var _center_x = display_get_width() * 0.5; 
     for (var _i = 0; _i < array_length(_buttons); _i++) {
@@ -21,7 +19,7 @@ function update_buttons_position(_buttons, _camera_x, _parallax_speed) {
     }
 }
 
-// Script para atualizar os textos dos botões
+// update positions because language
 function update_button_texts() {
     var _all_buttons = array_concat(global.menu_buttons, global.options_buttons);
     for (var _i = 0; _i < array_length(_all_buttons); _i++) {
@@ -39,14 +37,15 @@ function update_button_texts() {
     }
 }
 
-// Função para remover botões
+// remove
 function remove_buttons(_buttons) {
     for (var _i = 0; _i < array_length(_buttons); _i++) {
         instance_destroy(_buttons[_i]);
     }
 }
 
-function check_esc_pressed() {
+// verify fullscreen condition
+function change_fullscreen_button_text() {
 	if (keyboard_check_pressed(vk_escape) && (global.fullscreen = true)) {
 		window_set_fullscreen(false);
 	    global.fullscreen = false;
@@ -60,4 +59,3 @@ function check_esc_pressed() {
 		update_button_texts();
 	}
 }
-
