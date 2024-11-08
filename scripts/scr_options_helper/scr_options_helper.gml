@@ -1,6 +1,6 @@
 // Option Helper
 function update_option_selection() {
-    option_count = ChatterboxGetOptionCount(chatterbox); 
+    option_count = ChatterboxGetOptionCount(chatterbox);
     mouse_over_option = false;
 
     for (var _i = 0; _i < option_count; _i++) {
@@ -16,9 +16,11 @@ function update_option_selection() {
         }
     }
 
+		
     if (!mouse_over_option) {
         option_index = -1;
     }
+	
 }
 
 function select_option(_index) {
@@ -60,4 +62,5 @@ function draw_options() {
             }
         }
     }
+	
 }

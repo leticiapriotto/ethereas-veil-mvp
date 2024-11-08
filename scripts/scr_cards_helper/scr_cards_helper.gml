@@ -7,15 +7,15 @@ function initialize_card_positions() {
         3 * room_width / 4
     ];
 
-    first_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_decaptado_4];
-    second_decision_sprites = [spr_card_decaptado_4, spr_card_moon_2, spr_card_world_3];
+    first_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_sun_4];
+    second_decision_sprites = [spr_card_sun_4, spr_card_moon_2, spr_card_world_3];
     third_decision_sprites = [spr_card_order_1, spr_card_world_3, spr_card_chaos_5];
 }
 
 function draw_card_positions_debug() {
-    for (var i = 0; i < array_length(sprite_x_positions); i++) {
+    for (var _i = 0; _i < array_length(sprite_x_positions); _i++) {
         draw_set_color(c_red);
-        draw_rectangle(sprite_x_positions[i] - 10, sprite_y_position - 10, sprite_x_positions[i] + 10, sprite_y_position + 10, false);
+        draw_rectangle(sprite_x_positions[_i] - 10, sprite_y_position - 10, sprite_x_positions[_i] + 10, sprite_y_position + 10, false);
         draw_set_color(c_white);
     }
 }
@@ -103,13 +103,14 @@ function update_card_scale(_index) {
     scale_y_list[_index] = lerp(scale_y_list[_index], _target_scale, 0.1);
 }
 
+// Card Desription Drawing
 function draw_card_description() {
     if (mouse_over_option && option_index != -1) {
 	
         var _description = get_card_description(node_title, option_index);
         var _config = configure_character_dialogue(undefined);
 
-        wrap_text_in_chatterbox(_config.text_x, _config.text_y, _description, line_spacing, _config.text_width);
+        draw_text_ext(_config.text_x, _config.text_y, _description, 40,_config.text_width);
     }
 }
 

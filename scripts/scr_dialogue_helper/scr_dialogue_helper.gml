@@ -1,6 +1,7 @@
 // Text Formatting
-function wrap_text_in_chatterbox(x, y, _text, _line_spacing, _text_width) {
-    draw_text_ext(x, y, _text, _line_spacing, _text_width);
+function wrap_text_in_chatterbox(x, y, _text, _text_width) {
+	scribble(_text).wrap(_text_width).draw(x, y, typist);
+    //draw_text_ext(x, y, _text, _line_spacing, _text_width);
 }
 
 function strip_character_name_from_text(_text, _character) {
@@ -15,7 +16,6 @@ function get_default_text_position() {
         text_x: 150,
         text_y: 100,
         text_width: 640,
-        text_color: c_black,
         speech_bubble: noone
     };
 }
@@ -32,8 +32,7 @@ function draw_dialogue() {
         }
 
         // Configura o texto e o desenha usando as propriedades específicas do personagem
-        draw_set_color(_config.text_color);
-        wrap_text_in_chatterbox(_config.text_x, _config.text_y, text, line_spacing, _config.text_width);
+        wrap_text_in_chatterbox(_config.text_x, _config.text_y, text, _config.text_width);
     }
 }
 
@@ -41,13 +40,13 @@ function draw_dialogue() {
 function draw_speech_bubble(_speech_bubble, _bubble_x, _bubble_y) {
     
     if (_speech_bubble == spr_speech_bubble_dark_bg) {
-        _bubble_x = _bubble_x - 50 ;
-        _bubble_y = _bubble_y - 75;
+        _bubble_x = _bubble_x - 75;
+        _bubble_y = _bubble_y - 70;
     } 
 	
 	if (_speech_bubble == spr_speech_bubble_light_bg) {
-	    _bubble_x = _bubble_x - 50; 
-	    _bubble_y = _bubble_y + 75; 
+	    _bubble_x = _bubble_x - 75; 
+	    _bubble_y = _bubble_y + 175; 
 	}
     
     var _total_frames = sprite_get_number(_speech_bubble);
