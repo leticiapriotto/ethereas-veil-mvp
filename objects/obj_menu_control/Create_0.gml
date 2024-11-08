@@ -6,19 +6,7 @@ global.fullscreen =  false
 global.text_on_off = "OFF";
 global.current_language = 0; 
 
-global.menu_buttons = [
-	obj_button_new_game, 
-	obj_button_options, 
-	obj_button_exit
-];
-
-global.options_buttons = [
-	obj_button_volume_music,
-	obj_button_volume_sound_effects, 
-	obj_button_language,
-	obj_button_fullscreen,
-	obj_button_return
-];
+button_groups = set_button_groups();
 
 //Texts
 global.texts = [

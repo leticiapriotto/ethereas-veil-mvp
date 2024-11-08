@@ -1,3 +1,22 @@
+// setup
+function set_button_groups() {
+	var _menu_buttons = [
+		obj_button_new_game, 
+		obj_button_options, 
+		obj_button_exit
+	];
+
+	var _options_buttons = [
+		obj_button_volume_music,
+		obj_button_volume_sound_effects, 
+		obj_button_language,
+		obj_button_fullscreen,
+		obj_button_return
+	];
+
+	return {menu_buttons: _menu_buttons, options_buttons: _options_buttons};
+}
+
 // create
 function create_buttons(_buttons) {
     var _center_x = display_get_width() * (room_width / 2); 
@@ -14,6 +33,7 @@ function create_buttons(_buttons) {
 // update positions because parallax
 function update_buttons_position(_buttons, _camera_x, _parallax_speed) {
     var _center_x = display_get_width() * 0.5; 
+	
     for (var _i = 0; _i < array_length(_buttons); _i++) {
         _buttons[_i].x = _center_x - (_camera_x * _parallax_speed);
     }
@@ -21,13 +41,13 @@ function update_buttons_position(_buttons, _camera_x, _parallax_speed) {
 
 // update positions because language
 function update_button_texts() {
-    var _all_buttons = array_concat(global.menu_buttons, global.options_buttons);
+	var _buttons = set_button_groups();
+    var _all_buttons = array_concat(_buttons.menu_buttons, _buttons.options_buttons);
+	
     for (var _i = 0; _i < array_length(_all_buttons); _i++) {
         var _button = _all_buttons[_i];
         
-        // Verifica se a instância ainda existe antes de acessar o button_text
         if (instance_exists(_button)) {
-            // Atualiza o texto do botão Fullscreen com o valor atual de global.text_on_off
             if (_button == obj_button_fullscreen) {
                 _button.button_text = "Fullscreen: " + global.text_on_off;
             } else {
