@@ -59,21 +59,22 @@ function create_buttons(_buttons) {
     }
 }
 
-// update positions because parallax
+// update 
 function update_buttons_position(_buttons, _camera_x, _parallax_speed) {
     var _center_x = display_get_width() * 0.5; 
 	
+	// move because parallax
     for (var _i = 0; _i < array_length(_buttons); _i++) {
         _buttons[_i].x = _center_x - (_camera_x * _parallax_speed);
     }
 }
 
-// update positions because language
 function update_button_texts() {
 	var _buttons = set_button_groups();
 	var _button_texts = set_button_texts();
     var _all_buttons = array_concat(_buttons.menu_buttons, _buttons.options_buttons);
 	
+	// changes because language
     for (var _i = 0; _i < array_length(_all_buttons); _i++) {
         var _button = _all_buttons[_i];
         

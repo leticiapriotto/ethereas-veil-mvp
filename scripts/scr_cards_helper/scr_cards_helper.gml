@@ -1,27 +1,31 @@
-// Card Setup
-function initialize_card_positions() {
-    sprite_y_position = room_height / 2;
-    sprite_x_positions = [
+// setup
+function set_cards_positions() {
+	var _sprite_y_position = room_height / 2;
+    var _sprite_x_positions = [
         room_width / 4,
         room_width / 2,
         3 * room_width / 4
     ];
-
-    first_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_sun_4];
-    second_decision_sprites = [spr_card_sun_4, spr_card_moon_2, spr_card_world_3];
-    third_decision_sprites = [spr_card_order_1, spr_card_world_3, spr_card_chaos_5];
+	
+	return {sprite_y_position: _sprite_y_position,
+			sprite_x_positions: _sprite_x_positions
+	};
 }
+	
+function set_scale_lists(_index) {
+    if (!variable_instance_exists(id, "scale_x_list")) {
+        scale_x_list = [];
+        scale_y_list = [];
+    }
 
-function draw_card_positions_debug() {
-    for (var _i = 0; _i < array_length(sprite_x_positions); _i++) {
-        draw_set_color(c_red);
-        draw_rectangle(sprite_x_positions[_i] - 10, sprite_y_position - 10, sprite_x_positions[_i] + 10, sprite_y_position + 10, false);
-        draw_set_color(c_white);
+    // Define a escala inicial para o índice se ainda não existir
+    if (array_length(scale_x_list) <= _index) {
+        scale_x_list[_index] = 1.0;
+        scale_y_list[_index] = 1.0;
     }
 }
 
-
-function initialize_card_descriptions() {
+function set_card_descriptions() {
     first_decision_descriptions = [
         "The High Priestess - Description for the High Priestess card.",
         "The Lovers - Description for the Lovers card.",
@@ -42,13 +46,17 @@ function initialize_card_descriptions() {
 }
 	
 function get_sprite_list(_node_title) {
+	var _first_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_sun_4];
+    var _second_decision_sprites = [spr_card_sun_4, spr_card_moon_2, spr_card_world_3];
+    var _third_decision_sprites = [spr_card_order_1, spr_card_world_3, spr_card_chaos_5];
+	
     switch (_node_title) {
         case "First Decision":
-            return first_decision_sprites;
+            return _first_decision_sprites;
         case "Second Decision":
-            return second_decision_sprites;
+            return _second_decision_sprites;
         case "Third Decision":
-            return third_decision_sprites;
+            return _third_decision_sprites;
         default:
             return undefined;
     }
@@ -67,43 +75,20 @@ switch (_node_title) {
 }
 }
 
-// Card Drawing
+// draw
 function draw_card_sprites(_node_title, _index, x, y) {
     var _sprite_list = get_sprite_list(_node_title);
 
     if (_sprite_list != undefined && _sprite_list[_index] != undefined) {
 
-        initialize_scale_lists(_index); // Inicializa as listas de escala, se necessário
-        update_card_scale(_index); // Atualiza a escala da carta
+        set_scale_lists(_index); 
+        update_card_scale(_index);
 
-        // Define a opacidade e desenha a carta
         draw_set_alpha(1);
         draw_sprite_ext(_sprite_list[_index], 0, x, y, scale_x_list[_index], scale_y_list[_index], 0, c_white, 1);
     }
 }
 
-// Inicializa as listas de escala se ainda não existirem
-function initialize_scale_lists(_index) {
-    if (!variable_instance_exists(id, "scale_x_list")) {
-        scale_x_list = [];
-        scale_y_list = [];
-    }
-
-    // Define a escala inicial para o índice se ainda não existir
-    if (array_length(scale_x_list) <= _index) {
-        scale_x_list[_index] = 1.0;
-        scale_y_list[_index] = 1.0;
-    }
-}
-
-// Atualiza a escala da carta com interpolação
-function update_card_scale(_index) {
-    var _target_scale = (option_index == _index && mouse_over_option) ? 1.2 : 1.0;
-    scale_x_list[_index] = lerp(scale_x_list[_index], _target_scale, 0.1);
-    scale_y_list[_index] = lerp(scale_y_list[_index], _target_scale, 0.1);
-}
-
-// Card Desription Drawing
 function draw_card_description() {
     if (mouse_over_option && option_index != -1) {
 	
@@ -113,4 +98,10 @@ function draw_card_description() {
         draw_text_ext(_config.text_x, _config.text_y, _description, 40,_config.text_width);
     }
 }
-
+	
+// update
+function update_card_scale(_index) {
+    var _target_scale = (option_index == _index && mouse_over_option) ? 1.2 : 1.0;
+    scale_x_list[_index] = lerp(scale_x_list[_index], _target_scale, 0.1);
+    scale_y_list[_index] = lerp(scale_y_list[_index], _target_scale, 0.1);
+}

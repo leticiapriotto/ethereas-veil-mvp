@@ -32,8 +32,9 @@ function is_mouse_over_option(_index) {
     var _sprite_list = get_sprite_list(node_title);
     var _sprite_width = sprite_get_width(_sprite_list[_index]);
     var _sprite_height = sprite_get_height(_sprite_list[_index]);
-    var _sprite_x = sprite_x_positions[_index] - _sprite_width / 2;
-    var _sprite_y = sprite_y_position - _sprite_height / 2;
+	var _sprite_positions = set_cards_positions();
+    var _sprite_x = _sprite_positions.sprite_x_positions[_index] - _sprite_width / 2;
+    var _sprite_y = _sprite_positions.sprite_y_position - _sprite_height / 2;
 
     return mouse_x >= _sprite_x && mouse_x <= _sprite_x + _sprite_width &&
            mouse_y >= _sprite_y && mouse_y <= _sprite_y + _sprite_height;
@@ -48,6 +49,8 @@ function draw_darken_background() {
 
 // Options Draw
 function draw_options() {
+	var _sprite_positions = set_cards_positions();
+	
     if (option_count > 0) {
         // Escurece o fundo quando as cartas aparecem
         draw_darken_background();
@@ -57,7 +60,7 @@ function draw_options() {
                 var _option_text = ChatterboxGetOption(chatterbox, _i);
 
                 draw_set_alpha((option_index == _i) ? 0.5 : 1);
-                draw_card_sprites(node_title, _i, sprite_x_positions[_i], sprite_y_position);
+                draw_card_sprites(node_title, _i, _sprite_positions.sprite_x_positions[_i], _sprite_positions.sprite_y_position);
                 draw_set_alpha(1);
             }
         }

@@ -25,8 +25,8 @@ option_index = -1;
 option_count = 0;
 
 // Sprites setup
-initialize_card_positions();
-initialize_card_descriptions();
+set_cards_positions();
+set_card_descriptions();
 
 // Text setup
 line_spacing = 50;
