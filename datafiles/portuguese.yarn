@@ -1,6 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 162,217
+__PrivCrochet_position: 141,235
 __PrivCrochet_tags: 
 title: First Decision
 ---
@@ -245,7 +245,7 @@ How did you got here? wtf
 <<jump End Game>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 466,-39
+__PrivCrochet_position: 463,303
 __PrivCrochet_tags: 
 title: Curiosity
 ---
@@ -255,7 +255,7 @@ Neriah: I’ve always been curious about the world beyond the trees, but fear ho
 <<jump Goodbye>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 466,217
+__PrivCrochet_position: 430,-15
 __PrivCrochet_tags: 
 title: History
 ---
@@ -265,7 +265,7 @@ Neriah: I come from a small village where everyone seems to know their purpose. 
 <<jump Goodbye>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 466,456
+__PrivCrochet_position: 427,671
 __PrivCrochet_tags: 
 title: Confort
 ---
@@ -292,7 +292,7 @@ Neriah: Goodbye, thank you.
 <<jump Intro 2>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -666,214
+__PrivCrochet_position: -681,193
 __PrivCrochet_tags: 
 title: Start
 ---

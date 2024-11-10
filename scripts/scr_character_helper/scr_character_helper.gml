@@ -37,31 +37,31 @@ function configure_character_dialogue(_character) {
 
     switch (_character) {
         case "Neriah":
-            _config.text_x = 175;
-            _config.text_y = 175;
+            _config.text_x = 200;
+            _config.text_y = 200;
             _config.text_width = 1100;
             _config.speech_bubble = spr_speech_bubble_dark_bg;
             break;
 
         case "Player":
             _config.text_x = 150;
-            _config.text_y = 800;
+            _config.text_y = 775;
             _config.text_width = 950;
             _config.speech_bubble = spr_speech_bubble_light_bg;
             break;
 			
 		case "Title":
 		    _config.text_x = room_width / 2;
-            _config.text_y = 50;
+            _config.text_y = 125;
             _config.text_width = 1000;
             _config.speech_bubble = noone;
             break;
 
         default:
-			draw_set_halign(fa_center)
-            _config.text_x = room_width / 2;
+			draw_set_halign(fa_left)
+            _config.text_x = 100;
             _config.text_y = 1000;
-            _config.text_width = 800;
+            _config.text_width = 1000;
             _config.speech_bubble = noone;
             break;
     }
