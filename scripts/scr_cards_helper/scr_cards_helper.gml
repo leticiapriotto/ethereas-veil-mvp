@@ -51,11 +51,17 @@ function get_sprite_list(_node_title) {
     var _third_decision_sprites = [spr_card_order_1, spr_card_world_3, spr_card_chaos_5];
 	
     switch (_node_title) {
-        case "First Decision":
+        case "D1":
             return _first_decision_sprites;
-        case "Second Decision":
+        case "D2":
             return _second_decision_sprites;
-        case "Third Decision":
+        case "D3":
+            return _third_decision_sprites;
+        case "D4":
+            return _third_decision_sprites;
+        case "D5":
+            return _third_decision_sprites;
+        case "D6":
             return _third_decision_sprites;
         default:
             return undefined;
@@ -64,11 +70,17 @@ function get_sprite_list(_node_title) {
 	
 function get_card_description(_node_title, _index) {
 switch (_node_title) {
-    case "First Decision":
+    case "D1":
         return first_decision_descriptions[_index];
-    case "Second Decision":
+    case "D2":
         return second_decision_descriptions[_index];
-    case "Third Decision":
+    case "D3":
+        return third_decision_descriptions[_index];
+    case "D4":
+        return third_decision_descriptions[_index];
+    case "D5":
+        return third_decision_descriptions[_index];
+    case "D6":
         return third_decision_descriptions[_index];
     default:
         return "";

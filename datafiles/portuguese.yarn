@@ -1,207 +1,526 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 141,235
+__PrivCrochet_position: -23,2590
 __PrivCrochet_tags: 
-title: First Decision
+title: Final A
 ---
-Title: These cards can help us discover your path. Let's see what they reveal.
-Title: [fa_center]
--> Card: Curiosity
-    Player: Let's see...
-    <<jump Curiosity>>
--> Card: Doubt
-    Player: Let's see...
-    <<jump History>>
--> Card: Hope
-    Player: Let's see...
-    <<jump Confort>>
+Final A
+<<jump End Game>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -413,215
+__PrivCrochet_position: 201,2590
 __PrivCrochet_tags: 
-title: Intro
+title: Final B
 ---
+Final B
+<<jump End Game>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 420,2590
+__PrivCrochet_tags: 
+title: Final C
+---
+Final C
+<<jump End Game>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 646,2590
+__PrivCrochet_tags: 
+title: Final Alternativo
+---
+How did you got here? wtf
+<<jump End Game>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 314,3002
+__PrivCrochet_tags: 
+title: End Game
+---
+Empty Text
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1182,955
+__PrivCrochet_tags: 
+title: Start
+---
+Title: [fa_center][c_black]Bem-vindo!\n\nAntes de começar, temos algumas dicas para melhorar sua experiência.\n\nPara se imergir totalmente, recomendamos jogar em modo tela cheia com fones de ouvido. Este jogo é uma jornada onde suas escolhas fazem diferença no mundo dos personagens.\n\nDicas de navegação\n- Para pular diálogos, basta clicar duas vezes.\n- Quando as cartas de escolha aparecerem na tela, simplesmente escolha uma para continuar.\n\nDivirta-se!
+
+Title: [fa_center]Para existir ordem, é necessário o Caos.
+
 <<set $finalA = 0 >>
 <<set $finalB = 0 >>
 <<set $finalC = 0 >>
 
-Neriah: Às vezes, os caminhos que escolhemos... nos conduzem a lugares que jamais imaginaríamos.
-Neriah: Eu costumava acreditar que o controle estava em minhas mãos...
-Neriah: ...até que uma noite, a própria escuridão me respondeu de volta.
-Neriah: Você também ouve essas vozes, não é?
-Neriah: Vozes que nos desafiam a confrontar o que preferimos esconder?
-
+<<jump Neriah 1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -822,1009
+__PrivCrochet_tags: 
+title: Neriah 1
+---
+Neriah: Eles tiraram meu pai de mim... e sequer me deram a chance de entender o porquê.
+Neriah: Tudo o que sinto é essa... raiva. Esse peso no peito que só parece aumentar. 
+Neriah: Eu quero respostas, mas... até onde eu estou disposta a ir para obtê-las?
 
 Player: [c_black]...
-Player: [c_black]Essa... escuridão... foi você quem a trouxe ou foi ela que veio até você?
+Player: [c_black]É uma linha perigosa. A vingança tem o poder de destruir tanto quanto de satisfazer. 
+Player: [c_black]Você precisa pensar no que realmente está buscando: justiça ou só um alívio momentâneo?
 
+Neriah: Justiça... Essa palavra soa vazia agora. 
+Neriah: Não sei se a paz vem com ela ou se estou apenas me enganando. 
+Neriah: Se você estivesse no meu lugar, o que faria? Tentaria esquecer ou continuaria?
 
-Neriah: Ah... You know how it is. Sometimes, the abyss stares back, doesn't it?
-Neriah: And when you see yourself reflected there, there's nothing left but to accept... or to lose yourself.
-Neriah: You wouldn't understand... the pain of remembering what you'd rather forget.
+Player: [c_black]Depende do preço. Algumas respostas trazem mais dor do que conforto. 
+Player: [c_black]Mas só você pode decidir o que vale a pena.
 
-Player: [c_black]... 
-Player: [c_black]I... understand more than you think. Not all memories are welcome. 
-Player: [c_black]But sometimes, they're all we have left.
+Neriah: Talvez... eu tenha que encarar o que vier, independente do custo. 
+Neriah: Mas, ao mesmo tempo, algo dentro de mim me diz para ser cautelosa. 
+Neriah: E se eu acabar virando algo que odeio?
 
-Neriah: Is that so? And if all that remains are scars?
-Neriah: Marks of something that can't be erased... or redeemed.
-Neriah: Would you still cling to it, to something that only brings pain?
+Player: [c_black]...
+Player: [c_black]Vamos ler seu futuro
 
-Player: Maybe pain is... necessary.
-Player: Perhaps it's what keeps us alert, reminds us of who we are... 
-Player: or what we try to avoid.
-
-<<jump Problem 1>>
+<<jump D1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -144,217
+__PrivCrochet_position: -571,1009
 __PrivCrochet_tags: 
-title: Problem 1
+title: D1
 ---
-Neriah: I... feel like I'm lost. My heart longs for adventure, but I'm afraid of what I might find.
-Player: Sometimes, it's in uncertainty that we find what we really want. Let's see what the cards have to say.
-
-<<jump First Decision>>
+Title: [fa_center]As cartas podem ajudar a descobrir seu caminho
+Title: [fa_center]
+-> Option: Ir atras da Verdade
+    <<jump A1>>
+-> Option: Seguir em Frente
+    <<jump A2>>
+-> Option: Seguir com Cautela
+    <<jump A3>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1058,227
+__PrivCrochet_position: 201,797
 __PrivCrochet_tags: 
-title: Intro 2
+title: A1
 ---
-Player: Well, let's see...
-
-<<jump Second Decision>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 1398,216
-__PrivCrochet_tags: 
-title: Second Decision
----
-Void: Let’s discover what destiny has in store.
-    -> Encouragement
-        Player: I see...
-        <<jump Encouragement>>
-    -> Fear
-        Player: I see...
-        <<jump Fear>>
-    -> Uncertain
-        Player: I see...
-        <<jump Uncertain>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 1683,-54
-__PrivCrochet_tags: 
-title: Encouragement
----
-Player: Hope is within your reach. You must take the risk!
-
 <<set $finalA = $finalA + 1>>
-<<jump Passeio>>
+
+Player: [c_black]Você deveria confrontá-los, descobrir a verdade.
+
+Neriah: Tem razão, irei honrar meu falecido pai.
+Neriah: ... Obrigada.
+
+<<jump Gael 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1683,208
+__PrivCrochet_position: 420,797
 __PrivCrochet_tags: 
-title: Fear
+title: A2
 ---
-Player: What if you fail? Sometimes, it’s better to stay where we are.
-
 <<set $finalB = $finalB + 1>>
-<<jump Passeio>>
+
+Player: [c_black]A vingança pode ser perigosa. Talvez seja melhor seguir em frente.
+Neriah: Talvez você tenha razao... O que eu poderia fazer, não é?
+
+<<jump Gael 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 1683,460
+__PrivCrochet_position: 646,797
 __PrivCrochet_tags: 
-title: Uncertain
+title: A3
 ---
-Player: Well, I see...
-
 <<set $finalC = $finalC + 1>>
-<<jump Passeio>>
+
+Player: [c_black]Talvez você devesse invetigar um pouco mais antes de tomar uma decisão.
+
+Neriah: Vou ver o que mais consigo encontrar.
+
+<<jump Gael 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 2027,210
+__PrivCrochet_position: -571,1278
 __PrivCrochet_tags: 
-title: Passeio
+title: D2
 ---
-Player: Why don’t we explore the surroundings of the cabin?
-Neriah: Alright
-
-<<jump Consequencia>>
+Title: As cartas podem ajudar a descobrir seu caminho
+Title: [fa_center]
+-> Seguir sozinho
+    <<jump B1>>
+-> Familia é o mais importante
+    <<jump B2>>
+-> Seguir com Cautela
+    <<jump B3>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 2307,203
+__PrivCrochet_position: -571,1560
 __PrivCrochet_tags: 
-title: Consequencia
+title: D3
 ---
-Void: Well...
-
-<<if $finalA > $finalB and $finalA > $finalC>>
-    Void: Everything will be fine, I guess...
-<<elseif $finalB > $finalA and $finalB > $finalC>>
-    Void: I should go home, I'm need to rest.
-<<elseif $finalC > $finalB and $finalC > $finalA>>
-    Void: ...
-<<else>>
-    Void: ...
-<<endif>>
-
-<<jump Third Decision>>
+Title: As cartas podem ajudar a descobrir seu caminho
+Title: [fa_center]
+-> Deixar essa Bobagem de lado
+    <<jump C1>>
+-> Ter as coisas no Controle
+    <<jump C2>>
+-> Seguir com Cautela
+    <<jump C3>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 2600,203
+__PrivCrochet_position: 202,1350
 __PrivCrochet_tags: 
-title: Third Decision
+title: C1
 ---
-Void: Chose a card that will seal Elyssia's fate
-    -> The Tower
-        Player: Okay
-        <<jump The Tower>>
-    -> The Devil
-        Player: Fine
-        <<jump The Devil>>
-    -> Justice
-        Player: Oh my...
-        <<jump Justice>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 3235,-122
-__PrivCrochet_tags: 
-title: The Tower
----
-The Lovers tarot card encourages us to explore our personal beliefs and values, while also finding balance in life for increased success. The Upright Lovers card symbolizes a strong bond between two people, urging one to stay true to their values when it comes to relationships.
-
 <<set $finalA = $finalA + 1>>
-<<jump Intro 4>>
+
+Player: [c_black]Talvez seja melhor deixar que as coisas se resolvam naturalmente.
+
+Gideon: É... Talvez inventar problemas não seja a solução
+
+<<jump Neriah 2>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 3233,496
+__PrivCrochet_position: 420,1350
 __PrivCrochet_tags: 
-title: Justice
+title: C2
 ---
-The High Priestess is a powerful symbol of intuition and the feminine divine, offering a gateway to our subconscious minds and the highest source of wisdom. 
-She is a reminder to trust our inner knowing and to access the knowledge that lies within us
+<<set $finalC = $finalC+ 1>>
 
+Player: [c_black]Usar essas informações a seu favor pode manter as pessoas comportadas
+Gideon: Concordo contigo, és uma pessoa sábia.
+
+<<jump Neriah 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -820,1278
+__PrivCrochet_tags: 
+title: Gael 1
+---
+Gael: Sabe... eu sempre fui um sobrevivente. Desde garoto, fui moldado para sobreviver nesse caos...
+Gael: Sem esperar piedade de ninguém.
+Gael: Esse grupo de assassinos... eles se tornaram minha família, a única coisa que eu tive.
+Gael: Mas, às vezes, me pergunto… até onde vale continuar com isso?
+
+Player: [c_black]E por que questionar agora? Parece que esse caminho foi tudo o que você conheceu.
+Player: [c_black]Afinal, você não é do tipo que hesita, não é?
+
+Gael: Hesitar? Tsc, nem mesmo conheço essa palavra. 
+Gael: Mas... cada contrato, cada rosto que vejo cair... parece que carrego algo a mais. 
+Gael: Uma sombra. E agora estou aqui, perguntando se esse peso vale mais do que a lealdade que eles me deram.
+
+Player: [c_black]Família não é sempre algo escolhido, às vezes é imposto. 
+Player: [c_black]Mas nem por isso você deve se manter preso a um caminho que te destrói.
+
+Gael: Eu sei disso. Mas quebrar essas alianças não é simples, e há muito que ainda posso fazer.
+Gael: Se eu os deixo, perco minha única base. Se continuo... 
+Gael: bem, talvez eu acabe me tornando apenas mais um alvo na minha própria lista.
+
+Player: [c_black]Talvez seja hora de definir qual das verdades é a verdadeira prisão para você.
+
+Gael: Vamos ver...
+
+<<jump D2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 646,1069
+__PrivCrochet_tags: 
+title: B3
+---
 <<set $finalC = $finalC + 1>>
-<<jump Intro 4>>
+
+Player: O preço da liberdade pode ser alto demais. Certifique-se de que está pronto.
+Gael: Parece que terei que carregar esse fardo por mais um tempo.
+
+<<jump Gideon 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 3223,205
+__PrivCrochet_position: 420,1069
 __PrivCrochet_tags: 
-title: The Devil
+title: B2
 ---
-The Death tarot card is often misunderstood and feared, primarily due to its name. However, in the upright position, this card signifies not physical death but rather a profound transformation. It represents the end of a significant phase in your life that you recognize is no longer serving you.
-
 <<set $finalB = $finalB + 1>>
-<<jump Intro 4>>
+
+Player: A lealdade é tudo para alguém como você. Não abandone sua família.
+Gael: Era o que eu estava pensando também... Obrigada
+
+<<jump Gideon 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 3582,193
+__PrivCrochet_position: 198,1073
 __PrivCrochet_tags: 
-title: Intro 4
+title: B1
 ---
-You got...
+<<set $finalA = $finalA + 1>>
 
+Player: [c_black]Se você não confia mais neles, deveria encontrar um caminho próprio
+
+Gael: Eles são minha fámilia, mas quem sabe...
+
+<<jump Gideon 1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 646,1350
+__PrivCrochet_tags: 
+title: C3
+---
+<<set $finalC = $finalC+ 1>>
+
+Player: [c_black Às vezes, ter poder é saber quando não usá-lo.
+Gideon: ...
+
+<<jump Neriah 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -820,1560
+__PrivCrochet_tags: 
+title: Gideon 1
+---
+Gideon: Ah, meu bom amigo! Você sabe como é… nos meus negócios
+Gideon: Sempre existem ‘pequenas vantagens’ que se acumulam com o tempo. 
+Gideon: Claro, quem sou eu para controlar as coisas? 
+Gideon: Mas… digamos que eu tenho uma 'carta na manga' que poderia,hm, ajustar o equilíbrio em certos assuntos.
+
+Player: [c_black]Certo. Mas você acha que deve mesmo usá-la agora? Parece… arriscado.
+
+Gideon: Arriscado? Talvez. Mas é parte do jogo, não? A verdade é que… manipular as peças tem seu próprio encanto. 
+Gideon: Admito que dessa vez, no entanto, talvez as coisas tenham ido longe demais.
+Gideon: Essa 'carta' afeta mais de uma pessoa, digamos assim. Pessoas com… destinos entrelaçados.
+
+Player: Então, por que a hesitação agora? Você nunca se incomodou antes.
+
+Gideon: Sim, você me conhece bem demais. Mas às vezes, o simples prazer de mover as peças não é suficiente. 
+Gideon: A questão é… quando jogar a carta? Agora, e resolver algo imediato? Ou esperar, ver como o tabuleiro se move?
+
+Player: Saber o momento certo para agir vale mais do que a própria informação, certo?
+
+Gideon: Ah… vamos ver o que a sorte tem reservado, então
+
+<<jump D3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -820,1863
+__PrivCrochet_tags: 
+title: Neriah 2
+---
+Neriah: Eu... não sei o que fazer. A vingança é o que eu quero, 
+Neriah: mas... será que isso realmente vai me trazer paz?
+
+Player: Talvez você precise seguir seu coração, fazer o que acredita ser justo.
+
+Neriah: Eu sinto que preciso fazer isso. Mas, e se eu estiver me perdendo na raiva? E se houver outra maneira?
+
+Player: Talvez seja o momento de entender o que está por trás disso tudo.
+
+Neriah: ... Eu... não sei. Eu só sei que preciso de respostas. 
+Neriah: Vou decidir o que fazer, mas preciso saber a verdade.
+
+Player: Vamos ver onde isso nos leva.
+
+<<jump D4>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -571,1863
+__PrivCrochet_tags: 
+title: D4
+---
+Title: As cartas podem ajudar a descobrir seu caminho
+Title: [fa_center]
+-> Falar com Gael pra tentar entender
+    <<jump E1>>
+-> Vingar a morte do pai
+    <<jump E2>>
+-> Desemparo
+    <<jump E3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 201,1674
+__PrivCrochet_tags: 
+title: E1
+---
+<<set $finalB = $finalB + 1>>
+
+Player: Você deve seguir seu coração e fazer o que acha justo.
+Neriah: Tem razão, preciso confrontá-lo.
+
+<<jump Gael 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 420,1674
+__PrivCrochet_tags: 
+title: E2
+---
+<<set $finalA = $finalA + 1>>
+
+Player: A vingança pelo seu pai é o que você procura.
+Neriah: Sinto que é o que meu coração deseja.
+
+<<jump Gael 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 644,1674
+__PrivCrochet_tags: 
+title: E3
+---
+<<set $finalC = $finalC + 1>>
+
+Player: Às vezes, o perdão pode ser a verdadeira força.
+Neriah: Talvez... mas a que preço?
+
+<<jump Gael 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -825,2146
+__PrivCrochet_tags: 
+title: Gael 2
+---
+Gael: Sabe, estou começando a achar que perdi o controle... Essa vida de mercenário, as manipulações, as lealdades... 
+Gael: Está me corroendo. Eu vi essa 'família' como tudo, mas... agora? Não sei mais.
+
+Player: Você tem medo de perder o controle?
+
+Gael: É mais que medo. É como se estivesse sendo puxado em várias direções, e cada vez mais longe do que eu era. 
+Gael: E Gideon... ele só tem usado isso contra mim.
+
+Player: E você acha que romper com ele vai resolver?
+
+Gael: Não sei. Talvez seja a única maneira de me manter de pé. 
+Gael: Mas abandonar minha ‘família’, isso não é fácil...
+
+Player: Ficar leal a eles é o que você realmente quer?
+
+Gael: Eu... não sei mais.
+
+Player: Vamos ver.
+
+
+<<jump D5>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -571,2146
+__PrivCrochet_tags: 
+title: D5
+---
+Title: As cartas podem ajudar a descobrir seu caminho
+Title: [fa_center]
+-> Desistir e Ir embora
+    <<jump F1>>
+-> Se virar Contra Gideao
+    <<jump F2>>
+-> É assim que as coisas são
+    <<jump F3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 201,1963
+__PrivCrochet_tags: 
+title: F1
+---
+<<set $finalB = $finalB + 1>>
+
+Player: Você precisa se libertar, mesmo que seja arriscado.
+Gael: ...Eu sei.
+
+<<jump Gideon 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 418,1963
+__PrivCrochet_tags: 
+title: F2
+---
+<<set $finalA = $finalA + 1>>
+
+Player: Ficar com seu grupo ainda é sua melhor opção.
+Gael: No fim eu sabia que minha liberdade não valia isso...
+
+<<jump Gideon 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 646,1963
+__PrivCrochet_tags: 
+title: F3
+---
+<<set $finalC = $finalC + 1>>
+
+Player:  Talvez você não precise escolher entre lealdade e liberdade; apenas imponha seus próprios termos.
+
+Gael: Duvido que alguém concorde, mas é o que devo fazer
+
+<<jump Gideon 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -820,2430
+__PrivCrochet_tags: 
+title: Gideon 2
+---
+Gideon: Sempre é uma questão de controle, não é? 
+Gideon: Eu pensei que podia confiar neles, mas a insubordinação do Ghael... 
+Gideon: A forma como Neriah tem se aproximado, buscando respostas... 
+Gideon: É difícil, não é? Tantas peças, e eu... eu tenho todas elas em minhas mãos.
+
+Player: Você tem controle, não tem?
+
+Gideon: "Controle é uma palavra interessante. 
+Gideon: Às vezes, o controle parece escapar no momento em que você mais precisa dele. 
+Gideon: Eu vejo as fraquezas de Ghael, vejo as de Neriah... 
+Gideon: E tenho as minhas próprias cartas. A questão é, até onde eu vou usá-las?
+
+Player: Você não tem medo de perder o controle se continuar manipulando tudo?
+
+Gideon: Às vezes, o controle não se mantém... se você manipula demais. 
+Gideon: Mas, sem ele, o que resta? A confiança? Nem sei o que é mais arriscado agora.
+
+Player: E se for o momento de parar de manipular e simplesmente confiar?
+
+Gideon: Confiar... uma palavra rara para alguém como eu. 
+Gideon: E se eu errar? Se confiar neles e me descontrole?
+
+Player: Bom... Vamos ver
+
+
+<<jump D6>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -564,2427
+__PrivCrochet_tags: 
+title: D6
+---
+Title: As cartas podem ajudar a descobrir seu caminho
+Title: [fa_center]
+-> Confiar em Gael
+    <<jump G1>>
+-> Garantir o Controle
+    <<jump G2>>
+-> Não ajudar
+    <<jump G3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 201,2282
+__PrivCrochet_tags: 
+title: G1
+---
+<<set $finalA = $finalA + 1>>
+
+Player: Confie em seus aliados, manipular pode ser perigoso.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 420,2282
+__PrivCrochet_tags: 
+title: G2
+---
+Player: Use o que sabe para garantir seu poder.
+
+<<set $finalC = $finalC+ 1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 646,2283
+__PrivCrochet_tags: 
+title: G3
+---
+<<set $finalB = $finalB + 1>>
+
+Player: Às vezes, não usar o poder que você tem pode ser mais eficaz.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -564,2754
+__PrivCrochet_tags: 
+title: Node
+---
 <<if $finalA > $finalB and $finalA > $finalC>>
     <<jump Final A>>
 <<elseif $finalB > $finalA and $finalB > $finalC>>
@@ -211,94 +530,4 @@ You got...
 <<else>>
     <<jump Final Alternativo>>
 <<endif>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 3933,81
-__PrivCrochet_tags: 
-title: Final A
----
-Final A
-<<jump End Game>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 3936,392
-__PrivCrochet_tags: 
-title: Final B
----
-Final B
-<<jump End Game>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 3933,668
-__PrivCrochet_tags: 
-title: Final C
----
-Final C
-<<jump End Game>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 3963,-324
-__PrivCrochet_tags: 
-title: Final Alternativo
----
-How did you got here? wtf
-<<jump End Game>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 463,303
-__PrivCrochet_tags: 
-title: Curiosity
----
-Neriah: I’ve always been curious about the world beyond the trees, but fear holds me back. What if I never find my place?
-
-<<set $finalA = $finalA + 1>>
-<<jump Goodbye>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 430,-15
-__PrivCrochet_tags: 
-title: History
----
-Neriah: I come from a small village where everyone seems to know their purpose. I feel like a stranger even among my own people.
-
-<<set $finalB = $finalB + 1>>
-<<jump Goodbye>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 427,671
-__PrivCrochet_tags: 
-title: Confort
----
-Neriah: Sometimes, a kind word is all we need. I’ve often felt alone, wishing someone would understand my struggles.
-
-<<set $finalC = $finalC + 1>>
-<<jump Goodbye>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 4609,230
-__PrivCrochet_tags: 
-title: End Game
----
-Empty Text
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 765,219
-__PrivCrochet_tags: 
-title: Goodbye
----
-Neriah: Goodbye, thank you.
-
-
-<<jump Intro 2>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -681,193
-__PrivCrochet_tags: 
-title: Start
----
-Void: [fa_center][c_black]Bem-vindo!\n\nAntes de começar, temos algumas dicas para melhorar sua experiência.\n\nPara se imergir totalmente, recomendamos jogar em modo tela cheia com fones de ouvido.\n\nEste jogo é uma jornada onde suas escolhas fazem diferença no mundo dos personagens.\nPrepare-se para tomar decisões que moldarão a história.\n\nDicas de navegação\n- Para pular diálogos, basta clicar duas vezes.\n- Quando as cartas de escolha aparecerem na tela, simplesmente escolha uma para continuar.\n\nDivirta-se!
-
-
-
-<<jump Intro>>
 ===

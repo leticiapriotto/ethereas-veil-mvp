@@ -40,16 +40,32 @@ function continue_chatterbox_dialogue() {
 
 function verify_current_node() {
 
-    if (node_title == "End Game") { 
+    if (node_title == "Neriah 1" || node_title == "Neriah 2" ) { 
+        is_neriah_here = true;
+		is_gael_here = false;
+		is_gideon_here = false
+		delete_char_gael();
+		delete_char_gideon();
+    }
+	
+	if (node_title == "Gael 1" || node_title == "Gael 2") { 
+        is_neriah_here = false;
+		is_gael_here = true;
+		is_gideon_here = false;
+        delete_char_neriah();
+		delete_char_gideon();
+    }
+	
+	if (node_title == "Gideon 1" || node_title == "Gideon 2") { 
+        is_neriah_here = false;
+		is_gael_here = false;
+		is_gideon_here = true;
+        delete_char_neriah();
+		delete_char_gael();
+    }
+	
+	
+	if (node_title == "End Game") { 
         room_goto(rm_splash_credits); // Transição para os créditos
-    }
-
-    if (node_title == "Intro") { 
-        is_neriah_here = true; // Define que o personagem está presente
-    }
-
-    if (node_title == "Intro 2") { 
-        is_neriah_here = false; // Define que o personagem não está presente
-        delete_character(); // Chama a função para apagar o personagem
     }
 }

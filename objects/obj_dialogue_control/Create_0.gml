@@ -2,6 +2,8 @@
 
 // Chatterbox setup
 is_neriah_here = false;
+is_gael_here = false;
+is_gideon_here = false;
 is_text_complete = false;
 
 initialize_chatterbox(); 
