@@ -54,7 +54,7 @@ Title: [fa_center]Para existir ordem, é necessário o Caos.
 <<jump Neriah 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -822,1009
+__PrivCrochet_position: -824,1009
 __PrivCrochet_tags: 
 title: Neriah 1
 ---
@@ -96,7 +96,7 @@ Title: [fa_center]
 -> Option: Seguir com Cautela
     <<jump A3>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 2
 __PrivCrochet_position: 201,797
 __PrivCrochet_tags: 
 title: A1
@@ -110,8 +110,8 @@ Neriah: ... Obrigada.
 
 <<jump Gael 1>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 420,797
+__PrivCrochet_colorID: 5
+__PrivCrochet_position: 419,797
 __PrivCrochet_tags: 
 title: A2
 ---
@@ -122,8 +122,8 @@ Neriah: Talvez você tenha razao... O que eu poderia fazer, não é?
 
 <<jump Gael 1>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 646,797
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: 647,797
 __PrivCrochet_tags: 
 title: A3
 ---
@@ -163,7 +163,7 @@ Title: [fa_center]
 -> Seguir com Cautela
     <<jump C3>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 2
 __PrivCrochet_position: 202,1350
 __PrivCrochet_tags: 
 title: C1
@@ -176,12 +176,12 @@ Gideon: É... Talvez inventar problemas não seja a solução
 
 <<jump Neriah 2>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 7
 __PrivCrochet_position: 420,1350
 __PrivCrochet_tags: 
 title: C2
 ---
-<<set $finalC = $finalC+ 1>>
+<<set $finalC = $finalC + 1>>
 
 Player: [c_black]Usar essas informações a seu favor pode manter as pessoas comportadas
 Gideon: Concordo contigo, és uma pessoa sábia.
@@ -189,7 +189,7 @@ Gideon: Concordo contigo, és uma pessoa sábia.
 <<jump Neriah 2>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -820,1278
+__PrivCrochet_position: -822,1278
 __PrivCrochet_tags: 
 title: Gael 1
 ---
@@ -218,7 +218,7 @@ Gael: Vamos ver...
 
 <<jump D2>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 7
 __PrivCrochet_position: 646,1069
 __PrivCrochet_tags: 
 title: B3
@@ -230,7 +230,7 @@ Gael: Parece que terei que carregar esse fardo por mais um tempo.
 
 <<jump Gideon 1>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 5
 __PrivCrochet_position: 420,1069
 __PrivCrochet_tags: 
 title: B2
@@ -242,7 +242,7 @@ Gael: Era o que eu estava pensando também... Obrigada
 
 <<jump Gideon 1>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 2
 __PrivCrochet_position: 198,1073
 __PrivCrochet_tags: 
 title: B1
@@ -255,12 +255,12 @@ Gael: Eles são minha fámilia, mas quem sabe...
 
 <<jump Gideon 1>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 7
 __PrivCrochet_position: 646,1350
 __PrivCrochet_tags: 
 title: C3
 ---
-<<set $finalC = $finalC+ 1>>
+<<set $finalC = $finalC + 1>>
 
 Player: [c_black Às vezes, ter poder é saber quando não usá-lo.
 Gideon: ...
@@ -281,16 +281,16 @@ Player: [c_black]Certo. Mas você acha que deve mesmo usá-la agora? Parece… a
 
 Gideon: Arriscado? Talvez. Mas é parte do jogo, não? A verdade é que… manipular as peças tem seu próprio encanto. 
 Gideon: Admito que dessa vez, no entanto, talvez as coisas tenham ido longe demais.
-Gideon: Essa 'carta' afeta mais de uma pessoa, digamos assim. Pessoas com… destinos entrelaçados.
+Gideon: Essa 'carta' afeta mais de uma pessoa, digamos assim. Pessoas com... destinos entrelaçados.
 
 Player: Então, por que a hesitação agora? Você nunca se incomodou antes.
 
 Gideon: Sim, você me conhece bem demais. Mas às vezes, o simples prazer de mover as peças não é suficiente. 
-Gideon: A questão é… quando jogar a carta? Agora, e resolver algo imediato? Ou esperar, ver como o tabuleiro se move?
+Gideon: A questão é... quando jogar a carta? Agora, e resolver algo imediato? Ou esperar, ver como o tabuleiro se move?
 
 Player: Saber o momento certo para agir vale mais do que a própria informação, certo?
 
-Gideon: Ah… vamos ver o que a sorte tem reservado, então
+Gideon: Ah... vamos ver o que a sorte tem reservado, então
 
 <<jump D3>>
 ===
@@ -329,7 +329,7 @@ Title: [fa_center]
 -> Desemparo
     <<jump E3>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 5
 __PrivCrochet_position: 201,1674
 __PrivCrochet_tags: 
 title: E1
@@ -341,7 +341,7 @@ Neriah: Tem razão, preciso confrontá-lo.
 
 <<jump Gael 2>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 2
 __PrivCrochet_position: 420,1674
 __PrivCrochet_tags: 
 title: E2
@@ -353,7 +353,7 @@ Neriah: Sinto que é o que meu coração deseja.
 
 <<jump Gael 2>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 7
 __PrivCrochet_position: 644,1674
 __PrivCrochet_tags: 
 title: E3
@@ -406,7 +406,7 @@ Title: [fa_center]
 -> É assim que as coisas são
     <<jump F3>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 2
 __PrivCrochet_position: 201,1963
 __PrivCrochet_tags: 
 title: F1
@@ -418,7 +418,7 @@ Gael: ...Eu sei.
 
 <<jump Gideon 2>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 5
 __PrivCrochet_position: 418,1963
 __PrivCrochet_tags: 
 title: F2
@@ -430,8 +430,8 @@ Gael: No fim eu sabia que minha liberdade não valia isso...
 
 <<jump Gideon 2>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 646,1963
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: 648,1963
 __PrivCrochet_tags: 
 title: F3
 ---
@@ -489,7 +489,7 @@ Title: [fa_center]
 -> Não ajudar
     <<jump G3>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 2
 __PrivCrochet_position: 201,2282
 __PrivCrochet_tags: 
 title: G1
@@ -497,15 +497,19 @@ title: G1
 <<set $finalA = $finalA + 1>>
 
 Player: Confie em seus aliados, manipular pode ser perigoso.
+
+<<jump Choose>>
 ===
-__PrivCrochet_colorID: 0
+__PrivCrochet_colorID: 3
 __PrivCrochet_position: 420,2282
 __PrivCrochet_tags: 
 title: G2
 ---
+<<set $finalC = $finalC + 1>>
+
 Player: Use o que sabe para garantir seu poder.
 
-<<set $finalC = $finalC+ 1>>
+<<jump Choose>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 646,2283
@@ -515,11 +519,13 @@ title: G3
 <<set $finalB = $finalB + 1>>
 
 Player: Às vezes, não usar o poder que você tem pode ser mais eficaz.
+
+<<jump Choose>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -564,2754
+__PrivCrochet_position: -556,2743
 __PrivCrochet_tags: 
-title: Node
+title: Choose
 ---
 <<if $finalA > $finalB and $finalA > $finalC>>
     <<jump Final A>>
