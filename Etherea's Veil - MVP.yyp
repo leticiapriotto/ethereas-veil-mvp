@@ -114,7 +114,7 @@
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
     {"id":{"name":"obj_button_return","path":"objects/obj_button_return/obj_button_return.yy",},},
     {"id":{"name":"obj_button_volume_music","path":"objects/obj_button_volume_music/obj_button_volume_music.yy",},},
-    {"id":{"name":"obj_button_volume_sound_effects","path":"objects/obj_button_volume_sound_effects/obj_button_volume_sound_effects.yy",},},
+    {"id":{"name":"obj_button_volume_sfx","path":"objects/obj_button_volume_sfx/obj_button_volume_sfx.yy",},},
     {"id":{"name":"obj_camera_control","path":"objects/obj_camera_control/obj_camera_control.yy",},},
     {"id":{"name":"obj_dialogue_control","path":"objects/obj_dialogue_control/obj_dialogue_control.yy",},},
     {"id":{"name":"obj_logo_company","path":"objects/obj_logo_company/obj_logo_company.yy",},},

@@ -3,3 +3,4 @@
 // Inherit the parent event
 event_inherited();
 value = global.music_volume; 
+depth = -1;
