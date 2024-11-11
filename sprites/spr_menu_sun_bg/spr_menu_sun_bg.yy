@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Interface Elements",
-    "path":"folders/Sprites/Interface Elements.yy",
+    "name":"Menu",
+    "path":"folders/Sprites/Backgrounds/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

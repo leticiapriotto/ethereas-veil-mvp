@@ -26,7 +26,7 @@
   "origin":6,
   "parent":{
     "name":"Forest Layers",
-    "path":"folders/Sprites/Backgrounds/Forest Layers.yy",
+    "path":"folders/Sprites/Backgrounds/Deactive/Forest Layers.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

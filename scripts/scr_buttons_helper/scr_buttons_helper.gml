@@ -24,7 +24,7 @@ function set_button_texts() {
             "New Game",							// obj_button_new_game
             "Options",							// obj_button_options
             "Music Volume",						// obj_button_volume_music
-            "Sound Effects Volume",				// obj_button_sound_effects
+            "Effects Volume",				// obj_button_sound_effects
             "Language: English",				// obj_button_language
             "Fullscreen: " + global.text_on_off, // obj_button_fullscreen
             "Return",							// obj_button_return
@@ -35,8 +35,8 @@ function set_button_texts() {
             "Novo Jogo",						// obj_button_new_game
             "Opções",							// obj_button_options
             "Volume da Música",					// obj_button_volume_music
-            "Volume dos Efeitos Sonoros",		// obj_button_sound_effects
-            "Idioma: Português BR",             // obj_button_language
+            "Volume dos Efeitos",		// obj_button_sound_effects
+            "Idioma: Português",             // obj_button_language
             "Tela Cheia: " + global.text_on_off, // obj_button_fullscreen
             "Voltar",							// obj_button_return
             "Sair"								// obj_button_exit
@@ -50,7 +50,7 @@ function set_button_texts() {
 function create_buttons(_buttons) {
     var _center_x = display_get_width() * (room_width / 2); 
     var _base_y = display_get_height() * 0.5; 
-    var _spacing = display_get_height() * 0.1; 
+    var _spacing = display_get_height() * 0.13; 
 
     // distribute buttons by centering the middle and spacing the others above and below
     for (var _i = 0; _i < array_length(_buttons); _i++) {

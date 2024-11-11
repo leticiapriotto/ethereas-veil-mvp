@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Interface Elements",
-    "path":"folders/Sprites/Interface Elements.yy",
+    "name":"Deactive",
+    "path":"folders/Sprites/Interface Elements/Deactive.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

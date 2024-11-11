@@ -9,8 +9,8 @@
   "name":"obj_camera_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"Control",
-    "path":"folders/Objects/Control.yy",
+    "name":"Deactive",
+    "path":"folders/Objects/Control/Deactive.yy",
   },
   "parentObjectId":null,
   "persistent":false,
