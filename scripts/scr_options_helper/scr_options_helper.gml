@@ -29,7 +29,7 @@ function select_option(_index) {
 }
 
 function is_mouse_over_option(_index) {
-    var _sprite_list = get_decision_sprites(node_title);
+    var _sprite_list = get_sprite_list(node_title);
     var _sprite_width = sprite_get_width(_sprite_list[_index]);
     var _sprite_height = sprite_get_height(_sprite_list[_index]);
 	var _sprite_positions = set_cards_positions();
