@@ -1,30 +1,30 @@
 #__PrivCrochet_version:1
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -23,2590
+__PrivCrochet_colorID: 2
+__PrivCrochet_position: -347,2310
 __PrivCrochet_tags: 
 title: Final A
 ---
 Final A
 <<jump End Game>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 201,2590
+__PrivCrochet_colorID: 5
+__PrivCrochet_position: -137,2310
 __PrivCrochet_tags: 
 title: Final B
 ---
 Final B
 <<jump End Game>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 420,2590
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: 73,2310
 __PrivCrochet_tags: 
 title: Final C
 ---
 Final C
 <<jump End Game>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 646,2590
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: 282,2310
 __PrivCrochet_tags: 
 title: Final Alternativo
 ---
@@ -32,62 +32,66 @@ How did you got here? wtf
 <<jump End Game>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 314,3002
+__PrivCrochet_position: -18,2739
 __PrivCrochet_tags: 
 title: End Game
 ---
 Empty Text
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1182,955
+__PrivCrochet_position: -1541,717
 __PrivCrochet_tags: 
 title: Start
 ---
 Title: [fa_center][c_black]Bem-vindo!\n\nAntes de começar, temos algumas dicas para melhorar sua experiência.\n\nPara se imergir totalmente, recomendamos jogar em modo tela cheia com fones de ouvido. Este jogo é uma jornada onde suas escolhas fazem diferença no mundo dos personagens.\n\nDicas de navegação\n- Para pular diálogos, basta clicar duas vezes.\n- Quando as cartas de escolha aparecerem na tela, simplesmente escolha uma para continuar.\n\nDivirta-se!
 
-Title: [fa_center]Para existir ordem, é necessário o Caos.
-
 <<set $finalA = 0 >>
 <<set $finalB = 0 >>
 <<set $finalC = 0 >>
 
-<<jump Neriah 1>>
+<<jump Intro>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -824,1009
+__PrivCrochet_position: -892,1015
 __PrivCrochet_tags: 
 title: Neriah 1
 ---
-Neriah: Eles tiraram meu pai de mim... e sequer me deram a chance de entender o porquê.
-Neriah: Tudo o que sinto é essa... raiva. Esse peso no peito que só parece aumentar. 
+Neriah: [i]Eles[/i] tiraram meu pai de mim... e sequer me deram a chance de entender o porquê.
+Neriah: Tudo o que sinto é essa... [i]raiva[/i]. Esse peso no peito que só parece aumentar. 
 Neriah: Eu quero respostas, mas... até onde eu estou disposta a ir para obtê-las?
 
 Player: [c_black]...
-Player: [c_black]É uma linha perigosa. A vingança tem o poder de destruir tanto quanto de satisfazer. 
-Player: [c_black]Você precisa pensar no que realmente está buscando: justiça ou só um alívio momentâneo?
+Player: [c_black]É uma linha perigosa. 
+Player: [c_black]A vingança tem o poder de [i]destruir[/i] tanto quanto de [i]satisfazer[/i]. 
+Player: [c_black]Você precisa pensar no que realmente está buscando:
+Player: [c_black]Justiça ou só um alívio momentâneo?
 
-Neriah: Justiça... Essa palavra soa vazia agora. 
-Neriah: Não sei se a paz vem com ela ou se estou apenas me enganando. 
-Neriah: Se você estivesse no meu lugar, o que faria? Tentaria esquecer ou continuaria?
+Neriah: [i]Justiça[/i]...
+Neriah: Essa palavra soa vazia agora. 
+Neriah: Não sei se a paz vem com ela ou se estou apenas me... Enganando.
+Neriah: Se você estivesse no meu lugar, o que faria? 
+Neriah: Tentaria esquecer ou continuaria?
 
-Player: [c_black]Depende do preço. Algumas respostas trazem mais dor do que conforto. 
-Player: [c_black]Mas só você pode decidir o que vale a pena.
+Player: [c_black]Depende do preço
+Player: ...
+Player: [c_black]Algumas respostas trazem mais [i]dor[/i] do que conforto. 
+Player: [c_black]Mas, só você pode decidir o que vale a pena.
 
-Neriah: Talvez... eu tenha que encarar o que vier, independente do custo. 
-Neriah: Mas, ao mesmo tempo, algo dentro de mim me diz para ser cautelosa. 
+Neriah: Talvez, eu tenha que encarar o que vier... [i]Independente do custo[/i]. 
+Neriah: Mas, ao mesmo tempo... Algo dentro de mim me diz para ser [i]cautelosa[/i]. 
 Neriah: E se eu acabar virando algo que odeio?
 
 Player: [c_black]...
-Player: [c_black]Vamos ler seu futuro
+Player: [c_black]Vamos ver...
 
 <<jump D1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -571,1009
+__PrivCrochet_position: -688,1016
 __PrivCrochet_tags: 
 title: D1
 ---
-Title: [fa_center]As cartas podem ajudar a descobrir seu caminho
+TitleTop: [fa_center]As cartas podem ajudar a descobrir seu caminho.
 Title: [fa_center]
 -> Option: Ir atras da Verdade
     <<jump A1>>
@@ -97,33 +101,34 @@ Title: [fa_center]
     <<jump A3>>
 ===
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: 201,797
+__PrivCrochet_position: -347,898
 __PrivCrochet_tags: 
 title: A1
 ---
 <<set $finalA = $finalA + 1>>
 
-Player: [c_black]Você deveria confrontá-los, descobrir a verdade.
+Player: [c_black]A verdade merece ser descoberta.
 
-Neriah: Tem razão, irei honrar meu falecido pai.
-Neriah: ... Obrigada.
+Neriah: De [i]alguma forma[/i], irei honrar meu falecido pai.
 
-<<jump Gael 1>>
+<<jump T2>>
 ===
 __PrivCrochet_colorID: 5
-__PrivCrochet_position: 419,797
+__PrivCrochet_position: -137,898
 __PrivCrochet_tags: 
 title: A2
 ---
 <<set $finalB = $finalB + 1>>
 
 Player: [c_black]A vingança pode ser perigosa. Talvez seja melhor seguir em frente.
-Neriah: Talvez você tenha razao... O que eu poderia fazer, não é?
 
-<<jump Gael 1>>
+Neriah: Talvez você tenha razao...
+Neriah: ... Mas ainda tenho dúvidas.
+
+<<jump T2>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: 647,797
+__PrivCrochet_position: 73,898
 __PrivCrochet_tags: 
 title: A3
 ---
@@ -131,16 +136,17 @@ title: A3
 
 Player: [c_black]Talvez você devesse invetigar um pouco mais antes de tomar uma decisão.
 
-Neriah: Vou ver o que mais consigo encontrar.
+Neriah: ... Hm
+Neriah: Veremos...
 
-<<jump Gael 1>>
+<<jump T2>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -571,1278
+__PrivCrochet_position: -682,1226
 __PrivCrochet_tags: 
 title: D2
 ---
-Title: As cartas podem ajudar a descobrir seu caminho
+TitleTop: As cartas podem ajudar a descobrir seu caminho
 Title: [fa_center]
 -> Seguir sozinho
     <<jump B1>>
@@ -150,100 +156,137 @@ Title: [fa_center]
     <<jump B3>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -571,1560
+__PrivCrochet_position: -682,1436
 __PrivCrochet_tags: 
 title: D3
 ---
 Title: As cartas podem ajudar a descobrir seu caminho
 Title: [fa_center]
--> Deixar essa Bobagem de lado
-    <<jump C1>>
 -> Ter as coisas no Controle
+    <<jump C1>>
+-> Deixar essa Bobagem de lado
     <<jump C2>>
 -> Seguir com Cautela
     <<jump C3>>
 ===
-__PrivCrochet_colorID: 2
-__PrivCrochet_position: 202,1350
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: -347,1318
 __PrivCrochet_tags: 
 title: C1
 ---
-<<set $finalA = $finalA + 1>>
+<<set $finalC = $finalC + 1>>
 
-Player: [c_black]Talvez seja melhor deixar que as coisas se resolvam naturalmente.
+Player: [c_black]Mantenha a platéia entretida...
+Gideon: Sim... Hahahaha
+Gideon: Todos ficarão impressionados...
+Gideon: Muito obrigado! Espero que possamos nos encontrar no palco...
 
-Gideon: É... Talvez inventar problemas não seja a solução
-
-<<jump Neriah 2>>
+<<jump T4>>
 ===
-__PrivCrochet_colorID: 7
-__PrivCrochet_position: 420,1350
+__PrivCrochet_colorID: 2
+__PrivCrochet_position: -137,1318
 __PrivCrochet_tags: 
 title: C2
 ---
-<<set $finalC = $finalC + 1>>
+<<set $finalA = $finalA + 1>>
 
-Player: [c_black]Usar essas informações a seu favor pode manter as pessoas comportadas
-Gideon: Concordo contigo, és uma pessoa sábia.
+Player: [c_black]Talvez seja melhor deixar que a trama se resolva naturalmente.
 
-<<jump Neriah 2>>
+Gideon: Talvez inventar novas tramas não seja a solução para a minha grande apresentação.
+Gideon: Muito obrigado! Espero que possamos nos encontrar no palco...
+
+<<jump T4>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -822,1278
+__PrivCrochet_position: -892,1226
 __PrivCrochet_tags: 
 title: Gael 1
 ---
-Gael: Sabe... eu sempre fui um sobrevivente. Desde garoto, fui moldado para sobreviver nesse caos...
-Gael: Sem esperar piedade de ninguém.
-Gael: Esse grupo de assassinos... eles se tornaram minha família, a única coisa que eu tive.
-Gael: Mas, às vezes, me pergunto… até onde vale continuar com isso?
+Gael: [i]Ora Ora[/i], o que temos aqui?
+Gael: [i]Hahahaha[/i]
+Gael: Você parece perdido, amiguinho...
 
-Player: [c_black]E por que questionar agora? Parece que esse caminho foi tudo o que você conheceu.
+Player: [c_black]...
+Player: [c_black]Seus olhos me dizem, que quem está perdido é você...
+Player: [c_black]Mas não aqui em Etherea... Mas sim nos [i]seus próprios pensamentos[/i]...
+
+Gael: ...
+Gael: Sabe... eu sempre fui um sobrevivente.
+Gael: Agora o que sou?
+Gael: Um assassino?
+
+Player: [c_black]...
+
+Gael: Desde garoto, fui moldado para [i]sobreviver nesse caos[/i]...
+Gael: Esse grupo de [i]caçadores[/i]... Eles se tornaram minha família.
+Gael: Foi a única coisa que eu tive.
+Gael: Mas, às vezes me pergunto... até onde vale continuar com isso?
+
+Player: [c_black]E por que questionar agora?
+Player: [c_black]Me parece que [i]esse caminho[/i] foi tudo o que você conheceu.
+Player: [c_black]Você fez escolhas... E [i]todas tem consequências[/i]...
 Player: [c_black]Afinal, você não é do tipo que hesita, não é?
 
-Gael: Hesitar? Tsc, nem mesmo conheço essa palavra. 
+Gael: Hesitar?
+Gael: [i]Tsc...[/i] 
+Gael: Nem mesmo conheço essa palavra. 
 Gael: Mas... cada contrato, cada rosto que vejo cair... parece que carrego algo a mais. 
-Gael: Uma sombra. E agora estou aqui, perguntando se esse peso vale mais do que a lealdade que eles me deram.
+Gael: Uma sombra...
+Gael: E agora estou aqui, perguntando se esse peso vale mais do que a [i]lealdade[/i] que me deram.
 
-Player: [c_black]Família não é sempre algo escolhido, às vezes é imposto. 
+Player: [c_black]Família não é sempre algo escolhido... 
 Player: [c_black]Mas nem por isso você deve se manter preso a um caminho que te destrói.
 
-Gael: Eu sei disso. Mas quebrar essas alianças não é simples, e há muito que ainda posso fazer.
-Gael: Se eu os deixo, perco minha única base. Se continuo... 
-Gael: bem, talvez eu acabe me tornando apenas mais um alvo na minha própria lista.
+Gael: Eu sei disso. Mas quebrar essas [i]alianças[/i] não é tão simples...
+Gael: Se eu os deixo, para onde vou?
+Gael: Se continuo... 
+Gael: Bem... talvez eu acabe me tornando apenas mais um alvo na minha própria lista.
 
-Player: [c_black]Talvez seja hora de definir qual das verdades é a verdadeira prisão para você.
+Player: [c_black]Talvez seja hora de definir qual das suas verdades é a verdadeira prisão.
 
 Gael: Vamos ver...
 
 <<jump D2>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: 646,1069
+__PrivCrochet_position: 73,1108
 __PrivCrochet_tags: 
 title: B3
 ---
 <<set $finalC = $finalC + 1>>
 
-Player: O preço da liberdade pode ser alto demais. Certifique-se de que está pronto.
-Gael: Parece que terei que carregar esse fardo por mais um tempo.
+Player: [c_black]O preço da liberdade pode ser alto demais. Certifique-se de que está pronto.
 
-<<jump Gideon 1>>
+Gael: [i]ESTÁ DIZENDO QUE NÃO ESTOU PRONTO?[/i]
+Player:[c_black]...
+
+Gael: ...
+Gael: [i]Nos veremos em breve... Amigo...[/i]
+Gael: [i]Hahahahaha[/i]
+
+<<jump T3>>
 ===
 __PrivCrochet_colorID: 5
-__PrivCrochet_position: 420,1069
+__PrivCrochet_position: -137,1108
 __PrivCrochet_tags: 
 title: B2
 ---
 <<set $finalB = $finalB + 1>>
 
-Player: A lealdade é tudo para alguém como você. Não abandone sua família.
-Gael: Era o que eu estava pensando também... Obrigada
+Player: [c_black]A lealdade é tudo para alguém como você. Não abandone sua família.
 
-<<jump Gideon 1>>
+Gael: [i]O QUE VOCÊ SABE SOBRE FAMÍLIA?[/i]
+
+Player:[c_black]...
+
+Gael: ...
+Gael: [i]Nos veremos em breve... Amigo...[/i]
+Gael: [i]Hahahahaha[/i]
+
+<<jump T3>>
 ===
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: 198,1073
+__PrivCrochet_position: -348,1108
 __PrivCrochet_tags: 
 title: B1
 ---
@@ -251,72 +294,98 @@ title: B1
 
 Player: [c_black]Se você não confia mais neles, deveria encontrar um caminho próprio
 
-Gael: Eles são minha fámilia, mas quem sabe...
+Gael: [i]COMO OUSA?[/i]
+Gael: É da minha família que você está falando...
 
-<<jump Gideon 1>>
+Player: [c_black]...
+
+Gael: ...
+Gael: [i]Nos veremos em breve. Amiguinho...[/i]
+Gael: [i]Hahahahaha[/i]
+
+<<jump T3>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: 646,1350
+__PrivCrochet_position: 74,1318
 __PrivCrochet_tags: 
 title: C3
 ---
 <<set $finalC = $finalC + 1>>
 
-Player: [c_black Às vezes, ter poder é saber quando não usá-lo.
-Gideon: ...
+Player: [c_black]Um bom roteiro é feito com calma...
+Gideon: [i]Hahaha...[/i] Entendo.
+Gideon: Acho que já sei o que fazer.
 
-<<jump Neriah 2>>
+<<jump T4>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -820,1560
+__PrivCrochet_position: -892,1436
 __PrivCrochet_tags: 
 title: Gideon 1
 ---
-Gideon: Ah, meu bom amigo! Você sabe como é… nos meus negócios
-Gideon: Sempre existem ‘pequenas vantagens’ que se acumulam com o tempo. 
-Gideon: Claro, quem sou eu para controlar as coisas? 
-Gideon: Mas… digamos que eu tenho uma 'carta na manga' que poderia,hm, ajustar o equilíbrio em certos assuntos.
+Gideon: Ah, meu bom amigo! Tens tempo para um humilde Ventríloquo?
 
-Player: [c_black]Certo. Mas você acha que deve mesmo usá-la agora? Parece… arriscado.
+Player: [c_black] [i]Tempo?[/i] é sobre isso que se trata?
 
-Gideon: Arriscado? Talvez. Mas é parte do jogo, não? A verdade é que… manipular as peças tem seu próprio encanto. 
-Gideon: Admito que dessa vez, no entanto, talvez as coisas tenham ido longe demais.
-Gideon: Essa 'carta' afeta mais de uma pessoa, digamos assim. Pessoas com... destinos entrelaçados.
+Gideon: ...
+Gideon: Sempre existem [i]pequenas vantagens[/i] que se acumulam com o tempo. 
+Gideon: Claro... quem sou eu para controlar as coisas
+Gideon: Além dos meus próprios fantoches não é mesmo? [i]Hahaha[/i]
+Gideon: Mas...
+Gideon: Digamos que eu tenha uma [i]carta na manga[/i] que poderia...
+Gideon: Digamos...
+Gideon: Ajustar o equilíbrio em certas apresentações que faço.
 
-Player: Então, por que a hesitação agora? Você nunca se incomodou antes.
+Player: [c_black]Você parece ter dúvidas sobre isso. Você tem medo dos riscos?
 
-Gideon: Sim, você me conhece bem demais. Mas às vezes, o simples prazer de mover as peças não é suficiente. 
-Gideon: A questão é... quando jogar a carta? Agora, e resolver algo imediato? Ou esperar, ver como o tabuleiro se move?
+Gideon: Riscos? Talvez. Mas é parte do show, não? [i]Hahahaha...[/i]
+Gideon: As vezes precisamos improvisar...
 
-Player: Saber o momento certo para agir vale mais do que a própria informação, certo?
+Player: [c_black]...
 
-Gideon: Ah... vamos ver o que a sorte tem reservado, então
+Gideon: A verdade é que... [i]manipular fantoches[/i] tem seu próprio encanto. 
+Gideon: Admito que dessa vez, no entanto, talvez as coisas tenham ido [i]longe demais[/i].
+Gideon: Estou preparando o maior dos meus espetaculos.
+Gideon: E esse ato afeta mais de um personagem da minha grande peça.
+Gideon: Uma história com... [i]destinos entrelaçados[/i].
+
+Player: [c_black]Então, por que a hesitação agora?
+Player: [c_black]Você parece saber o que está fazendo...
+
+Gideon: Sim, mas...
+Gideon: Às vezes, ser o diretor de uma [i]grande peça[/i] não é suficiente. 
+
+Player: [c_black]... Entendo...
 
 <<jump D3>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -820,1863
+__PrivCrochet_position: -892,1646
 __PrivCrochet_tags: 
 title: Neriah 2
 ---
-Neriah: Eu... não sei o que fazer. A vingança é o que eu quero, 
-Neriah: mas... será que isso realmente vai me trazer paz?
+Neriah: Eu... não sei o que fazer. 
+Neriah: A [i]vingança[/i] é o que eu quero, 
+Neriah: mas... será que isso realmente vai me trazer [i]paz[/i]?
 
-Player: Talvez você precise seguir seu coração, fazer o que acredita ser justo.
+Player: [c_black]Talvez você precise seguir seu coração, fazer o que acredita ser justo.
 
-Neriah: Eu sinto que preciso fazer isso. Mas, e se eu estiver me perdendo na raiva? E se houver outra maneira?
+Neriah: Eu sinto que preciso fazer isso. Mas, e se eu estiver me perdendo na raiva?
+Neriah: E se houver outra maneira?
 
-Player: Talvez seja o momento de entender o que está por trás disso tudo.
+Player: [c_black]Talvez seja o momento de entender o que está por trás disso tudo.
 
-Neriah: ... Eu... não sei. Eu só sei que preciso de respostas. 
-Neriah: Vou decidir o que fazer, mas preciso saber a verdade.
+Neriah: Eu... Não sei.
+Neriah: Eu só sei que preciso de respostas.
+Neriah: ...
+Neriah: Vou decidir o que fazer, mas [i]preciso saber a verdade[/i].
 
-Player: Vamos ver onde isso nos leva.
+Player: [c_black]Vamos ver onde isso nos leva.
 
 <<jump D4>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -571,1863
+__PrivCrochet_position: -683,1646
 __PrivCrochet_tags: 
 title: D4
 ---
@@ -324,206 +393,214 @@ Title: As cartas podem ajudar a descobrir seu caminho
 Title: [fa_center]
 -> Falar com Gael pra tentar entender
     <<jump E1>>
--> Vingar a morte do pai
+-> Enferentar Gideon
     <<jump E2>>
 -> Desemparo
     <<jump E3>>
 ===
 __PrivCrochet_colorID: 5
-__PrivCrochet_position: 201,1674
+__PrivCrochet_position: -347,1528
 __PrivCrochet_tags: 
 title: E1
 ---
 <<set $finalB = $finalB + 1>>
 
-Player: Você deve seguir seu coração e fazer o que acha justo.
-Neriah: Tem razão, preciso confrontá-lo.
+Player: Às vezes, o perdão pode ser a verdadeira força.
+Neriah: Talvez... mas a que preço?
 
-<<jump Gael 2>>
+<<jump T5>>
 ===
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: 420,1674
+__PrivCrochet_position: -137,1528
 __PrivCrochet_tags: 
 title: E2
 ---
 <<set $finalA = $finalA + 1>>
 
-Player: A vingança pelo seu pai é o que você procura.
+Player: Ainda pode existir paz, até mesmo com sangue derramado.
 Neriah: Sinto que é o que meu coração deseja.
 
-<<jump Gael 2>>
+<<jump T5>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: 644,1674
+__PrivCrochet_position: 73,1528
 __PrivCrochet_tags: 
 title: E3
 ---
 <<set $finalC = $finalC + 1>>
 
-Player: Às vezes, o perdão pode ser a verdadeira força.
-Neriah: Talvez... mas a que preço?
+Player: [c_black]Acho que o correto é seguir seu coração e fazer o que acha [i]justo[/i].
+Neriah: Tem razão...
+Neriah: [i]Cansei de ter dúvidas...[/i]
+Neriah: ... Acho que simplismente, [i]cansei...[/i]
+
 
 <<jump Gael 2>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -825,2146
+__PrivCrochet_position: -892,1856
 __PrivCrochet_tags: 
 title: Gael 2
 ---
-Gael: Sabe, estou começando a achar que perdi o controle... Essa vida de mercenário, as manipulações, as lealdades... 
-Gael: Está me corroendo. Eu vi essa 'família' como tudo, mas... agora? Não sei mais.
+Gael: Enfim nos encontramos denovo, amiguinho... [i]Hahahahaha[/i]
 
-Player: Você tem medo de perder o controle?
+Player: [c_black]Você é um ótimo caçador... Sabe encontrar e rastrear...
+Player: [c_black]Mas e você? [i]Já se encontrou[/i]?
 
-Gael: É mais que medo. É como se estivesse sendo puxado em várias direções, e cada vez mais longe do que eu era. 
-Gael: E Gideon... ele só tem usado isso contra mim.
+Gael: ...
+Gael: De novo com essa palhaçada...
+Gael: Tsc...
+Gael: As manipulações e as lealdades, estão me [i]corroendo.[/i]
+Gael: Em algum momento, esse [i]bando[/i]...
+Gael: Eles foram tudo. Agora, não passam de algo...
 
-Player: E você acha que romper com ele vai resolver?
+Player: [c_black]Você tem medo de perder o controle? Ou já perdeu?
+
+Gael: É como se estivesse sendo puxado em várias direções, e cada vez mais longe do que já fui. 
+Gael: [b]O Contratante[/b]... tem usado isso contra mim.
+
+Player: [c_black]O Contratante?
+
+Gael: Eu e meu bando... Nossos serviços são pagos por alguém...
+Gael: Nenhum de nós sabe quem é... Mas eu digo uma coisa...
+Gael: Já ví muitas coisas cruéis em Etherea... mas [i]O Contratante[/i]...
+Gael: ...
+
+Player: [c_black]Acho que está na hora de fazer algo a respeito.
 
 Gael: Não sei. Talvez seja a única maneira de me manter de pé. 
-Gael: Mas abandonar minha ‘família’, isso não é fácil...
+Gael: Mas abandonar minha família, meu bando... [i]Isso não é fácil...[/i]
 
-Player: Ficar leal a eles é o que você realmente quer?
+Player: [c_black]Proteger a família, ou a si mesmo?
 
-Gael: Eu... não sei mais.
-
-Player: Vamos ver.
+Gael: ...
 
 
 <<jump D5>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -571,2146
+__PrivCrochet_position: -682,1856
 __PrivCrochet_tags: 
 title: D5
 ---
 Title: As cartas podem ajudar a descobrir seu caminho
 Title: [fa_center]
--> Desistir e Ir embora
+->  É assim que as coisas são
     <<jump F1>>
--> Se virar Contra Gideao
+-> Enfrenta a si mesmo
     <<jump F2>>
--> É assim que as coisas são
+-> Tenta enfrentar gideon sozinho
     <<jump F3>>
 ===
-__PrivCrochet_colorID: 2
-__PrivCrochet_position: 201,1963
+__PrivCrochet_colorID: 5
+__PrivCrochet_position: -347,1738
 __PrivCrochet_tags: 
 title: F1
 ---
 <<set $finalB = $finalB + 1>>
 
-Player: Você precisa se libertar, mesmo que seja arriscado.
-Gael: ...Eu sei.
+Player: [c_black]Lealdade é raro em Etherea.
+Gael: Farei, pela minha família...
 
-<<jump Gideon 2>>
+<<jump T6>>
 ===
-__PrivCrochet_colorID: 5
-__PrivCrochet_position: 418,1963
+__PrivCrochet_colorID: 2
+__PrivCrochet_position: -137,1738
 __PrivCrochet_tags: 
 title: F2
 ---
 <<set $finalA = $finalA + 1>>
 
-Player: Ficar com seu grupo ainda é sua melhor opção.
-Gael: No fim eu sabia que minha liberdade não valia isso...
+Player: [c_black]Sei que você é um ótimo [i]Caçador[/i]... [i]Encontre a sí mesmo[/i].
+Gael:Farei, por mim...
 
-<<jump Gideon 2>>
+<<jump T6>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: 648,1963
+__PrivCrochet_position: 73,1738
 __PrivCrochet_tags: 
 title: F3
 ---
 <<set $finalC = $finalC + 1>>
 
-Player:  Talvez você não precise escolher entre lealdade e liberdade; apenas imponha seus próprios termos.
+Player: [c_black]Não se perca em mais dúvidas...
 
-Gael: Duvido que alguém concorde, mas é o que devo fazer
+Gael: Farei, por todos...
 
-<<jump Gideon 2>>
+<<jump T6>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -820,2430
+__PrivCrochet_position: -892,2066
 __PrivCrochet_tags: 
 title: Gideon 2
 ---
-Gideon: Sempre é uma questão de controle, não é? 
-Gideon: Eu pensei que podia confiar neles, mas a insubordinação do Ghael... 
-Gideon: A forma como Neriah tem se aproximado, buscando respostas... 
-Gideon: É difícil, não é? Tantas peças, e eu... eu tenho todas elas em minhas mãos.
-
-Player: Você tem controle, não tem?
-
-Gideon: "Controle é uma palavra interessante. 
-Gideon: Às vezes, o controle parece escapar no momento em que você mais precisa dele. 
-Gideon: Eu vejo as fraquezas de Ghael, vejo as de Neriah... 
-Gideon: E tenho as minhas próprias cartas. A questão é, até onde eu vou usá-las?
-
-Player: Você não tem medo de perder o controle se continuar manipulando tudo?
-
-Gideon: Às vezes, o controle não se mantém... se você manipula demais. 
-Gideon: Mas, sem ele, o que resta? A confiança? Nem sei o que é mais arriscado agora.
-
-Player: E se for o momento de parar de manipular e simplesmente confiar?
-
-Gideon: Confiar... uma palavra rara para alguém como eu. 
-Gideon: E se eu errar? Se confiar neles e me descontrole?
-
-Player: Bom... Vamos ver
-
+Gideon: Está chegando o grande dia...
+Gideon: Meu [i]espetáculo[/i] está quase pronto.
+Gideon: Na verdade... Preciso apenas de uma opinião.
+Player: [c_black]...
+Gideon: Você acha que essa trama, todo esse show...
+Gideon: Deveria ser uma [b]Tragédia[/b], com corações partidos e traições?
+Gideon: Talvez uma [b]Comédia[/b]? Garanto que sei tirar risadas da platéia... [i]Hahaha[/i].
+Gideon: Ou um [b]Drama[/b]... Afinal os clichês são clichês por um motivo... [i]Haha[/i].
 
 <<jump D6>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -564,2427
+__PrivCrochet_position: -682,2066
 __PrivCrochet_tags: 
 title: D6
 ---
 Title: As cartas podem ajudar a descobrir seu caminho
 Title: [fa_center]
--> Confiar em Gael
+-> Tragico
     <<jump G1>>
--> Garantir o Controle
+-> Comédia
     <<jump G2>>
--> Não ajudar
+-> Drama
     <<jump G3>>
 ===
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: 201,2282
+__PrivCrochet_position: -347,1948
 __PrivCrochet_tags: 
 title: G1
 ---
 <<set $finalA = $finalA + 1>>
 
-Player: Confie em seus aliados, manipular pode ser perigoso.
+Player: [c_black]Vejo alegria no trágico.
+Gideon: Eu também...
+
 
 <<jump Choose>>
 ===
-__PrivCrochet_colorID: 3
-__PrivCrochet_position: 420,2282
+__PrivCrochet_colorID: 7
+__PrivCrochet_position: -137,1948
 __PrivCrochet_tags: 
 title: G2
 ---
 <<set $finalC = $finalC + 1>>
 
-Player: Use o que sabe para garantir seu poder.
+Player: [c_black]Rir é o melhor remédio.
 
+Gideon: [i]Hahahahaha...[/i]
+Gideon: De fato, caro amigo.
+Gideon: Espero ver você na platéia... Hahaha
 <<jump Choose>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: 646,2283
+__PrivCrochet_colorID: 5
+__PrivCrochet_position: 73,1948
 __PrivCrochet_tags: 
 title: G3
 ---
 <<set $finalB = $finalB + 1>>
 
-Player: Às vezes, não usar o poder que você tem pode ser mais eficaz.
+Player: [c_black]Bons clichês são sempre memoráveis.
+
+Gideon: Sei como ser dramático...
 
 <<jump Choose>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -556,2743
+__PrivCrochet_position: -682,2445
 __PrivCrochet_tags: 
 title: Choose
 ---
@@ -536,4 +613,74 @@ title: Choose
 <<else>>
     <<jump Final Alternativo>>
 <<endif>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1311,717
+__PrivCrochet_tags: 
+title: Intro
+---
+TitleMiddleCenter: [fa_center][fa_middle]Para existir Ordem, é necessário existir o Caos.
+
+<<jump T1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1102,1016
+__PrivCrochet_tags: 
+title: T1
+---
+TitleMiddleLeft: [fa_left][fa_middle]Neriah
+
+<<jump Neriah 1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1102,1226
+__PrivCrochet_tags: 
+title: T2
+---
+Title: Gael
+
+<<jump Gael 1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1102,1436
+__PrivCrochet_tags: 
+title: T3
+---
+Title: Gideon
+
+<<jump Gideon 1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1102,1646
+__PrivCrochet_tags: 
+title: T4
+---
+Title: Neriah
+
+<<jump Neriah 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1102,1856
+__PrivCrochet_tags: 
+title: T5
+---
+Title: Gael
+
+<<jump Gael 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1102,2066
+__PrivCrochet_tags: 
+title: T6
+---
+Title: Gideon
+
+<<jump Gideon 2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1452,1100
+__PrivCrochet_tags: 
+title: Node
+---
+Empty Text
 ===

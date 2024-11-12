@@ -80,6 +80,20 @@ function configure_character_dialogue(_character) {
             _config.speech_bubble = spr_speech_bubble_light_bg;
             break;
 			
+		case "TitleMiddleCenter":
+		    _config.text_x = room_width / 2;
+            _config.text_y = room_height / 2;
+            _config.text_width = 1000;
+            _config.speech_bubble = noone;
+            break;
+			
+		case "TitleMiddleLeft":
+		    _config.text_x = 640;
+            _config.text_y = room_height / 2;
+            _config.text_width = 1000;
+            _config.speech_bubble = noone;
+            break;
+			
 		case "Title":
 		    _config.text_x = room_width / 2;
             _config.text_y = 125;

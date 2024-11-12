@@ -40,7 +40,7 @@ function continue_chatterbox_dialogue() {
 
 function verify_current_node() {
 
-    if (node_title == "Neriah 1" || node_title == "Neriah 2" ) { 
+    if (node_title == "T1" || node_title == "T4" ) { 
         is_neriah_here = true;
 		is_gael_here = false;
 		is_gideon_here = false
@@ -48,7 +48,7 @@ function verify_current_node() {
 		delete_char_gideon();
     }
 	
-	if (node_title == "Gael 1" || node_title == "Gael 2") { 
+	if (node_title == "T2" || node_title == "T5") { 
         is_neriah_here = false;
 		is_gael_here = true;
 		is_gideon_here = false;
@@ -56,7 +56,7 @@ function verify_current_node() {
 		delete_char_gideon();
     }
 	
-	if (node_title == "Gideon 1" || node_title == "Gideon 2") { 
+	if (node_title == "T3" || node_title == "T6") { 
         is_neriah_here = false;
 		is_gael_here = false;
 		is_gideon_here = true;

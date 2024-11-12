@@ -27,28 +27,50 @@ function set_scale_lists(_index) {
 
 function set_card_descriptions() {
     first_decision_descriptions = [
-        "The High Priestess - Description for the High Priestess card.",
-        "The Lovers - Description for the Lovers card.",
-        "Death - Description for the Death card."
+        "\"A verdade é clara, mas seus raios podem queimar.\"",
+        "\"O equilíbrio está na dança entre o fim e o começo.\"",
+        "\"A verdade é vista apenas à luz do mistério.\""
     ];
 
     second_decision_descriptions = [
-        "The Fool - Description for the Fool card.",
-        "The Emperor - Description for the Emperor card.",
-        "Strength - Description for the Strength card."
+        "\"Na destruição, nasce a possibilidade.\"",
+        "\"A verdade é clara, mas seus raios podem queimar.\"",
+        "\"O equilíbrio está na dança entre o fim e o começo.\""
     ];
 
     third_decision_descriptions = [
-        "The Tower - Description for the Tower card.",
-        "The Devil - Description for the Devil card.",
-        "Justice - Description for the Justice card."
+        "\"Na destruição, nasce a possibilidade.\"",
+        "\"A verdade é vista apenas à luz do mistério.\"",
+        "\"A paz vem quando as peças se alinham.\""
+    ];
+
+    fourth_decision_descriptions = [
+        "\"A paz vem quando as peças se alinham.\"",
+        "\"Na destruição, nasce a possibilidade.\"",
+        "\"O equilíbrio está na dança entre o fim e o começo.\""
+    ];
+
+    fifth_decision_descriptions = [
+        "\"A verdade é clara, mas seus raios podem queimar.\"",
+        "\"A paz vem quando as peças se alinham.\"",
+        "\"O equilíbrio está na dança entre o fim e o começo.\""
+    ];
+
+    sixth_decision_descriptions = [
+        "\"O equilíbrio está na dança entre o fim e o começo.\"",
+        "\"Na destruição, nasce a possibilidade.\"",
+        "\"A paz vem quando as peças se alinham.\""
     ];
 }
+
 	
 function get_sprite_list(_node_title) {
-	var _first_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_sun_4];
-    var _second_decision_sprites = [spr_card_sun_4, spr_card_moon_2, spr_card_world_3];
-    var _third_decision_sprites = [spr_card_order_1, spr_card_world_3, spr_card_chaos_5];
+	var _first_decision_sprites = [spr_card_sun_4, spr_card_world_3, spr_card_moon_2];
+    var _second_decision_sprites = [spr_card_chaos_5, spr_card_sun_4, spr_card_world_3];
+    var _third_decision_sprites = [spr_card_chaos_5, spr_card_moon_2, spr_card_order_1];
+    var _fourth_decision_sprites = [spr_card_order_1, spr_card_chaos_5, spr_card_world_3];
+    var _fifth_decision_sprites = [spr_card_sun_4, spr_card_order_1, spr_card_world_3];
+    var _sixth_decision_sprites = [spr_card_world_3, spr_card_chaos_5, spr_card_order_1];
 	
     switch (_node_title) {
         case "D1":
@@ -58,33 +80,33 @@ function get_sprite_list(_node_title) {
         case "D3":
             return _third_decision_sprites;
         case "D4":
-            return _third_decision_sprites;
+            return _fourth_decision_sprites;
         case "D5":
-            return _third_decision_sprites;
+            return _fifth_decision_sprites;
         case "D6":
-            return _third_decision_sprites;
+            return _sixth_decision_sprites;
         default:
             return undefined;
     }
 }
 	
 function get_card_description(_node_title, _index) {
-switch (_node_title) {
-    case "D1":
-        return first_decision_descriptions[_index];
-    case "D2":
-        return second_decision_descriptions[_index];
-    case "D3":
-        return third_decision_descriptions[_index];
-    case "D4":
-        return third_decision_descriptions[_index];
-    case "D5":
-        return third_decision_descriptions[_index];
-    case "D6":
-        return third_decision_descriptions[_index];
-    default:
-        return "";
-}
+	switch (_node_title) {
+	    case "D1":
+	        return first_decision_descriptions[_index];
+	    case "D2":
+	        return second_decision_descriptions[_index];
+	    case "D3":
+	        return third_decision_descriptions[_index];
+	    case "D4":
+	        return fourth_decision_descriptions[_index];
+	    case "D5":
+	        return fifth_decision_descriptions[_index];
+	    case "D6":
+	        return sixth_decision_descriptions[_index];
+	    default:
+	        return "";
+	}
 }
 
 // draw
