@@ -1,5 +1,11 @@
 /// @description chatterbox and options setup
 
+// Backgrounds setup
+global.layer_bg_light = "Backgrounds_Light";
+global.layer_bg_dark = "Backgrounds_Dark";
+global.layer_bg_letterbox = "Backgrounds_Letterbox";
+global.layer_bg = "Backgrounds";
+
 // Chatterbox setup
 is_neriah_here = false;
 is_gael_here = false;

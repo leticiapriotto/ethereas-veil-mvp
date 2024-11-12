@@ -628,7 +628,7 @@ __PrivCrochet_position: -1102,1016
 __PrivCrochet_tags: 
 title: T1
 ---
-TitleMiddleLeft: [fa_left][fa_middle]Neriah
+TitleMiddleLeft: [fa_left][fa_middle][c_black]Neriah
 
 <<jump Neriah 1>>
 ===
@@ -637,7 +637,7 @@ __PrivCrochet_position: -1102,1226
 __PrivCrochet_tags: 
 title: T2
 ---
-TitleMiddleLeft: [fa_left][fa_middle]Gael
+TitleMiddleLeft: [fa_left][fa_middle][c_black]Gael
 
 <<jump Gael 1>>
 ===
@@ -646,16 +646,16 @@ __PrivCrochet_position: -1102,1436
 __PrivCrochet_tags: 
 title: T3
 ---
-TitleMiddleLeft: [fa_left][fa_middle]Gideon
+TitleMiddleLeft: [fa_left][fa_middle][c_black]Gideon
 
 <<jump Gideon 1>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1102,1646
+__PrivCrochet_position: -1101,1646
 __PrivCrochet_tags: 
 title: T4
 ---
-TitleMiddleLeft: [fa_left][fa_middle]Neriah
+TitleMiddleLeft: [fa_left][fa_middle][c_black]Neriah
 
 <<jump Neriah 2>>
 ===
@@ -664,7 +664,7 @@ __PrivCrochet_position: -1102,1856
 __PrivCrochet_tags: 
 title: T5
 ---
-TitleMiddleLeft: [fa_left][fa_middle]Gael
+TitleMiddleLeft: [fa_left][fa_middle][c_black]Gael
 
 <<jump Gael 2>>
 ===
@@ -673,7 +673,7 @@ __PrivCrochet_position: -1102,2066
 __PrivCrochet_tags: 
 title: T6
 ---
-TitleMiddleLeft: [fa_left][fa_middle]Gideon
+TitleMiddleLeft: [fa_left][fa_middle][c_black]Gideon
 
 <<jump Gideon 2>>
 ===

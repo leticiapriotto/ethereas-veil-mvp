@@ -39,8 +39,28 @@ function continue_chatterbox_dialogue() {
 }
 
 function verify_current_node() {
+	
+	if (node_title == "Start") {
+		layer_set_visible(global.layer_bg_light, true);
+		layer_set_visible(global.layer_bg_dark, false);
+		layer_set_visible(global.layer_bg_letterbox, false);
+		layer_set_visible(global.layer_bg, false);
+	}
+	
+	if (node_title == "Intro") {
+		layer_set_visible(global.layer_bg_light, false);
+		layer_set_visible(global.layer_bg_dark, true);
+		layer_set_visible(global.layer_bg_letterbox, false);
+		layer_set_visible(global.layer_bg, false);
+	}
+		
 
     if (node_title == "T1" || node_title == "T4" ) { 
+		layer_set_visible(global.layer_bg_light, false);
+		layer_set_visible(global.layer_bg_dark, false);
+		layer_set_visible(global.layer_bg_letterbox, true);
+		layer_set_visible(global.layer_bg, true);
+		
         is_neriah_here = true;
 		is_gael_here = false;
 		is_gideon_here = false
