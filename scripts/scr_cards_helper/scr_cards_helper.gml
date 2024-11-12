@@ -27,41 +27,43 @@ function set_scale_lists(_index) {
 
 function set_card_descriptions() {
     first_decision_descriptions = [
-        "\"A verdade é clara, mas seus raios podem queimar.\"",
-        "\"O equilíbrio está na dança entre o fim e o começo.\"",
-        "\"A verdade é vista apenas à luz do mistério.\""
+        ["\"The truth is clear, but its rays may burn.\"", "\"A verdade é clara, mas seus raios podem queimar.\""],
+        ["\"Balance lies in the dance between the end and the beginning.\"", "\"O equilíbrio está na dança entre o fim e o começo.\""],
+        ["\"The truth is seen only in the light of mystery.\"", "\"A verdade é vista apenas à luz do mistério.\""]
     ];
 
     second_decision_descriptions = [
-        "\"Na destruição, nasce a possibilidade.\"",
-        "\"A verdade é clara, mas seus raios podem queimar.\"",
-        "\"O equilíbrio está na dança entre o fim e o começo.\""
+        ["\"In destruction, possibility is born.\"", "\"Na destruição, nasce a possibilidade.\""],
+        ["\"The truth is clear, but its rays may burn.\"", "\"A verdade é clara, mas seus raios podem queimar.\""],
+        ["\"Balance lies in the dance between the end and the beginning.\"", "\"O equilíbrio está na dança entre o fim e o começo.\""]
     ];
 
     third_decision_descriptions = [
-        "\"Na destruição, nasce a possibilidade.\"",
-        "\"A verdade é vista apenas à luz do mistério.\"",
-        "\"A paz vem quando as peças se alinham.\""
+        ["\"In destruction, possibility is born.\"", "\"Na destruição, nasce a possibilidade.\""],
+        ["\"The truth is seen only in the light of mystery.\"", "\"A verdade é vista apenas à luz do mistério.\""],
+        ["\"Peace comes when the pieces align.\"", "\"A paz vem quando as peças se alinham.\""]
     ];
 
     fourth_decision_descriptions = [
-        "\"A paz vem quando as peças se alinham.\"",
-        "\"Na destruição, nasce a possibilidade.\"",
-        "\"O equilíbrio está na dança entre o fim e o começo.\""
+        ["\"Peace comes when the pieces align.\"", "\"A paz vem quando as peças se alinham.\""],
+        ["\"In destruction, possibility is born.\"", "\"Na destruição, nasce a possibilidade.\""],
+        ["\"Balance lies in the dance between the end and the beginning.\"", "\"O equilíbrio está na dança entre o fim e o começo.\""]
     ];
 
     fifth_decision_descriptions = [
-        "\"A verdade é clara, mas seus raios podem queimar.\"",
-        "\"A paz vem quando as peças se alinham.\"",
-        "\"O equilíbrio está na dança entre o fim e o começo.\""
+        ["\"The truth is clear, but its rays may burn.\"", "\"A verdade é clara, mas seus raios podem queimar.\""],
+        ["\"Peace comes when the pieces align.\"", "\"A paz vem quando as peças se alinham.\""],
+        ["\"Balance lies in the dance between the end and the beginning.\"", "\"O equilíbrio está na dança entre o fim e o começo.\""]
     ];
 
     sixth_decision_descriptions = [
-        "\"O equilíbrio está na dança entre o fim e o começo.\"",
-        "\"Na destruição, nasce a possibilidade.\"",
-        "\"A paz vem quando as peças se alinham.\""
+        ["\"Balance lies in the dance between the end and the beginning.\"", "\"O equilíbrio está na dança entre o fim e o começo.\""],
+        ["\"In destruction, possibility is born.\"", "\"Na destruição, nasce a possibilidade.\""],
+        ["\"Peace comes when the pieces align.\"", "\"A paz vem quando as peças se alinham.\""]
     ];
 }
+
+
 
 	
 function get_sprite_list(_node_title) {
@@ -125,13 +127,16 @@ function draw_card_sprites(_node_title, _index, x, y) {
 
 function draw_card_description() {
     if (mouse_over_option && option_index != -1) {
-	
         var _description = get_card_description(node_title, option_index);
-        var _config = configure_character_dialogue(undefined);
 
-        draw_text_ext(_config.text_x, _config.text_y, _description, 40,_config.text_width);
+        // Seleciona a descrição com base no idioma
+        var translated_description = _description[global.current_language];
+
+        var _config = configure_character_dialogue(undefined);
+        draw_text_ext(_config.text_x, _config.text_y, translated_description, 40, _config.text_width);
     }
 }
+
 	
 // update
 function update_card_scale(_index) {
