@@ -105,7 +105,7 @@ function configure_character_dialogue(_character) {
 			draw_set_halign(fa_left)
             _config.text_x = 100;
             _config.text_y = 1000;
-            _config.text_width = 1000;
+            _config.text_width = 1200;
             _config.speech_bubble = noone;
             break;
     }

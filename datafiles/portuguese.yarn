@@ -73,7 +73,7 @@ Neriah: Se você estivesse no meu lugar, o que faria?
 Neriah: Tentaria esquecer ou continuaria?
 
 Player: [c_black]Depende do preço
-Player: ...
+Player: [c_black]...
 Player: [c_black]Algumas respostas trazem mais [i]dor[/i] do que conforto. 
 Player: [c_black]Mas, só você pode decidir o que vale a pena.
 
@@ -91,8 +91,8 @@ __PrivCrochet_position: -688,1016
 __PrivCrochet_tags: 
 title: D1
 ---
-TitleTop: [fa_center]As cartas podem ajudar a descobrir seu caminho.
-Title: [fa_center]
+Option: As cartas podem ajudar a descobrir seu caminho.
+Option: [fa_center]
 -> Option: Ir atras da Verdade
     <<jump A1>>
 -> Option: Seguir em Frente
